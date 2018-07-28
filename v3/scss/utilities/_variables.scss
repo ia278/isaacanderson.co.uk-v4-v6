@@ -1,0 +1,87 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Breakpoints
+$breakpoint-s: 320px;                           // Breakpoint where small screens start (phones)
+$breakpoint-m-card: 618px;                      // Breakpoint where medium screens start (tablets)
+$breakpoint-m: 668px;                           // Breakpoint where medium screens start (tablets)
+$breakpoint-l: 950px;                           // Breakpoint where large screens start (desktops)
+
+// Buttons
+$button-dark-before: #111;                      // Color of dark button background before
+$button-dark-after: #FFF;                       // Color of dark button background after
+$button-light-before: #FFF;                     // Color of light button background before
+$button-light-after: #111;                      // Color of light button backgound after
+
+// Colors
+$color-bg: #FFF;                                // Background color
+$color-bg-cta-allwork: #111;                    // Background color "all work" modules
+$color-bg-cta-contact: #111;                    // Background color "contact" modules
+$color-bg-allwork: #FFF;                        // Background color for footer module
+$color-bg-card: #F5F5F5;                        // Background color for cards
+$color-bg-card-image: #FFF;                     // Background color for card images (used for transparent images)
+$color-bg-footer: #EEE;                         // Background color for footer module
+$color-bg-header: #222;                         // Background color for header module
+$color-bg-project: #CCC;                        // Background color for project modules (even only)
+$color-bg-related: #F5F5F5;                     // Background color for related module
+$color-header: #FFF;                            // Header text color
+$color-link: #C33;                              // Link color
+$color-link-hover: darken($color-link, 15%);    // Link color on hover
+$color-logo-dribbble: #EA4C89;                  // Dribbble color
+$color-logo-github: #6E5494;                    // Github color
+$color-logo-linkedin: #0077B5;                  // LinkedIn color
+$color-logo-medium: #00AB6C;                    // Medium color
+$color-quote: #C33;                             // Color used for quotes
+$color-text: #000;                              // Text color
+
+// Fonts, line height and scaling (base)
+$font-primary: "Raleway", sans-serif;           // Used for paragraphs and buttons
+$font-secondary: "Josefin Sans", sans-serif;    // Used for headlines
+$font-size: 16px;                               // Font size for medium screens
+$font-size-s: 12px;                             // Font size for small screens
+$font-size-xs: 10px;                            // Font size for extra small screens  
+$line-height: 1.4;                              // Default line height
+
+// Fonts (other)
+$font-size-card-p: 14px;                        // Font size for paragraphs in cards
+$font-size-hero: 60px;                          // Font size for hero text (name)
+$font-size-hero-s: 34px;                        // Font size for hero text for small screens (name)
+$font-size-hero-xs: 24px;                       // Font size for hero text for extra small screens (name)
+$font-size-logo: 4rem;                          // Logo font size (in header)
+$font-size-mainNav: 1.2rem;                     // Main nav font size
+$font-size-p: 20px;                             // Font size used for paragraphs on medium screens
+$font-size-p-s: 17px;                           // Font size used for paragraphs on small screens
+$font-size-p-xs: 14px;                          // Font size used for paragraphs on extra small screens 
+
+// Margins, padding and gutters
+$gutter: 10px;                                  // Gutter size (used to create margins with flexbox) 
+$margin-allwork: 20px;                          // Space between container boxes inside "allwork" module
+$margin-card-row: 60px;                         // Space between rows of cards in "allwork" module
+$margin-headerDiv: 75px;                        // Space between header and logo/options
+$margin-social-svg: 15px;                       // Space between social media icons in footer
+
+// SVG
+$svg-width-project: 40%;                        // Width of SVGs used in project sections
+$svg-width-title-s: 30%;                        // Width of title SVGs used in project sections (small screens)
+$svg-width-title-m: 40%;                        // Width of title SVGs used in project sections (medium screens)
+
+// Transitions
+$transition-click: 0.5s ease;                   // Transition used on click
+$transition-hoverButton: 0.75s ease;            // Transition used on hovering over buttons
+$transition-hoverLink: 0.6s ease;               // Transition used on hovering over links
+
+// Widths and heights
+$height-card-image: 180px;                      // Height of card images
+$height-cta: 33vh;                              // Height of "call-to-action" modules
+$height-footer: 15vh;                           // Height of footer module
+$height-header: 65px;                           // Height of header
+$height-hero-s: 60vh;                           // Height of hero module for small screens
+$height-hero-m: 100vh;                          // Height of hero module for medium screens
+$height-images: 60vh;                           // Height of images div
+$height-related: 30vh;                          // Height of related module
+$height-project-s: 20vh;                        // Height of each module for small screens
+$height-project-m: 55vh;                        // Height of each module for medium screens
+$width-max: 1080px;                             // Max width of website
+$width-max-p-s: 550px;                          // Max width of paragraphs on small screens
+$width-max-p-m: 630px;                          // Max width of paragraphs on medium screens

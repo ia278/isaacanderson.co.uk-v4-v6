@@ -1,0 +1,104 @@
+// ======================================
+//  Project styles
+// ======================================
+
+// Reset and backgrounds
+.project {
+  @include reset (true, true);
+  &:nth-child(even) {
+    background-color: $color-bg-project;
+    @media all and (min-width: $breakpoint-m) {
+      .project-container {
+        flex-flow: row-reverse wrap;
+      }               // Alternates order of project containers
+    }
+  }
+}
+
+// General styling
+.project {
+  @include center(100%, 0);
+  @include flexbox(column wrap);
+  font-family: $font-primary;
+  height: auto;
+  min-height: $height-project-s;
+  &-container {
+    @include center($width-max: $width-max);
+    @include flexbox(column wrap, space-around);
+    height: 100%;  //IE
+    text-align: center;
+  }
+  &-contents {
+    font-size: $font-size-s;
+    margin-bottom: $gutter;
+    margin-top: $gutter;
+    max-width: $width-max;
+    width: 95%;
+    h4 {
+      margin-top: 8px;
+    }
+    .btn-dark {
+      margin-top: 20px;
+    }
+  }
+  &-svg {
+    height: 0;                    // Cancels any height, countering IE SVG bug.
+    height: 100%;                 // Fits container height to match height of SVG.
+    width: $svg-width-project;    // Size of accompanying image SVG.
+    &-title {
+      height: 80px;
+      margin-bottom: 15px;
+      width: $svg-width-title-s;  //Width of title SVG.
+    }
+  }
+}
+
+// Breakpoints
+
+@media all and (min-width: $breakpoint-s) {
+  .project {
+    min-height: $height-project-m;
+    &-container {
+      overflow-x: hidden; // IE
+    }
+  } 
+}
+
+
+@media all and (min-width: $breakpoint-m) {
+  .project {
+    min-height: $height-project-m;
+    &-container {
+      flex-flow: row wrap;
+    }
+    &-contents {
+      font-size: $font-size;
+      margin: $gutter;
+      flex: 1 items-per-line(2);
+    }
+    &-svg {
+      width: $svg-width-project;    // Size of accompanying image SVG.
+      &-title {
+        width: $svg-width-title-m;  //Width of title SVG.
+      }
+    }
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+
+//<section class="project" id="appy-parking">
+//  <div class="project-container">
+//    <div class="project-contents">
+//      <svg class="project-svg-title" xmlns="http://www.w3.org/2000/svg" width="50px" viewBox="-316 251 273 57"></svg>
+//      <p>The app that drivers badly need, but cannot easily use.</p>
+//      <h4>Check out my user experience redesign of AppyParking.</h4>
+//      <a href="post.html" class="btn-dark">Read case study &nbsp; &#10230;</a>
+//    </div>
+//    <div class="project-contents hide-small">
+//      <svg class="project-svg" xmlns="http://www.w3.org/2000/svg" height="500px" viewBox="0 0 547.387 595.773"></svg>
+//    </div>
+//  </div>
+//</section>

@@ -1,0 +1,64 @@
+// ======================================
+//  Hero styles
+// ======================================
+
+// Reset
+.hero {
+  @include font-size;
+  @include reset;
+}
+
+// General styling
+.hero {
+  @include center(100%, $height-header);             // Positions and centers intro under header bar.
+  @include flexbox;
+  font-family: $font-primary;
+  text-align: center;
+  min-height: calc(#{$height-hero-s} - #{$height-header});
+  &-container {
+    width: $width-max;
+    h1, h4 {
+      display: block; 
+      @include center (98%, 0, $width-max, 0);
+    }
+    h1 {
+      font-size: $font-size-hero-xs;
+    }
+    h4 {
+      font-weight: normal;
+    }
+  }
+}
+
+// Breakpoints 
+@media all and (min-width: $breakpoint-s) {
+  .hero {
+    &-container {
+      h1 {
+        font-size: $font-size-hero-s;
+      }
+    }
+  }
+}
+@media all and (min-width: $breakpoint-m) {
+  .hero {
+    min-height: calc(#{$height-hero-m} - #{$height-header});
+    &-container {
+      h1 {
+        font-size: $font-size-hero;
+      }
+    }
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+
+//<section class="hero" id="hero">
+//  <div class="hero-container">
+//    <h4>i'm</h4>
+//    <h1>isaac anderson</h1>
+//    <h4>designer. developer. engineer</h4>
+//  </div>
+//</section>
