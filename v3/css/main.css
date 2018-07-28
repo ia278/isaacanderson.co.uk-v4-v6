@@ -852,7 +852,7 @@ body {
       font-size: 14px;
       margin: 10px auto;
       padding: 0 10px; }
-    .post-contents p, .post-contents ul {
+    .post-contents p, .post-contents ul, .post-contents ol {
       margin-left: auto;
       margin-right: auto;
       text-align: justify; }
@@ -861,7 +861,7 @@ body {
       margin: 30px auto;
       width: 100%;
       max-width: 100vw; }
-    .post-contents ul {
+    .post-contents ul, .post-contents ol {
       margin-bottom: 40px; }
     .post-contents:nth-child(1) {
       width: 100%;
@@ -876,12 +876,12 @@ body {
       max-width: 1080px; }
 
 @media all and (min-width: 320px) {
-  .post-contents p, .post-contents ul {
+  .post-contents p, .post-contents ul, .post-contents ol {
     max-width: 550px; }
   .post-contents p, .post-contents li {
     font-size: 17px; } }
 @media all and (min-width: 668px) {
-  .post-contents p, .post-contents ul {
+  .post-contents p, .post-contents ul, .post-contents ol {
     max-width: 630px; }
   .post-contents p, .post-contents li {
     font-size: 20px; } }
