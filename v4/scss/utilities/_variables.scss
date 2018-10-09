@@ -4,9 +4,7 @@
 
 // Breakpoints
 $breakpoint-s: 320px;                           // Breakpoint where small screens start (phones)
-$breakpoint-m-card: 618px;                      // Breakpoint where medium screens start (tablets)
-$breakpoint-m: 668px;                           // Breakpoint where medium screens start (tablets)
-$breakpoint-l: 950px;                           // Breakpoint where large screens start (desktops)
+$breakpoint-m: 768px;                           // Breakpoint where medium screens start (tablets)
 
 // Buttons
 $button-dark-before: #111;                      // Color of dark button background before
@@ -16,9 +14,9 @@ $button-light-after: #111;                      // Color of light button backgou
 
 // Colors
 $color-bg: #FFF;                                // Background color
-$color-bg-cta-allwork: #111;                    // Background color "all work" modules
+$color-bg-cta-work: #111;                       // Background color "work" modules
 $color-bg-cta-contact: #111;                    // Background color "contact" modules
-$color-bg-allwork: #FFF;                        // Background color for footer module
+$color-bg-work: #FFF;                           // Background color for footer module
 $color-bg-card: #F5F5F5;                        // Background color for cards
 $color-bg-card-image: #FFF;                     // Background color for card images (used for transparent images)
 $color-bg-footer: #EEE;                         // Background color for footer module
@@ -56,8 +54,8 @@ $font-size-p-xs: 14px;                          // Font size used for paragraphs
 
 // Margins, padding and gutters
 $gutter: 10px;                                  // Gutter size (used to create margins with flexbox) 
-$margin-allwork: 20px;                          // Space between container boxes inside "allwork" module
-$margin-card-row: 60px;                         // Space between rows of cards in "allwork" module
+$margin-work: 20px;                             // Space between container boxes inside "work" module
+$margin-card-row: 60px;                         // Space between rows of cards in "work" module
 $margin-headerDiv: 75px;                        // Space between header and logo/options
 $margin-social-svg: 15px;                       // Space between social media icons in footer
 

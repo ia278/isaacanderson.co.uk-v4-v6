@@ -177,7 +177,7 @@ body {
   @media all and (min-width: 320px) {
     .btn-dark, .btn-dark-s {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .btn-dark, .btn-dark-s {
       font-size: 16px; } }
 
@@ -201,7 +201,7 @@ body {
   @media all and (min-width: 320px) {
     .btn-light, .btn-light-s {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .btn-light, .btn-light-s {
       font-size: 16px; } }
 
@@ -227,7 +227,7 @@ body {
 .hide {
   display: none; }
 
-@media all and (max-width: 668px) {
+@media all and (max-width: 768px) {
   .hide-small {
     display: none; } }
 
@@ -343,7 +343,7 @@ body {
     margin-left: 75px; }
   .header-contentsB {
     margin-right: 75px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .hamburger {
     display: none; }
 
@@ -392,7 +392,7 @@ body {
     align-items: flex-start;
     text-align: center; }
 
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .footer-contents {
     width: 65%; } }
 .hero {
@@ -400,7 +400,7 @@ body {
   @media all and (min-width: 320px) {
     .hero {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .hero {
       font-size: 16px; } }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
@@ -434,7 +434,7 @@ body {
 @media all and (min-width: 320px) {
   .hero-container h1 {
     font-size: 34px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .hero {
     min-height: calc(100vh - 65px); }
     .hero-container h1 {
@@ -448,7 +448,7 @@ body {
   margin: 0; }
 .project:nth-child(even) {
   background-color: #CCC; }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .project:nth-child(even) .project-container {
       flex-flow: row-reverse wrap; } }
 
@@ -498,7 +498,7 @@ body {
     min-height: 55vh; }
     .project-container {
       overflow-x: hidden; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .project-container {
     flex-flow: row wrap; }
   .project-contents {
@@ -509,21 +509,21 @@ body {
     width: 40%; }
     .project-svg-title {
       width: 40%; } }
-.cta-allwork {
+.cta-work {
   font-size: 10px; }
   @media all and (min-width: 320px) {
-    .cta-allwork {
+    .cta-work {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
-    .cta-allwork {
+  @media all and (min-width: 768px) {
+    .cta-work {
       font-size: 16px; } }
-  .cta-allwork h1, .cta-allwork h2, .cta-allwork h3, .cta-allwork h4, .cta-allwork h5, .cta-allwork h6 {
+  .cta-work h1, .cta-work h2, .cta-work h3, .cta-work h4, .cta-work h5, .cta-work h6 {
     font-family: "Josefin Sans", sans-serif;
     margin: 0; }
-  .cta-allwork a {
+  .cta-work a {
     text-decoration: none; }
 
-.cta-allwork {
+.cta-work {
   margin: 0 auto 0;
   width: 100%;
   display: flex;
@@ -536,25 +536,25 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center;
   min-height: 33vh; }
-  .cta-allwork-container {
+  .cta-work-container {
     width: 95%; }
-    .cta-allwork-container h1, .cta-allwork-container h4 {
+    .cta-work-container h1, .cta-work-container h4 {
       display: block;
       margin: 10px auto 10px;
       max-width: 1080px;
       width: 98%; }
-    .cta-allwork-container h4 {
+    .cta-work-container h4 {
       font-weight: normal; }
 
-@media all and (min-width: 668px) {
-  .cta-allwork {
+@media all and (min-width: 768px) {
+  .cta-work {
     min-height: 33vh; } }
 .cta-contact {
   font-size: 10px; }
   @media all and (min-width: 320px) {
     .cta-contact {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .cta-contact {
       font-size: 16px; } }
   .cta-contact h1, .cta-contact h2, .cta-contact h3, .cta-contact h4, .cta-contact h5, .cta-contact h6 {
@@ -584,7 +584,7 @@ body {
       max-width: 1080px;
       width: 98%; }
 
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .cta-contact {
     min-height: 33vh; } }
 .about {
@@ -592,7 +592,7 @@ body {
   @media all and (min-width: 320px) {
     .about {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .about {
       font-size: 16px; } }
   .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
@@ -661,7 +661,7 @@ body {
       max-width: 550px; }
     .about-contents:nth-child(3) p {
       font-size: 12px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .about-contents {
     font-size: 16px; }
     .about-contents p, .about-contents ul {
@@ -669,15 +669,15 @@ body {
       max-width: 630px; }
     .about-contents:nth-child(3) p {
       font-size: 16px; } }
-.all-work h1, .all-work h2, .all-work h3, .all-work h4, .all-work h5, .all-work h6 {
+.work h1, .work h2, .work h3, .work h4, .work h5, .work h6 {
   font-family: "Josefin Sans", sans-serif;
   margin: 0; }
-.all-work a {
+.work a {
   text-decoration: none; }
-.all-work p {
+.work p {
   margin: 0; }
 
-.all-work {
+.work {
   margin: 65px auto 0;
   width: 100%;
   display: flex;
@@ -688,9 +688,9 @@ body {
   background-color: #FFF;
   font-family: "Raleway", sans-serif;
   text-align: center; }
-  .all-work .btn-dark, .all-work .btn-dark-s {
+  .work .btn-dark, .work .btn-dark-s {
     margin: 5px 10px; }
-  .all-work-container {
+  .work-container {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -699,16 +699,16 @@ body {
     margin: 30px 0;
     max-width: 1080px;
     width: 100%; }
-  .all-work-contents {
+  .work-contents {
     margin: 10px auto; }
-    .all-work-contents:nth-child(2) {
+    .work-contents:nth-child(2) {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
       align-content: center;
       align-items: flex-start;
       width: 90%; }
-  .all-work-card {
+  .work-card {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -719,20 +719,20 @@ body {
     flex: 1 98.1481481481%;
     margin: 10px;
     margin-bottom: 60px; }
-    .all-work-card h2 {
+    .work-card h2 {
       color: #000;
       margin: 10px auto; }
-    .all-work-card > p {
+    .work-card > p {
       color: #000;
       padding: 0 5px;
       width: 100%; }
-    .all-work-card-image {
+    .work-card-image {
       background-color: #FFF;
       height: 180px;
       width: 100%;
       position: relative;
       overflow: hidden; }
-      .all-work-card-image img {
+      .work-card-image img {
         left: 50%;
         position: absolute;
         top: 50%;
@@ -740,32 +740,29 @@ body {
         width: 100%;
         height: auto;
         min-height: 100%; }
-    .all-work-card-button {
+    .work-card-button {
       height: auto;
       width: 100%; }
-      .all-work-card-button .btn-dark, .all-work-card-button .btn-dark-s {
+      .work-card-button .btn-dark, .work-card-button .btn-dark-s {
         display: block;
         font-weight: normal;
         margin: 10px 0 0; }
 
 @media all and (min-width: 320px) {
-  .all-work-card {
+  .work-card {
     font-size: 12px; } }
-@media all and (min-width: 618px) {
-  .all-work-card {
+@media all and (min-width: 768px) {
+  .work-card {
     font-size: 14px;
     flex: 0 46.2962962963%; }
-    .all-work-card .btn-dark, .all-work-card .btn-dark-s {
+    .work-card .btn-dark, .work-card .btn-dark-s {
       font-size: 14px; } }
-@media all and (min-width: 950px) {
-  .all-work-card {
-    flex: 0 27.7777777778%; } }
 .error {
   font-size: 10px; }
   @media all and (min-width: 320px) {
     .error {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .error {
       font-size: 16px; } }
   .error h1, .error h2, .error h3, .error h4, .error h5, .error h6 {
@@ -810,7 +807,7 @@ body {
 @media all and (min-width: 320px) {
   .error-container h1 {
     font-size: 34px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .error-container h1 {
     font-size: 60px; }
   .error-search input, .error-search .btn-dark, .error-search .btn-dark-s {
@@ -824,7 +821,7 @@ body {
   @media all and (min-width: 320px) {
     .post {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .post {
       font-size: 16px; } }
   .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
@@ -899,7 +896,7 @@ body {
     max-width: 550px; }
   .post-contents p, .post-contents li {
     font-size: 17px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {
     max-width: 630px; }
   .post-contents p, .post-contents li {
@@ -909,7 +906,7 @@ body {
   @media all and (min-width: 320px) {
     .related {
       font-size: 12px; } }
-  @media all and (min-width: 668px) {
+  @media all and (min-width: 768px) {
     .related {
       font-size: 16px; } }
   .related h1, .related h2, .related h3, .related h4, .related h5, .related h6 {
@@ -972,7 +969,7 @@ body {
 @media all and (min-width: 320px) {
   .related-card {
     font-size: 12px; } }
-@media all and (min-width: 668px) {
+@media all and (min-width: 768px) {
   .related-card {
     font-size: 16px; } }
 

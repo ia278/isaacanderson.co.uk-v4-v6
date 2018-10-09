@@ -3,15 +3,15 @@
 // ======================================
 
 // Resets
-.all-work {
+.work {
   @include reset(true, true);
 }
 
 // General styling
-.all-work {
+.work {
   @include center(100%, $height-header);             // Positions and centers bounding box to viewport
   @include flexbox(column wrap, space-around);
-  background-color: $color-bg-allwork;
+  background-color: $color-bg-work;
   font-family: $font-primary;
   text-align: center;
   .btn-dark {
@@ -72,14 +72,14 @@
 
 // Breakpoints 
 @media all and (min-width: $breakpoint-s) {
-  .all-work {
+  .work {
     &-card {
       font-size: $font-size-s;
     }
   }
 }
-@media all and (min-width: $breakpoint-m-card) {
-  .all-work {
+@media all and (min-width: $breakpoint-m) {
+  .work {
     &-card {
       font-size: $font-size-card-p;
       flex: 0 items-per-line(2);
@@ -89,34 +89,28 @@
     }
   }
 }
-@media all and (min-width: $breakpoint-l) {
-  .all-work {
-    &-card {
-      flex: 0 items-per-line(3);
-    }
-  }
-}
+
 
 // ======================================
 //  HTML code
 // ======================================
 
-//<section class="all-work" id="all-work">
-//  <div class="all-work-container">
-//    <div class="all-work-contents">
+//<section class="work" id="work">
+//  <div class="work-container">
+//    <div class="work-contents">
 //      <h1 class="underline-double">work</h1>
 //    </div>
-//    <div class="all-work-contents">
+//    <div class="work-contents">
 //      <a href="post.html" class="all-work-card border">
-//        <div class="all-work-card-image"><img src="images/placeimg_640_480_tech.jpg"></div>
+//        <div class="work-card-image"><img src="images/placeimg_640_480_tech.jpg"></div>
 //        <h2>Project One</h2>
 //        <p>Quo et esse irure irure ubi nisi consequat a eruditionem, laboris a quid probant 
 //          non proident ita elit, incurreret ipsum consequat incididunt, quem nescius ex 
 //          adipisicing.</p>
-//        <div class="all-work-card-button"><p class="btn-dark">View case study</p></div>
+//        <div class="work-card-button"><p class="btn-dark">View case study</p></div>
 //      </a>
 //    </div>
-//    <div class="all-work-contents">
+//    <div class="work-contents">
 //      <a class="btn-dark-s">&lsaquo;</a>
 //      <a class="btn-dark-s">&rsaquo;</a>
 //    </div>
