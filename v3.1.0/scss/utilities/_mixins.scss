@@ -1,0 +1,66 @@
+// ======================================
+//  Mixins
+// ======================================
+
+@mixin center($width: 100%, $margin-top: 0, $width-max: null, $margin-bottom: 0) {
+  margin: $margin-top auto $margin-bottom;
+  max-width: $width-max;
+  width: $width;
+  @content;
+}
+@mixin centerX($left: 50%, $width: 98%, $position: absolute) {
+  left: $left;
+  position: $position;
+  transform: translateX(-$left);
+  width: $width;
+  @content;
+}
+@mixin centerY($top: 50%, $width: 98%, $position: absolute) {
+  position: $position;
+  top: $top;
+  transform: translateY(-$top);
+  width: $width;
+  @content;
+}
+@mixin centerXY($left: 50%, $top: 50%, $width: 98%, $position: absolute) {
+  left: $left;
+  position: $position;
+  top: $top;
+  transform: translate(-$left, -$top);
+  width: $width;
+  @content;
+}
+@mixin flexbox($flex-flow: row wrap, $justify-content: center, $display: flex, $align-content: center, $align-items: center) {
+  display: $display;
+  flex-flow: $flex-flow;
+  justify-content: $justify-content;
+  align-content: $align-content;
+	align-items: $align-items;
+  @content;
+}
+@mixin font-size {
+  font-size: $font-size-xs;
+  @media all and (min-width: $breakpoint-s) {
+    font-size: $font-size-s;    
+  }
+  @media all and (min-width: $breakpoint-m) {
+    font-size: $font-size;    
+  }
+}
+@mixin reset ($a: false, $p: false) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+    margin: 0;
+  }
+  @if $a {
+    a {
+      text-decoration: none;
+    }
+  }
+  @if $p {
+    p {
+      margin: 0;
+    }
+  }
+  @content;
+}

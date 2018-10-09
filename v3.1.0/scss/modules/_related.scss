@@ -1,0 +1,87 @@
+// ======================================
+//  Related styles
+// ======================================
+
+// Resets
+.related {
+  @include font-size;
+  @include reset (true, true) {
+    a {
+      color: $color-text;
+    }
+  }
+}
+
+// General styling
+.related {
+  @include center(100%);                                 // Positions and centers bounding box to viewport
+  @include flexbox($justify-content: space-around);
+  background-color: $color-bg-related;
+  font-family: $font-primary;
+  text-align: center;
+  &-container {
+    @include flexbox(column wrap, space-between);
+    margin: 15px auto;
+    height: auto;
+    min-height: $height-related;
+    width: $width-max;                          
+  }
+  &-contents {
+    @include flexbox($justify-content: space-between);
+    margin: 5px 0;
+    width: 98%;
+    h3 {
+      margin: 0 25px;
+    }
+  }
+  &-card {
+    @include flexbox(row no-wrap, flex-start);
+    background-color: #fff;
+//    flex: 1 items-per-line(1);
+    margin: $gutter;
+    height: auto; // IE
+    max-height: 120px;
+    overflow: hidden;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 25%;
+    }
+  }
+}
+
+// Breakpoints 
+@media all and (min-width: $breakpoint-s) {
+  .related{
+    &-card {
+      font-size: $font-size-s;
+    }
+  }
+}
+@media all and (min-width: $breakpoint-m) {
+  .related {
+    &-card {
+      font-size: $font-size;
+    }
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+//
+//<section class="related" id="related">
+//  <div class="related-container">
+//    <div class="related-contents"><h2 class="underline-double">related</h2></div>
+//    <div class="related-contents">
+//      <a href="post.html" class="related-card">
+//        <img src="images/placeimg_640_480_tech%20(1).jpg">
+//        <h3>Ea ullamco a litteris.</h3>
+//      </a>
+//      <a href="post.html" class="related-card">
+//        <img src="images/placeimg_640_480_tech%20(2).jpg">
+//        <h3>Officia multos aliquip.</h3>          
+//      </a>
+//    </div>
+//  </div>
+//</section>

@@ -1,0 +1,134 @@
+// ======================================
+//  Class styles
+// ======================================
+
+.bold {
+  font-weight: bold;
+}
+.border {
+  border: thin solid red;
+}
+.btn-dark {
+  background: $button-dark-before;
+  border: 2px solid $button-dark-before;
+  color: $button-dark-after;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: $font-size-xs;
+  padding: 20px;
+  text-align: center;
+  &:hover {
+    color: $button-dark-before;
+    background: transparent;
+    transition: $transition-hoverButton;
+    }
+  @media all and (min-width: $breakpoint-s) {
+    font-size: $font-size-s;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    font-size: $font-size;
+  }
+}
+.btn-dark-s {
+  @extend .btn-dark;
+  padding: 5px 10px;
+}
+.btn-light {
+  background: $button-light-before;
+  border: 2px solid $button-light-before;
+  color: $button-light-after;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: $font-size-xs;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  &:hover {
+    color: $button-light-before;
+    background: transparent;
+    transition: $transition-hoverButton;
+    }
+  @media all and (min-width: $breakpoint-s) {
+    font-size: $font-size-s;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    font-size: $font-size;
+  }
+}
+.btn-light-s {
+  @extend .btn-light;
+  padding: 5px 10px;
+}
+.center {
+  margin: 0 auto;
+}
+.copyright {
+  color: #6D6968;
+  font-weight: normal;
+  letter-spacing: 0.08rem;
+}
+.dribbble {
+  &:hover, &:active, &:visited {
+    fill: $color-logo-dribbble;
+    transition: $transition-hoverLink;
+  }
+}
+.github {
+  &:hover, &:active, &:visited {
+    fill: $color-logo-github;
+    transition: $transition-hoverLink;
+  }
+}
+.hide {
+  display: none;
+}
+.hide-small {
+  @media all and (max-width: $breakpoint-m) {
+    display: none;
+  }
+}
+.images {
+  text-align: center;
+  max-width: $width-max;
+  &-one {
+    width: 98.5%;
+  }
+  &-two {
+    width: 49%;
+  }
+  &-three {
+    width: 32.55%;
+  }
+  &-four {
+    width: 24.33%;
+  }
+}
+.italic {
+  font-style: italic;
+}
+.linkedin {
+  &:hover, &:active, &:visited {
+    fill: $color-logo-linkedin;
+    transition: $transition-hoverLink;
+  }
+}
+.medium {
+  &:hover, &:active, &:visited {
+    fill: $color-logo-medium;
+    transition: $transition-hoverLink;
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-double {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+// ======================================
+//  ID styles
+// ======================================
+#hero {
+  background: url("https://i.imgur.com/0unzGaD.png") center/cover no-repeat;
+}                // Background for intro

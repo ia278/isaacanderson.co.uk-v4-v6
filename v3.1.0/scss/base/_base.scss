@@ -1,0 +1,38 @@
+/* ======================================
+//  Base element styles
+// ====================================*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-primary;
+  font-size: $font-size;
+}
+blockquote {
+  color: $color-quote;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  margin: 15px auto;
+  &::before, &::after {
+    background-color: $color-quote;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    width: 10%;
+  }
+}
+body {
+  background: $color-bg;
+  box-sizing: border-box;
+	line-height: $line-height;
+  text-rendering: optimizeLegibility;
+  
+  // Flexbox IE11 workaround
+  
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+}
