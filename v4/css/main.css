@@ -343,7 +343,7 @@ body {
     margin-left: 75px; }
   .header-contentsB {
     margin-right: 75px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .hamburger {
     display: none; }
 
