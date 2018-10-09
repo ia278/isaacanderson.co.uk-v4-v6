@@ -1,0 +1,5 @@
+﻿utilities (variables, mixins, functions, helpers)
+base (reset, base, maybe typography)
+layout (header, footer etc.)
+page (if layout is page specific)
+components (classes, buttons, icons, images etc. ) - any RESUSABLE styles

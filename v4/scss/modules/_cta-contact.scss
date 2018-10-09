@@ -1,0 +1,45 @@
+// ======================================
+//  Call-to-action (contact) styles
+// ======================================
+
+// Reset
+.cta-contact {
+  @include font-size;
+  @include reset(true, false);
+}
+
+// General styling
+.cta-contact {
+  @include center(100%);                             // Positions and centers intro under header bar.
+  @include flexbox;
+  background-color: $color-bg-cta-contact;
+  color: invert($color-bg-cta-contact);
+  font-family: $font-primary;
+  text-align: center;
+  min-height: $height-cta;
+  &-container {
+    width: 95%;
+    h1 {
+      display: block;
+      @include center (98%, 10px, $width-max, 10px);
+    }
+  }
+}
+
+// Breakpoints 
+@media all and (min-width: $breakpoint-m) {
+  .cta-contact {
+    min-height: $height-cta;
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+
+//<section class="cta-contact" id="cta-contact">
+//  <div class="cta-contact-container">
+//    <h1 class="">Fancy getting in contact?</h1>
+//    <a "href="mailto:isaacaanderson4@gmail.com" class="btn-light">Contact me &nbsp; &#10230;</a>
+//  </div>
+//</section>
