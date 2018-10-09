@@ -78,7 +78,7 @@
     }
   }
 }
-@media all and (min-width: $breakpoint-m) {
+@media all and (min-width: $breakpoint-m-card) {
   .work {
     &-card {
       font-size: $font-size-card-p;

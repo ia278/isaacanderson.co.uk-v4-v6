@@ -177,7 +177,7 @@ body {
   @media all and (min-width: 320px) {
     .btn-dark, .btn-dark-s {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .btn-dark, .btn-dark-s {
       font-size: 16px; } }
 
@@ -201,7 +201,7 @@ body {
   @media all and (min-width: 320px) {
     .btn-light, .btn-light-s {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .btn-light, .btn-light-s {
       font-size: 16px; } }
 
@@ -227,7 +227,7 @@ body {
 .hide {
   display: none; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 668px) {
   .hide-small {
     display: none; } }
 
@@ -392,7 +392,7 @@ body {
     align-items: flex-start;
     text-align: center; }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .footer-contents {
     width: 65%; } }
 .hero {
@@ -400,7 +400,7 @@ body {
   @media all and (min-width: 320px) {
     .hero {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .hero {
       font-size: 16px; } }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
@@ -434,7 +434,7 @@ body {
 @media all and (min-width: 320px) {
   .hero-container h1 {
     font-size: 34px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .hero {
     min-height: calc(100vh - 65px); }
     .hero-container h1 {
@@ -448,7 +448,7 @@ body {
   margin: 0; }
 .project:nth-child(even) {
   background-color: #CCC; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .project:nth-child(even) .project-container {
       flex-flow: row-reverse wrap; } }
 
@@ -498,7 +498,7 @@ body {
     min-height: 55vh; }
     .project-container {
       overflow-x: hidden; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .project-container {
     flex-flow: row wrap; }
   .project-contents {
@@ -514,7 +514,7 @@ body {
   @media all and (min-width: 320px) {
     .cta-work {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .cta-work {
       font-size: 16px; } }
   .cta-work h1, .cta-work h2, .cta-work h3, .cta-work h4, .cta-work h5, .cta-work h6 {
@@ -546,7 +546,7 @@ body {
     .cta-work-container h4 {
       font-weight: normal; }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .cta-work {
     min-height: 33vh; } }
 .cta-contact {
@@ -554,7 +554,7 @@ body {
   @media all and (min-width: 320px) {
     .cta-contact {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .cta-contact {
       font-size: 16px; } }
   .cta-contact h1, .cta-contact h2, .cta-contact h3, .cta-contact h4, .cta-contact h5, .cta-contact h6 {
@@ -584,7 +584,7 @@ body {
       max-width: 1080px;
       width: 98%; }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .cta-contact {
     min-height: 33vh; } }
 .about {
@@ -592,7 +592,7 @@ body {
   @media all and (min-width: 320px) {
     .about {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .about {
       font-size: 16px; } }
   .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
@@ -661,7 +661,7 @@ body {
       max-width: 550px; }
     .about-contents:nth-child(3) p {
       font-size: 12px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .about-contents {
     font-size: 16px; }
     .about-contents p, .about-contents ul {
@@ -762,7 +762,7 @@ body {
   @media all and (min-width: 320px) {
     .error {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .error {
       font-size: 16px; } }
   .error h1, .error h2, .error h3, .error h4, .error h5, .error h6 {
@@ -807,7 +807,7 @@ body {
 @media all and (min-width: 320px) {
   .error-container h1 {
     font-size: 34px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .error-container h1 {
     font-size: 60px; }
   .error-search input, .error-search .btn-dark, .error-search .btn-dark-s {
@@ -821,7 +821,7 @@ body {
   @media all and (min-width: 320px) {
     .post {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .post {
       font-size: 16px; } }
   .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
@@ -896,7 +896,7 @@ body {
     max-width: 550px; }
   .post-contents p, .post-contents li {
     font-size: 17px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {
     max-width: 630px; }
   .post-contents p, .post-contents li {
@@ -906,7 +906,7 @@ body {
   @media all and (min-width: 320px) {
     .related {
       font-size: 12px; } }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 668px) {
     .related {
       font-size: 16px; } }
   .related h1, .related h2, .related h3, .related h4, .related h5, .related h6 {
@@ -969,7 +969,7 @@ body {
 @media all and (min-width: 320px) {
   .related-card {
     font-size: 12px; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
   .related-card {
     font-size: 16px; } }
 
