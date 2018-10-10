@@ -48,7 +48,7 @@
     }
     &-image {
       background-color: $color-bg-card-image;
-      height: 180px;
+      height: 230px;
       width: 100%;
       position: relative;
       overflow: hidden;
@@ -86,13 +86,6 @@
       .btn-dark {
         font-size: $font-size-card-p;
       }
-    }
-  }
-}
-@media all and (min-width: $breakpoint-l) {
-  .all-work {
-    &-card {
-      flex: 0 items-per-line(3);
     }
   }
 }
