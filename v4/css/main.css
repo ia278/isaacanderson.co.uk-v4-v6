@@ -289,7 +289,6 @@ h6 {
   align-content: center;
   align-items: center;
   margin: 0 auto;
-  transition: all .2s ease-in-out;
   width: 100%; }
   .project-container {
     display: flex;
@@ -297,7 +296,9 @@ h6 {
     justify-content: center;
     align-content: center;
     align-items: center;
+    color: #000;
     height: 100%;
+    text-decoration: none;
     width: 98%; }
   .project-image {
     display: flex;
@@ -322,6 +323,9 @@ h6 {
     margin: 56px auto 0; }
   .project-container {
     max-width: 1080px; }
+    .project-container:hover {
+      transition: all .3s ease-in-out;
+      transform: scale(1.1); }
   .project-image {
     margin: 0;
     padding: 15px;

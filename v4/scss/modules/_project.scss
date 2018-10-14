@@ -1,14 +1,12 @@
 .project {
   @include flexbox(row wrap, center);
   margin: 0 auto;
-  transition: all .2s ease-in-out;
   width: 100%;
-  &:hover {
-//    transform: scale(1.1);
-  }
   &-container {
     @include flexbox(row wrap, center);
+    color: $color-text;
     height: 100%;
+    text-decoration: none;
     width: 98%;
   }
   &-image {
@@ -39,6 +37,10 @@
     }
     &-container {
       max-width: $width-max-website;
+      &:hover {
+        transition: all .3s ease-in-out;
+        transform: scale(1.1);
+      }
     }
     &-image {
       margin: 0;
