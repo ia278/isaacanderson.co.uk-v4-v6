@@ -38,15 +38,6 @@
 	align-items: $align-items;
   @content;
 }
-@mixin font-size {
-  font-size: $font-size-xs;
-  @media all and (min-width: $breakpoint-s) {
-    font-size: $font-size-s;    
-  }
-  @media all and (min-width: $breakpoint-m) {
-    font-size: $font-size;    
-  }
-}
 @mixin reset ($a: false, $p: false) {
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-secondary;

@@ -12,7 +12,9 @@ $color-bg: #FFF;                                      // Background color
 $color-bg-header: #FBF5F3;                            // Background header color 
 $color-header: #000;                                  // Header text color
 $color-link: #A7001E;                                 // Link color
+$color-link-hover: darken($color-link, 15%);          // Link color on hover
 $color-quote: #A7001E;                                // Quote color
+$color-text: #000;                                    // Text color
 
 // Fonts
 
@@ -31,9 +33,12 @@ $line-height: 1.5;                                    // Line height
 // Transitions
 
 $transition-hover: 0.5s ease;                         // Hover transition
-$transition-scroll: top 0.3s ease;                         // Scroll transition
+$transition-scroll: top 0.5s ease;                    // Scroll transition
 
 
 // Widths and heights
-$height-header: 52px;                                 // Header height
+$height-header: 56px;                                 // Header height
+
+$width-max-p-s: 550px;                                // ParaMax width of paragraphs on small screens
+$width-max-p-m: 630px;                                // Max width of paragraphs on medium screens
 $width-max-website: 1080px;                           // Max width of website

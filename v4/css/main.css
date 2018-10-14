@@ -136,6 +136,7 @@ html {
 body {
   background: #FFF;
   box-sizing: border-box;
+  color: #000;
   line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
@@ -208,12 +209,7 @@ h6 {
   align-items: center;
   background-color: #FBF5F3;
   font-family: "Oswald", sans-serif;
-  left: 50%;
-  position: fixed;
   text-align: center;
-  top: 0;
-  transition: top 0.3s ease;
-  transform: translateX(-50%);
   width: 100%;
   z-index: 1000; }
   .header-container {
@@ -222,7 +218,7 @@ h6 {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    width: 95%; }
+    width: 98%; }
   .header-logo {
     margin: 0 auto;
     width: 45%; }
@@ -251,7 +247,12 @@ h6 {
 
 @media all and (min-width: 768px) {
   .header {
-    height: 56px; }
+    height: 56px;
+    left: 50%;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease;
+    transform: translateX(-50%); }
     .header-container {
       max-width: 1080px; }
     .header-logo {
