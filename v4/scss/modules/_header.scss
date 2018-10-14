@@ -15,11 +15,10 @@
   width: 100%;
   z-index: 1000;
   &-container {
-    @include flexbox(row wrap, space-between);
+    @include flexbox(row wrap, space-between);    
     width: 95%;
   }
   &-logo {
-    height: auto;
     margin: 0 auto;
     width: 45%;
     svg {
@@ -51,6 +50,7 @@
 
 @media all and (min-width: $breakpoint-m) {
   .header {
+    height: 56px;
     &-container {
       max-width: $width-max-website;
     }

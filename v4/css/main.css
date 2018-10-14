@@ -224,7 +224,6 @@ h6 {
     align-items: center;
     width: 95%; }
   .header-logo {
-    height: auto;
     margin: 0 auto;
     width: 45%; }
     .header-logo svg {
@@ -251,18 +250,20 @@ h6 {
         width: 80px; }
 
 @media all and (min-width: 768px) {
-  .header-container {
-    max-width: 1080px; }
-  .header-logo {
-    margin: 0;
-    width: 200px; }
-  .header-nav {
-    margin: 0;
-    width: 300px; }
-    .header-nav ul {
-      list-style-type: none;
-      justify-content: space-between;
-      margin: 5px auto 10px;
-      padding: 0; } }
+  .header {
+    height: 56px; }
+    .header-container {
+      max-width: 1080px; }
+    .header-logo {
+      margin: 0;
+      width: 200px; }
+    .header-nav {
+      margin: 0;
+      width: 300px; }
+      .header-nav ul {
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 5px auto 10px;
+        padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
