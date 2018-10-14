@@ -9,8 +9,9 @@ $breakpoint-m: 768px;                                 // Medium screen breakpoin
 // Colors
 
 $color-bg: #FFF;                                      // Background color
-$color-bg-header: #FBF5F3;                            // Background header color 
-$color-header: #000;                                  // Header text color
+$color-bg-header: #222;                               // Background header color 
+$color-bg-project-polygon: #D1A3D2;                   // Background project color (Polygon)
+$color-header: #FFF;                                  // Header text color
 $color-link: #A7001E;                                 // Link color
 $color-link-hover: darken($color-link, 15%);          // Link color on hover
 $color-quote: #A7001E;                                // Quote color

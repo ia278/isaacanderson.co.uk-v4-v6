@@ -1,5 +1,45 @@
 .project {
-  
+  @include flexbox(row wrap, center);
+  background-color: $color-bg-project-polygon;
+//  height: 450px;
+  margin: 0 auto;
+  width: 100%;
+  &-container {
+    @include flexbox(row wrap, center);
+    height: 100%;
+    width: 98%;
+  }
+  &-image {
+    @include flexbox(row wrap, center);
+    width: 45%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-desc {
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    h4 {
+      text-decoration: underline;
+    }
+  }
 }
 
 
+@media all and (min-width: $breakpoint-m) {
+  .project {
+    margin: $height-header auto 0;
+    &-container {
+      max-width: $width-max-website;
+    }
+    &-image {
+      width: 225px;
+    }
+    &-desc {
+      padding: 40px;
+      width: 50%;
+    }
+  }
+}

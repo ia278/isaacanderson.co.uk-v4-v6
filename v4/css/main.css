@@ -190,13 +190,10 @@ h6 {
     background-color: #000;
     display: none; } }
 .active {
-  border-bottom: 3px solid #000; }
+  border-bottom: 3px solid #FFF; }
   .active:hover {
     border-bottom: 3px solid #A7001E;
     transition: 0.5s ease; }
-
-.border {
-  border: thin solid black; }
 
 .hide {
   display: none; }
@@ -207,7 +204,7 @@ h6 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #FBF5F3;
+  background-color: #222;
   font-family: "Oswald", sans-serif;
   text-align: center;
   width: 100%;
@@ -223,7 +220,7 @@ h6 {
     margin: 0 auto;
     width: 45%; }
     .header-logo svg {
-      fill: #000; }
+      fill: #FFF; }
   .header-nav {
     margin: 0 auto;
     width: 100%; }
@@ -237,7 +234,7 @@ h6 {
       margin: 10px auto;
       padding: 0; }
       .header-nav ul a {
-        color: #000;
+        color: #FFF;
         text-decoration: none; }
         .header-nav ul a:hover {
           color: #A7001E;
@@ -266,5 +263,49 @@ h6 {
         justify-content: space-between;
         margin: 5px auto 10px;
         padding: 0; } }
+.project {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #D1A3D2;
+  margin: 0 auto;
+  width: 100%; }
+  .project-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 98%; }
+  .project-image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 45%; }
+    .project-image img {
+      height: 100%;
+      width: 100%; }
+  .project-desc {
+    padding: 15px;
+    text-align: center;
+    width: 90%; }
+    .project-desc h4 {
+      text-decoration: underline; }
+
+@media all and (min-width: 768px) {
+  .project {
+    margin: 56px auto 0; }
+    .project-container {
+      max-width: 1080px; }
+    .project-image {
+      width: 225px; }
+    .project-desc {
+      padding: 40px;
+      width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

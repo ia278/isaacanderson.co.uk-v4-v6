@@ -1,1 +1,2 @@
 Redesign logo.
+Write javascript to show menu on upwards scroll
