@@ -5,24 +5,9 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 html {
   font-family: $font-primary;
-  font-size: $font-size;
-}
-blockquote {
-  color: $color-quote;
-  font-family: $font-secondary;
-  font-size: 1.5rem;
-  margin: 15px auto;
-  &::before, &::after {
-    background-color: $color-quote;
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 20px auto;
-    width: 10%;
-  }
+  font-size: 20px;
 }
 body {
   background: $color-bg;
@@ -32,7 +17,62 @@ body {
   
   // Flexbox IE11 workaround
   
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
+//  display: flex;
+//  flex: 0 1 auto;
+//  flex-direction: column;
+}
+blockquote {
+  color: $color-quote;
+  font-family: $font-primary;
+  font-size: $font-size-h3;
+  font-weight: bold;
+  margin: 15px auto;
+  span {
+    font-size: $font-size-h5;
+    font-weight: normal;
+  }
+  &::before, &::after {
+    background-color: $color-quote;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    width: 10%;
+  }
+}
+canvas {
+  display: block;
+  height: 100%;
+//  visibility: hidden;    
+}
+figcaption {
+  font-size: $font-size-h5;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+}
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+
+@media all and (max-width: 319px) {
+  body {
+    background-color: #000;
+    display: none;
+  }
 }

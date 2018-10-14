@@ -1,0 +1,107 @@
+// ======================================
+//  Header styles
+// ======================================
+
+.header {
+  @include flexbox (column no-wrap, center);
+  background-color: $color-bg-header;
+  font-family: "Josefin Sans", sans-serif;
+  height: $height-header;
+  left: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+  a {
+    color: $color-header;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+  &-container {
+    @include flexbox (row wrap, space-between);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 98%;
+  }
+  &-logo {
+    z-index: 100;
+    svg {
+      fill: $color-header;
+      height: 40px;
+      margin: 0;
+      width: auto;
+    }
+  }
+  &-menu {
+    a:hover {
+      color: $color-link;
+      transition: $transition-hover-link;
+    }
+    svg {
+      cursor: pointer;
+      fill: $color-header;
+      height: 35px;
+      position: relative;
+      width: auto;
+      z-index: 100;
+    } 
+  }
+}
+
+
+@media all and (min-width: $breakpoint-m) {
+  .header {
+    &-container {
+      max-width: $width-max-website;
+    }
+    &-menu {
+      svg {
+        display: none;
+
+      }
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        li {
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: calc(#{$breakpoint-m} - 1px)) {
+  .header-menu ul {
+    background-color: $color-bg-header;
+    display: none;
+    left: 50%;
+    padding: $height-header 2rem 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    li {
+      margin: 0px auto 10px;
+      padding: 5px;
+    }
+  }
+  .header-menu:hover ul {
+    display: block;    
+  } 
+}
+
+
+
+
+//  Notes
+// ======================================
+
+/* - distance of logo/menu from container edge is set using container padding, not logo/menu margins
+*/

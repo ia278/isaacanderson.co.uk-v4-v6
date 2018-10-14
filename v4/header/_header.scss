@@ -1,0 +1,117 @@
+// ======================================
+//  Header styles
+// ======================================
+
+// Hamburger menu
+.hamburger {
+	cursor: pointer;
+	display: inline-block;
+}
+.bar1, .bar2, .bar3 {
+  background-color: $color-header;
+  height: 5px;
+  margin: 6px 0;
+  transition: $transition-click;
+  width: 35px;
+}
+.change .bar1{
+  transform: rotate(-45deg) translate(-9px, 6px); 
+}
+.change .bar2 {
+  opacity: 0; 
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+// General styling
+.header {
+  @include centerX(50%, 100%, fixed);
+  @include flexbox;
+  background-color: $color-bg-header;
+  top: 0;
+  z-index: 10;
+  a {
+    color: $color-header;
+    text-decoration: none;
+  }
+  &-container {
+    @include flexbox(row wrap, space-between, inline-flex);
+    font-family: $font-tertiary;
+    height: $height-header;
+    line-height: 1.0;            // Reduce whitespace between element and inner border
+    max-width: $width-max-website;
+    text-transform: lowercase;
+    width: 100%;
+  }
+  &-contentsA {
+    display: inline-flex;
+    margin-left: 75px; // Space between header and logo
+    a {
+      font-size: $font-size-h1;
+      font-weight: bold;
+    }
+  }
+  &-contentsB {
+    margin-right: 75px; // Space between header and options
+    a:hover {
+      color: $color-link;
+      transition: $transition-hover-link;
+    }
+  }
+  &-options {
+    @include centerX($width: 100%);
+    background-color: $color-bg-header;
+    display: none;
+    padding: 10px 0;     // Space between header options container and dropdown menu
+    top: $height-header;
+    text-align: center;
+    a {
+      display: block;
+      margin: 15px auto;                // Spacing between each option in dropdown
+    }
+  }
+}
+
+// Breakpoints
+
+@media all and (min-width: $breakpoint-m) {
+  .hamburger {
+    display: none;
+  }
+  .header {
+    &-options {
+      display: inline-flex;        // Reset header options to flexbox
+      position: static;            // Move header options div back inside header
+      text-align: left;            // Cancel text centering needed for dropdown
+      transform: translateX(0);    // Cancel block centering needed for dropdown
+      a {
+        display: inline-block;     // Display all header options on one line
+        margin: 0 20px;            // Distance between each header option
+      }
+    }
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+//<header class="header">
+//  <nav class="header-container">
+//    <div class="header-contentsA">
+//      <a href="index.html">ia</a>
+//    </div>
+//    <div class="header-contentsB">
+//      <div class="hamburger">
+//        <div class="bar1"></div>
+//        <div class="bar2"></div>
+//        <div class="bar3"></div>
+//      </div>
+//      <div class="header-options">
+//        <a href="about.html">about</a>
+//        <a href="allwork.html">work</a>
+//        <a href="mailto:isaacaanderson4@gmail.com">contact</a>
+//      </div>
+//    </div>
+//  </nav>
+//</header> 

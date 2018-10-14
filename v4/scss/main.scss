@@ -1,8 +1,7 @@
 // Utilities
-@import "utilities/variables", 
-        "utilities/mixins",
-        "utilities/functions",
-        "utilities/helpers";
+@import "utilities/variables",
+        "utilities/mixins";
+
 
 // Base styles
 @import "base/normalize",
@@ -11,13 +10,4 @@
 
 // Module styles
 @import "modules/header",
-        "modules/footer",
-        "modules/hero",
-        "modules/project",
-        "modules/cta-work",
-        "modules/cta-contact",
-        "modules/about",
-        "modules/work",
-        "modules/error",
-        "modules/post",
-        "modules/related";
+        "modules/nav";
