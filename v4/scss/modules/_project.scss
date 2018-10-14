@@ -14,7 +14,7 @@
   &-image {
     @include flexbox(row wrap, center);
     margin-top: 15px;
-    width: 45%;
+    width: 50%;
     img {
       height: 100%;
       width: 100%;
@@ -40,6 +40,7 @@
     &-container {
       max-width: $width-max-website;
       &:hover {
+        overflow: hidden;
         transition: all .3s ease-in-out;
         transform: scale(1.1);
       }
