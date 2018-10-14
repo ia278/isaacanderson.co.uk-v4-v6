@@ -11,12 +11,29 @@
 }
 
 
-//.border {
-//  border: thin solid black;
-//}
 
+.border {
+  border: thin solid black;
+}
 
 
 .hide {
   display: none;
+}
+
+#appy {
+  background-color: $color-bg-project-appy;
+  color: $color-text-alt;
+}
+#ebm {
+  background-color: $color-bg-project-ebm;
+}
+#polygon {
+  background-color: $color-bg-project-polygon;
+}
+#rules {
+  background-color: $color-bg-project-rules;
+}
+#website {
+  background-color: $color-bg-project-website;
 }

@@ -195,8 +195,27 @@ h6 {
     border-bottom: 3px solid #A7001E;
     transition: 0.5s ease; }
 
+.border {
+  border: thin solid black; }
+
 .hide {
   display: none; }
+
+#appy {
+  background-color: #3A3C3F;
+  color: #FFF; }
+
+#ebm {
+  background-color: #ACF68B; }
+
+#polygon {
+  background-color: #D1A3D2; }
+
+#rules {
+  background-color: #ACCCFF; }
+
+#website {
+  background-color: #F9F871; }
 
 .header {
   display: flex;
@@ -269,8 +288,8 @@ h6 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #D1A3D2;
   margin: 0 auto;
+  transition: all .2s ease-in-out;
   width: 100%; }
   .project-container {
     display: flex;
@@ -286,26 +305,29 @@ h6 {
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 15px;
     width: 45%; }
     .project-image img {
       height: 100%;
       width: 100%; }
   .project-desc {
-    padding: 15px;
+    padding-bottom: 15px;
     text-align: center;
     width: 90%; }
     .project-desc h4 {
       text-decoration: underline; }
 
 @media all and (min-width: 768px) {
-  .project {
+  .project:nth-of-type(1) {
     margin: 56px auto 0; }
-    .project-container {
-      max-width: 1080px; }
-    .project-image {
-      width: 225px; }
-    .project-desc {
-      padding: 40px;
-      width: 50%; } }
+  .project-container {
+    max-width: 1080px; }
+  .project-image {
+    margin: 0;
+    padding: 15px;
+    width: 225px; }
+  .project-desc {
+    padding: 40px;
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

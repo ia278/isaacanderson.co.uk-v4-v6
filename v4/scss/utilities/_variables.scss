@@ -9,13 +9,18 @@ $breakpoint-m: 768px;                                 // Medium screen breakpoin
 // Colors
 
 $color-bg: #FFF;                                      // Background color
-$color-bg-header: #222;                               // Background header color 
+$color-bg-header: #222;                               // Background header color
+$color-bg-project-appy: #3A3C3F;                      // Background project color (AppyParking)
+$color-bg-project-ebm: #ACF68B;                       // Background project color (EBM)
 $color-bg-project-polygon: #D1A3D2;                   // Background project color (Polygon)
+$color-bg-project-rules: #ACCCFF;                     // Background project color (New rules)
+$color-bg-project-website: #F9F871;                   // Background project color (Website)
 $color-header: #FFF;                                  // Header text color
 $color-link: #A7001E;                                 // Link color
 $color-link-hover: darken($color-link, 15%);          // Link color on hover
 $color-quote: #A7001E;                                // Quote color
 $color-text: #000;                                    // Text color
+$color-text-alt: #FFF;                                // Text color (dark backgrounds)
 
 // Fonts
 
