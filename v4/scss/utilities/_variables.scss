@@ -9,10 +9,8 @@ $breakpoint-m: 768px;                                 // Medium screen breakpoin
 // Colors
 
 $color-bg: #FFF;                                      // Background color
-$color-bg-header-logo: #FBF5F3;                       // Background header color (logo)
-$color-header-logo: #000;                             // Header text color (logo)
-$color-bg-header-nav: #FBF5F3;                        // Background header color (nav)
-$color-header-nav: #000;                              // Header text color (nav)
+$color-bg-header: #FBF5F3;                            // Background header color 
+$color-header: #000;                                  // Header text color
 $color-link: #A7001E;                                 // Link color
 $color-quote: #A7001E;                                // Quote color
 
@@ -28,13 +26,12 @@ $font-size-h6: 0.563rem;                              // h6 font size
 
 $font-primary: "Raleway", sans-serif;                 // Default page font
 $font-secondary: "Oswald", sans-serif;                // h1-h6 font
-$font-tertiary: "Josefin Sans", sans-serif;           // Header bar font
 $line-height: 1.5;                                    // Line height
 
 // Transitions
 
-$transition-click: 0.5s ease;                         // Transition used on click
-$transition-hover-link: 0.5s ease;                    // Click transition
+$transition-hover: 0.5s ease;                         // Hover transition
+$transition-scroll: top 0.3s ease;                         // Scroll transition
 
 
 // Widths and heights

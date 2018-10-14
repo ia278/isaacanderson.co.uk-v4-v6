@@ -1,5 +1,5 @@
 // ======================================
-//  Header styles
+//  Nav styles
 // ======================================
 
 .nav {
@@ -7,10 +7,10 @@
   background-color: $color-bg-header-logo;
   font-family: "Oswald", sans-serif;
   font-size: $font-size-h4;
-  padding: 5px 0;
+  padding: 10px 0 15px;
   position: sticky;
-  top: 0;
   text-align: center;
+  top: 0;
   width: 100%;
   z-index: 100;
   &-container {

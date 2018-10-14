@@ -3,25 +3,15 @@
 // ======================================
 
 .active {
-  border-bottom: 3px solid $color-header-nav;
+  border-bottom: 3px solid $color-header;
   &:hover {
     border-bottom: 3px solid $color-link;
-    transition: $transition-hover-link;
+    transition: $transition-hover;
   }
-  
 }
-
-
-//
-//.border {
-//  border: thin solid red;
-//}
-
-
-
-
-
-
+.border {
+  border: thin solid black;
+}
 .hide {
   display: none;
 }
