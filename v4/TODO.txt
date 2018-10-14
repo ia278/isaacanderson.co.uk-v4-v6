@@ -1,2 +1,4 @@
 Redesign logo.
-Write javascript to show menu on upwards scroll
+Write javascript to show menu on upwards scroll.
+find fix to scroll bars appearing on hover (firefox, ie)
+Show links as visited when they have already been opened.

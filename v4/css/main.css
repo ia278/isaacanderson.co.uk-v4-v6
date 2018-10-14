@@ -201,13 +201,32 @@ h6 {
 .hide {
   display: none; }
 
+.mini {
+  font-size: 0.75rem; }
+
 #appy {
   background-color: #3A3C3F; }
   #appy a {
     color: #FFF; }
 
+#dribbble:hover {
+  color: #EA4C89;
+  transition: 0.5s ease; }
+
 #ebm {
   background-color: #ACF68B; }
+
+#github:hover {
+  color: #6E5494;
+  transition: 0.5s ease; }
+
+#linkedin:hover {
+  color: #0077B5;
+  transition: 0.5s ease; }
+
+#medium:hover {
+  color: #00AB6C;
+  transition: 0.5s ease; }
 
 #polygon {
   background-color: #D1A3D2; }
@@ -329,6 +348,7 @@ h6 {
   .project:nth-of-type(1) {
     margin: 56px auto 0; }
   .project-container {
+    width: 90%;
     max-width: 1080px; }
     .project-container:hover {
       overflow: hidden;
@@ -341,5 +361,48 @@ h6 {
   .project-desc {
     padding: 40px;
     width: 50%; } }
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; }
+  .footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    width: 98%; }
+    .footer-container ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      list-style-type: none;
+      margin: 0 0 5px;
+      padding: 0; }
+      .footer-container ul li {
+        margin: 0 10px;
+        text-align: center;
+        width: 30px; }
+        .footer-container ul li a {
+          color: #6D6968;
+          text-decoration: none; }
+    .footer-container .copyright {
+      color: #6D6968;
+      letter-spacing: 0.1rem;
+      margin: 5px 0 0;
+      text-align: center;
+      width: 100%; }
+
+@media all and (min-width: 768px) {
+  .footer-container {
+    max-width: 1080px; } }
 
 /*# sourceMappingURL=main.css.map */

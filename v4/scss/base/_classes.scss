@@ -20,6 +20,10 @@
 .hide {
   display: none;
 }
+.mini {
+  font-size: $font-size-h5;
+}
+
 
 #appy {
   background-color: $color-bg-project-appy;
@@ -27,8 +31,32 @@
     color: $color-text-alt;
   }
 }
+#dribbble {
+  &:hover {
+    color: $color-logo-dribbble;
+    transition: $transition-hover;
+  }
+}
 #ebm {
   background-color: $color-bg-project-ebm;
+}
+#github {
+  &:hover {
+    color: $color-logo-github;
+    transition: $transition-hover;
+  }
+}
+#linkedin {
+  &:hover {
+    color: $color-logo-linkedin;
+    transition: $transition-hover;
+  }
+}
+#medium {
+  &:hover {
+    color: $color-logo-medium;
+    transition: $transition-hover;
+  }
 }
 #polygon {
   background-color: $color-bg-project-polygon;

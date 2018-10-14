@@ -38,6 +38,7 @@
       margin: $height-header auto 0;
     }
     &-container {
+      width: 90%;              // This width change fixes scroll bar issue on hover (Firefox, IE)
       max-width: $width-max-website;
       &:hover {
         overflow: hidden;

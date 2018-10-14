@@ -1,0 +1,42 @@
+.footer {
+  @include flexbox(row wrap, center);
+  margin: 0 auto;
+  width: 100%;
+  &-container {
+    @include flexbox(row wrap, center);
+    height: 100%;
+    padding: 15px;
+    width: 98%;
+    ul {
+      @include flexbox(row wrap, center);
+      list-style-type: none;
+      margin: 0 0 5px;
+      padding: 0;
+      li {
+        margin: 0 10px;
+        text-align: center;
+        width: 30px;
+        a {
+          color: $color-footer;
+          text-decoration: none;
+        }
+      }
+    }
+    .copyright {
+      color: $color-footer;
+      letter-spacing: 0.1rem;
+      margin: 5px 0 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+
+@media all and (min-width: $breakpoint-m) {
+  .footer {
+    &-container {
+      max-width: $width-max-website;
+    }
+  }
+}
