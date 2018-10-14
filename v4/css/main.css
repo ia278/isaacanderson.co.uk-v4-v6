@@ -202,8 +202,9 @@ h6 {
   display: none; }
 
 #appy {
-  background-color: #3A3C3F;
-  color: #FFF; }
+  background-color: #3A3C3F; }
+  #appy a {
+    color: #FFF; }
 
 #ebm {
   background-color: #ACF68B; }
@@ -295,13 +296,14 @@ h6 {
   align-items: center;
   margin: 0 auto;
   width: 100%; }
+  .project a {
+    color: #000; }
   .project-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    color: #000;
     height: 100%;
     text-decoration: none;
     width: 98%; }

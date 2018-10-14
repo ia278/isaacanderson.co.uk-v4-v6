@@ -23,7 +23,9 @@
 
 #appy {
   background-color: $color-bg-project-appy;
-  color: $color-text-alt;
+  a {
+    color: $color-text-alt;
+  }
 }
 #ebm {
   background-color: $color-bg-project-ebm;

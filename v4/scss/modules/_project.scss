@@ -2,9 +2,11 @@
   @include flexbox(row wrap, center);
   margin: 0 auto;
   width: 100%;
+  a {
+    color: $color-text;
+  }
   &-container {
     @include flexbox(row wrap, center);
-    color: $color-text;
     height: 100%;
     text-decoration: none;
     width: 98%;
