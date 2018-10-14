@@ -196,7 +196,7 @@ h6 {
     transition: 0.5s ease; }
 
 .border {
-  border: thin solid black; }
+  border: thin solid red; }
 
 .hide {
   display: none; }
@@ -236,6 +236,11 @@ h6 {
     align-items: center;
     width: 98%; }
   .header-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     margin: 0 auto;
     width: 45%; }
     .header-logo svg {

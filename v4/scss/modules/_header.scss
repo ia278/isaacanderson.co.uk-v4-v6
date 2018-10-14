@@ -19,6 +19,7 @@
     width: 98%;
   }
   &-logo {
+    @include flexbox(row wrap, center);  
     margin: 0 auto;
     width: 45%;
     svg {
