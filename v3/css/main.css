@@ -170,7 +170,7 @@ body {
   font-size: 10px;
   padding: 20px;
   text-align: center; }
-  .btn-dark:hover, .btn-dark-s:hover, .btn-dark:active, .btn-dark-s:active, .btn-dark:visited, .btn-dark-s:visited {
+  .btn-dark:hover, .btn-dark-s:hover {
     color: #111;
     background: transparent;
     transition: 0.75s ease; }
@@ -194,7 +194,7 @@ body {
   margin-bottom: 10px;
   padding: 20px;
   text-align: center; }
-  .btn-light:hover, .btn-light-s:hover, .btn-light:active, .btn-light-s:active, .btn-light:visited, .btn-light-s:visited {
+  .btn-light:hover, .btn-light-s:hover {
     color: #FFF;
     background: transparent;
     transition: 0.75s ease; }
@@ -207,6 +207,9 @@ body {
 
 .btn-light-s {
   padding: 5px 10px; }
+
+.center {
+  margin: 0 auto; }
 
 .copyright {
   color: #6D6968;
@@ -237,6 +240,8 @@ body {
     width: 49%; }
   .images-three {
     width: 32.55%; }
+  .images-four {
+    width: 24.33%; }
 
 .italic {
   font-style: italic; }
@@ -411,6 +416,7 @@ body {
   align-content: center;
   align-items: center;
   font-family: "Raleway", sans-serif;
+  max-height: 1080px;
   text-align: center;
   min-height: calc(60vh - 65px); }
   .hero-container {
@@ -493,18 +499,16 @@ body {
     .project-container {
       overflow-x: hidden; } }
 @media all and (min-width: 668px) {
-  .project {
-    min-height: 55vh; }
-    .project-container {
-      flex-flow: row wrap; }
-    .project-contents {
-      font-size: 16px;
-      margin: 10px;
-      flex: 1 46.2962962963%; }
-    .project-svg {
-      width: 40%; }
-      .project-svg-title {
-        width: 40%; } }
+  .project-container {
+    flex-flow: row wrap; }
+  .project-contents {
+    font-size: 16px;
+    margin: 10px;
+    flex: 1 46.2962962963%; }
+  .project-svg {
+    width: 40%; }
+    .project-svg-title {
+      width: 40%; } }
 .cta-allwork {
   font-size: 10px; }
   @media all and (min-width: 320px) {
@@ -724,7 +728,7 @@ body {
       width: 100%; }
     .all-work-card-image {
       background-color: #FFF;
-      height: 180px;
+      height: 230px;
       width: 100%;
       position: relative;
       overflow: hidden; }
@@ -747,15 +751,12 @@ body {
 @media all and (min-width: 320px) {
   .all-work-card {
     font-size: 12px; } }
-@media all and (min-width: 618px) {
+@media all and (min-width: 768px) {
   .all-work-card {
     font-size: 14px;
     flex: 0 46.2962962963%; }
     .all-work-card .btn-dark, .all-work-card .btn-dark-s {
       font-size: 14px; } }
-@media all and (min-width: 950px) {
-  .all-work-card {
-    flex: 0 27.7777777778%; } }
 .error {
   font-size: 10px; }
   @media all and (min-width: 320px) {
@@ -833,14 +834,14 @@ body {
   margin: 65px auto 0;
   width: 100%;
   font-family: "Raleway", sans-serif; }
+  .post a {
+    color: #C33; }
+    .post a:hover, .post a:active, .post a:visited {
+      color: #8f2424; }
   .post-contents {
     margin: 30px auto;
     text-align: center;
     width: 90%; }
-    .post-contents a {
-      color: #C33; }
-      .post-contents a:hover, .post-contents a:active, .post-contents a:visited {
-        color: #8f2424; }
     .post-contents blockquote {
       max-width: 630px;
       text-align: center; }
@@ -852,10 +853,12 @@ body {
       font-size: 14px;
       margin: 10px auto;
       padding: 0 10px; }
-    .post-contents p, .post-contents ul, .post-contents ol {
+    .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {
       margin-left: auto;
       margin-right: auto;
       text-align: justify; }
+    .post-contents h5 {
+      text-align: center; }
     .post-contents p {
       font-size: 14px;
       margin: 30px auto;
@@ -875,16 +878,38 @@ body {
     .post-contents:nth-child(2) {
       max-width: 1080px; }
 
+.visual-list {
+  display: inline-block;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 550px;
+  width: 100%; }
+  .visual-list img {
+    width: 100%; }
+  .visual-list h4 {
+    margin: 20px auto;
+    font-size: 1rem; }
+  .visual-list p:first-child {
+    margin: 20px auto;
+    text-align: center; }
+
 @media all and (min-width: 320px) {
-  .post-contents p, .post-contents ul, .post-contents ol {
+  .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {
     max-width: 550px; }
   .post-contents p, .post-contents li {
     font-size: 17px; } }
 @media all and (min-width: 668px) {
-  .post-contents p, .post-contents ul, .post-contents ol {
+  .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {
     max-width: 630px; }
   .post-contents p, .post-contents li {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .visual-list {
+    margin: 10px 12px;
+    max-width: 630px;
+    width: 45%; }
+    .visual-list p {
+      font-size: 0.95rem; } }
 .related {
   font-size: 10px; }
   @media all and (min-width: 320px) {
