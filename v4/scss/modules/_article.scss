@@ -25,13 +25,24 @@
       color: $color-link;
     }
   }
-  blockquote, p, ul, ol {
+  blockquote {
     margin: 20px auto;
+    max-width: $width-max-p-s;
+    text-align: center;
+  }
+  li {
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+  ol, ul {
+    margin: 40px auto;
     max-width: $width-max-p-s;
     text-align: justify;
   }
-  blockquote {
-    text-align: center;
+  p {
+    margin: 20px auto;
+    max-width: $width-max-p-s;
+    text-align: justify;
   }
 
 }
@@ -45,9 +56,8 @@
     section {
       max-width: $width-max-website;
     }
-    blockquote, p, ul, ol {
+    blockquote, p, ol, ul {
       max-width: $width-max-p-m;
     }
   }
 }
-

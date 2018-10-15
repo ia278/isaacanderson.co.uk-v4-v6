@@ -404,12 +404,21 @@ iframe {
     width: 98%; }
     .article section a {
       color: #C33; }
-  .article blockquote, .article p, .article ul, .article ol {
+  .article blockquote {
+    margin: 20px auto;
+    max-width: 550px;
+    text-align: center; }
+  .article li {
+    margin: 10px auto;
+    padding: 0 10px; }
+  .article ol, .article ul {
+    margin: 40px auto;
+    max-width: 550px;
+    text-align: justify; }
+  .article p {
     margin: 20px auto;
     max-width: 550px;
     text-align: justify; }
-  .article blockquote {
-    text-align: center; }
 
 @media all and (min-width: 768px) {
   .article {
@@ -418,7 +427,7 @@ iframe {
       color: #8f2424; }
     .article section {
       max-width: 1080px; }
-    .article blockquote, .article p, .article ul, .article ol {
+    .article blockquote, .article p, .article ol, .article ul {
       max-width: 630px; } }
 .footer {
   display: flex;
@@ -426,6 +435,7 @@ iframe {
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: #FFE6D6;
   margin: 0 auto;
   width: 100%; }
   .footer-container {
