@@ -199,6 +199,9 @@ iframe {
 @media all and (max-width: 768px) {
   html {
     font-size: 16px; } }
+.border {
+  border: thin solid red; }
+
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
@@ -252,7 +255,7 @@ iframe {
 .related-card {
   color: #000;
   display: inline-block;
-  margin: 20px auto;
+  margin: 20px auto 30px;
   max-width: 550px;
   text-align: center;
   text-decoration: none;
@@ -422,7 +425,7 @@ iframe {
     padding-bottom: 15px;
     text-align: center;
     width: 90%; }
-    .project-desc h4 {
+    .project-desc h3 {
       text-decoration: underline; }
 
 @media all and (min-width: 768px) {

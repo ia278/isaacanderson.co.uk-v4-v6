@@ -3,9 +3,9 @@
 // ======================================
 
 
-//.border {
-//  border: thin solid red;
-//}
+.border {
+  border: thin solid red;
+}
 
 
 .active {
@@ -66,14 +66,10 @@
 .mini {
   font-size: $font-size-h5;
 }
-
-
-
-
 .related-card {
   color: $color-text;
   display: inline-block;
-  margin: 20px auto;
+  margin: 20px auto 30px;
   max-width: $width-max-p-s;
   text-align: center;
   text-decoration: none;
@@ -102,11 +98,6 @@
     }
   }
 }
-
-
-
-
-
 .underline {
   text-decoration: underline;
 }
