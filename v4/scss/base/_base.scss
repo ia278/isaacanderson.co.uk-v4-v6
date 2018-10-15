@@ -84,3 +84,8 @@ iframe {
     display: none;
   }
 }
+@media all and (max-width: $breakpoint-m) {
+  html {
+    font-size: 16px;
+  }
+}

@@ -196,6 +196,9 @@ iframe {
   body {
     background-color: #000;
     display: none; } }
+@media all and (max-width: 768px) {
+  html {
+    font-size: 16px; } }
 .border {
   border: thin solid red; }
 
