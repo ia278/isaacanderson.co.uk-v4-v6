@@ -199,9 +199,6 @@ iframe {
 @media all and (max-width: 768px) {
   html {
     font-size: 16px; } }
-.border {
-  border: thin solid red; }
-
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
@@ -258,6 +255,7 @@ iframe {
   margin: 20px auto;
   max-width: 550px;
   text-align: center;
+  text-decoration: none;
   vertical-align: top;
   width: 90%; }
   .related-card img {
@@ -265,14 +263,19 @@ iframe {
     width: 100%; }
   .related-card h4 {
     margin: 10px auto;
-    text-align: center; }
+    text-align: center;
+    text-decoration: underline; }
   .related-card p, .related-card .mini {
     margin: 10px auto 0;
     text-align: justify; }
   @media all and (min-width: 768px) {
     .related-card {
       padding: 0 10px;
-      width: 350px; } }
+      width: 350px; }
+      .related-card:hover {
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+        transform: scale(1.1); } }
 
 .underline {
   text-decoration: underline; }

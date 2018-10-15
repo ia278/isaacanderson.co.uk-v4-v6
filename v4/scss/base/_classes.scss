@@ -3,9 +3,9 @@
 // ======================================
 
 
-.border {
-  border: thin solid red;
-}
+//.border {
+//  border: thin solid red;
+//}
 
 
 .active {
@@ -76,6 +76,7 @@
   margin: 20px auto;
   max-width: $width-max-p-s;
   text-align: center;
+  text-decoration: none;
   vertical-align: top;
   width: 90%;
   img {
@@ -85,6 +86,7 @@
   h4 {
     margin: 10px auto;
     text-align: center;
+    text-decoration: underline;
   }
   p, .mini {
     margin: 10px auto 0;
@@ -93,6 +95,11 @@
   @media all and (min-width: $breakpoint-m) {
     padding: 0 10px;
     width: 350px;
+    &:hover {
+      overflow: hidden;
+      transition: all .3s ease-in-out;
+      transform: scale(1.1);
+    }
   }
 }
 
