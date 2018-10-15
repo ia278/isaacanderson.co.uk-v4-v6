@@ -1,29 +1,22 @@
 /* ======================================
-//  Related styles
+//  Error styles
 // ====================================*/
 
-.related {
+.error {
   @include flexbox(row wrap, center);
-  background-color: $color-bg-related;
-  margin: 20px auto 0;
+  margin: 0 auto;
   width: 100%;
+  height: calc(100vh - #{$height-footer} - 89px);
   &-container {
-    @include flexbox(column wrap, center);
-    width: 98%;
-    h3 {
-      margin: 15px auto 0;
-      text-align: center;
-      width: 100%;
-    }
-  }
-  &-contents {
     text-align: center;
-    width: 100%;
+    width: 98%;
   }
 }
 
 @media all and (min-width: $breakpoint-m) {
-  .related {
+  .error {
+    margin-top: $height-header;
+    height: calc(100vh - #{$height-footer} - #{$height-header});
     &-container {
       max-width: $width-max-website;
     }

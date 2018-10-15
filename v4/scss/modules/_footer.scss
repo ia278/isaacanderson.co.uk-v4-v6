@@ -1,17 +1,16 @@
-// ======================================
+/* ======================================
 //  Footer styles
-// ======================================
-
+// ====================================*/
 
 .footer {
   @include flexbox(row wrap, center);
   background-color: $color-bg-footer;
+  height: $height-footer;
   margin: 0 auto;
   width: 100%;
   &-container {
     @include flexbox(row wrap, center);
     height: 100%;
-    padding: 15px;
     width: 98%;
     ul {
       @include flexbox(row wrap, center);

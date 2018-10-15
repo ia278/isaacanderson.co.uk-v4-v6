@@ -120,9 +120,9 @@ template {
 [hidden] {
   display: none; }
 
-/* ========================================================================== 
+/*========================================================================== 
     RESET FINISHES HERE
-============================================================================= */
+===========================================================================*/
 /* ======================================
 //  Base element styles
 // ====================================*/
@@ -199,6 +199,9 @@ iframe {
 @media all and (max-width: 768px) {
   html {
     font-size: 16px; } }
+/* ======================================
+//  Class styles
+// ====================================*/
 .border {
   border: thin solid red; }
 
@@ -287,6 +290,9 @@ iframe {
   text-decoration: underline;
   text-decoration-style: double; }
 
+/* ======================================
+//  ID styles
+// ====================================*/
 #appy {
   background-color: #3A3C3F; }
   #appy a {
@@ -320,6 +326,9 @@ iframe {
 #website {
   background-color: #F9F871; }
 
+/* ======================================
+//  Header styles
+// ====================================*/
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -391,6 +400,9 @@ iframe {
         justify-content: space-between;
         margin: 5px auto 10px;
         padding: 0; } }
+/* ======================================
+//  Project styles
+// ====================================*/
 .project {
   display: flex;
   flex-flow: row wrap;
@@ -445,6 +457,9 @@ iframe {
   .project-desc {
     padding: 40px;
     width: 50%; } }
+/* ======================================
+//  Article styles
+// ====================================*/
 .article {
   display: flex;
   flex-flow: column wrap;
@@ -497,6 +512,9 @@ iframe {
       max-width: 1080px; }
     .article blockquote, .article p, .article ol, .article ul {
       max-width: 630px; } }
+/* ======================================
+//  Related styles
+// ====================================*/
 .related {
   display: flex;
   flex-flow: row wrap;
@@ -524,6 +542,9 @@ iframe {
 @media all and (min-width: 768px) {
   .related-container {
     max-width: 1080px; } }
+/* ======================================
+//  Footer styles
+// ====================================*/
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -531,6 +552,7 @@ iframe {
   align-content: center;
   align-items: center;
   background-color: #FBF5F3;
+  height: 100px;
   margin: 0 auto;
   width: 100%; }
   .footer-container {
@@ -540,7 +562,6 @@ iframe {
     align-content: center;
     align-items: center;
     height: 100%;
-    padding: 15px;
     width: 98%; }
     .footer-container ul {
       display: flex;
@@ -552,7 +573,7 @@ iframe {
       margin: 0 0 5px;
       padding: 0; }
       .footer-container ul li {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         margin: 0 10px;
         text-align: center;
         width: 30px; }
@@ -569,5 +590,27 @@ iframe {
 @media all and (min-width: 768px) {
   .footer-container {
     max-width: 1080px; } }
+/* ======================================
+//  Error styles
+// ====================================*/
+.error {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: calc(100vh - 100px - 89px); }
+  .error-container {
+    text-align: center;
+    width: 98%; }
+
+@media all and (min-width: 768px) {
+  .error {
+    margin-top: 56px;
+    height: calc(100vh - 100px - 56px); }
+    .error-container {
+      max-width: 1080px; } }
 
 /*# sourceMappingURL=main.css.map */

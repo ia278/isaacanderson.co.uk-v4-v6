@@ -32,7 +32,7 @@ $color-text-alt: #FFF;                                // Text color (dark backgr
 // Fonts
 
 $font-size-base: 20px;                                // Base font size
-$font-size-fa: 1.25rem;                               // Font Awesome font size
+$font-size-fa: 1.1rem;                                // Font Awesome font size
 $font-size-h1: 3rem;                                  // h1 font size
 $font-size-h2: 2.25rem;                               // h2 font size
 $font-size-h3: 1.5rem;                                // h3 font size
@@ -50,6 +50,7 @@ $transition-scroll: top 0.5s ease;                    // Scroll transition
 
 
 // Widths and heights
+$height-footer: 100px;                                // Footer height
 $height-header: 56px;                                 // Header height
 $width-logo-project-s: 50%;                           // "Project" logo width (small screens)
 $width-logo-project-m: 225px;                         // "Project" logo width (medium screens)
