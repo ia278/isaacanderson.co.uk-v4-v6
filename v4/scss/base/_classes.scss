@@ -2,6 +2,12 @@
 //  Class styles
 // ======================================
 
+
+.border {
+  border: thin solid red;
+}
+
+
 .active {
   border-bottom: 3px solid $color-header;
   &:hover {
@@ -9,14 +15,9 @@
     transition: $transition-hover;
   }
 }
-
-
-
-//.border {
-//  border: thin solid red;
-//}
-
-
+.bold {
+  font-weight: bold;
+}
 .hide {
   display: none;
 }
@@ -36,10 +37,46 @@
     width: 24.33%;
   }
 }
+.italic {
+  font-style: italic;
+}   
+.list-card {
+  @include flexbox(column wrap, space-around);
+  display: inline-block;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  vertical-align: top;
+  width: 100%;
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+  }
+  p, .mini {
+    margin: 10px auto 0;
+    text-align: justify;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
+  }
+}
 .mini {
   font-size: $font-size-h5;
 }
+.underline {
+  text-decoration: underline;
+}
+.underline-double {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
 
+// ======================================
+//  ID styles
+// ======================================
 
 #appy {
   background-color: $color-bg-project-appy;

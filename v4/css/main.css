@@ -196,11 +196,17 @@ iframe {
   body {
     background-color: #000;
     display: none; } }
+.border {
+  border: thin solid red; }
+
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
     border-bottom: 3px solid #C33;
     transition: 0.5s ease; }
+
+.bold {
+  font-weight: bold; }
 
 .hide {
   display: none; }
@@ -217,8 +223,42 @@ iframe {
   .images-four {
     width: 24.33%; }
 
+.italic {
+  font-style: italic; }
+
+.list-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  display: inline-block;
+  margin: 20px auto;
+  max-width: 550px;
+  vertical-align: top;
+  width: 100%; }
+  .list-card img {
+    overflow: hidden;
+    width: 100%; }
+  .list-card h4 {
+    margin: 10px auto; }
+  .list-card p, .list-card .mini {
+    margin: 10px auto 0;
+    text-align: justify; }
+  @media all and (min-width: 768px) {
+    .list-card {
+      padding: 0 10px;
+      width: 350px; } }
+
 .mini {
   font-size: 0.75rem; }
+
+.underline {
+  text-decoration: underline; }
+
+.underline-double {
+  text-decoration: underline;
+  text-decoration-style: double; }
 
 #appy {
   background-color: #3A3C3F; }
@@ -435,7 +475,7 @@ iframe {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #FFE6D6;
+  background-color: #EEE;
   margin: 0 auto;
   width: 100%; }
   .footer-container {
