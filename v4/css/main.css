@@ -165,7 +165,8 @@ canvas {
   height: 100%; }
 
 figcaption {
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  font-weight: bold; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif; }
@@ -201,11 +202,20 @@ iframe {
     border-bottom: 3px solid #C33;
     transition: 0.5s ease; }
 
-.border {
-  border: thin solid red; }
-
 .hide {
   display: none; }
+
+.images {
+  text-align: center;
+  max-width: 1080px; }
+  .images-one {
+    width: 98.5%; }
+  .images-two {
+    width: 49%; }
+  .images-three {
+    width: 32.55%; }
+  .images-four {
+    width: 24.33%; }
 
 .mini {
   font-size: 0.75rem; }
@@ -395,7 +405,7 @@ iframe {
     .article section a {
       color: #C33; }
   .article blockquote, .article p, .article ul, .article ol {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 550px;
     text-align: justify; }
   .article blockquote {
@@ -409,11 +419,7 @@ iframe {
     .article section {
       max-width: 1080px; }
     .article blockquote, .article p, .article ul, .article ol {
-      margin: 0 auto;
-      max-width: 630px;
-      text-align: justify; }
-    .article blockquote {
-      text-align: center; } }
+      max-width: 630px; } }
 .footer {
   display: flex;
   flex-flow: row wrap;

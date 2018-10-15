@@ -12,13 +12,29 @@
 
 
 
-.border {
-  border: thin solid red;
-}
+//.border {
+//  border: thin solid red;
+//}
 
 
 .hide {
   display: none;
+}
+.images {
+  text-align: center;
+  max-width: $width-max-website;
+  &-one {
+    width: 98.5%;
+  }
+  &-two {
+    width: 49%;
+  }
+  &-three {
+    width: 32.55%;
+  }
+  &-four {
+    width: 24.33%;
+  }
 }
 .mini {
   font-size: $font-size-h5;

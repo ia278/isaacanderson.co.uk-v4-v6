@@ -26,7 +26,7 @@
     }
   }
   blockquote, p, ul, ol {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: $width-max-p-s;
     text-align: justify;
   }
@@ -46,12 +46,7 @@
       max-width: $width-max-website;
     }
     blockquote, p, ul, ol {
-      margin: 0 auto;
       max-width: $width-max-p-m;
-      text-align: justify;
-    }
-    blockquote {
-      text-align: center;
     }
   }
 }
