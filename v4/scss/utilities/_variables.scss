@@ -17,13 +17,13 @@ $color-bg-project-rules: #ACCCFF;                     // Background project colo
 $color-bg-project-website: #F9F871;                   // Background project color (Website)
 $color-footer: #6D6968;                               // Footer text color
 $color-header: #FFF;                                  // Header text color
-$color-link: #A7001E;                                 // Link color
+$color-link: #C33;                                    // Link color
 $color-link-hover: darken($color-link, 15%);          // Link color (hover)
 $color-logo-dribbble: #EA4C89;                        // Dribbble color
 $color-logo-github: #6E5494;                          // Github color
 $color-logo-linkedin: #0077B5;                        // LinkedIn color
 $color-logo-medium: #00AB6C;                          // Medium color
-$color-quote: #A7001E;                                // Quote color
+$color-quote: #C33;                                   // Quote color
 $color-text: #000;                                    // Text color
 $color-text-alt: #FFF;                                // Text color (dark backgrounds)
 
@@ -48,7 +48,10 @@ $transition-scroll: top 0.5s ease;                    // Scroll transition
 
 // Widths and heights
 $height-header: 56px;                                 // Header height
-$width-max-hero-article: 1920px;                      // Max width of article hero
-$width-max-p-s: 550px;                                // ParaMax width of paragraphs on small screens
-$width-max-p-m: 630px;                                // Max width of paragraphs on medium screens
+$width-footer-logo: 30px;                             // Footer logo width
+$width-logo-project-s: 50%;                           // Project logo width (small screens)
+$width-logo-project-m: 225px;                         // Project logo width (medium screens)
+$width-max-hero-article: 1920px;                      // Article hero max width
+$width-max-p-s: 550px;                                // Paragraph max width (small screens)
+$width-max-p-m: 630px;                                // Paragraph max width (medium screens)
 $width-max-website: 1080px;                           // Max width of website

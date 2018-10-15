@@ -7,7 +7,6 @@
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  
   figure {
     @include flexbox(row wrap, center);
     margin: 0;
@@ -22,9 +21,17 @@
   section {
     padding: 0 10px;
     width: 98%;
+    a {
+      color: $color-link;
+    }
   }
-  p, ul, ol {
+  blockquote, p, ul, ol {
+    margin: 0 auto;
+    max-width: $width-max-p-s;
     text-align: justify;
+  }
+  blockquote {
+    text-align: center;
   }
 
 }
@@ -32,8 +39,19 @@
 @media all and (min-width: $breakpoint-m) {
   .article {
     margin: $height-header auto 0;
+    a:hover {
+      color: $color-link-hover;
+    }
     section {
       max-width: $width-max-website;
+    }
+    blockquote, p, ul, ol {
+      margin: 0 auto;
+      max-width: $width-max-p-m;
+      text-align: justify;
+    }
+    blockquote {
+      text-align: center;
     }
   }
 }

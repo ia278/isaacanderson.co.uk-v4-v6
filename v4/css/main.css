@@ -141,16 +141,19 @@ body {
   text-rendering: optimizeLegibility; }
 
 blockquote {
-  color: #A7001E;
+  color: #C33;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 15px auto; }
   blockquote span {
+    display: block;
     font-size: 0.75rem;
-    font-weight: normal; }
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    margin-top: 20px; }
   blockquote::before, blockquote::after {
-    background-color: #A7001E;
+    background-color: #C33;
     content: "";
     display: block;
     height: 2px;
@@ -195,7 +198,7 @@ iframe {
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
-    border-bottom: 3px solid #A7001E;
+    border-bottom: 3px solid #C33;
     transition: 0.5s ease; }
 
 .border {
@@ -284,7 +287,7 @@ iframe {
         color: #FFF;
         text-decoration: none; }
         .header-nav ul a:hover {
-          color: #A7001E;
+          color: #C33;
           transition: 0.5s ease; }
       .header-nav ul li {
         width: 80px; }
@@ -389,14 +392,28 @@ iframe {
   .article section {
     padding: 0 10px;
     width: 98%; }
-  .article p, .article ul, .article ol {
+    .article section a {
+      color: #C33; }
+  .article blockquote, .article p, .article ul, .article ol {
+    margin: 0 auto;
+    max-width: 550px;
     text-align: justify; }
+  .article blockquote {
+    text-align: center; }
 
 @media all and (min-width: 768px) {
   .article {
     margin: 56px auto 0; }
+    .article a:hover {
+      color: #8f2424; }
     .article section {
-      max-width: 1080px; } }
+      max-width: 1080px; }
+    .article blockquote, .article p, .article ul, .article ol {
+      margin: 0 auto;
+      max-width: 630px;
+      text-align: justify; }
+    .article blockquote {
+      text-align: center; } }
 .footer {
   display: flex;
   flex-flow: row wrap;
