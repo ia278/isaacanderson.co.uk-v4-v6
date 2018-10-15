@@ -15,7 +15,8 @@
   width: 100%;
   z-index: 1000;
   &-container {
-    @include flexbox(row wrap, space-between);    
+    @include flexbox(row wrap, space-between);
+    padding: 0 20px;
     width: 98%;
   }
   &-logo {
@@ -62,7 +63,7 @@
     }
     &-logo {
       margin: 0;
-      width: 200px;
+      width: 100px;
     }
     &-nav {
       margin: 0;

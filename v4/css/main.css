@@ -310,6 +310,7 @@ iframe {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    padding: 0 20px;
     width: 98%; }
   .header-logo {
     display: flex;
@@ -354,7 +355,7 @@ iframe {
       max-width: 1080px; }
     .header-logo {
       margin: 0;
-      width: 200px; }
+      width: 100px; }
     .header-nav {
       margin: 0;
       width: 300px; }
