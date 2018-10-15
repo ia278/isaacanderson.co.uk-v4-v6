@@ -70,6 +70,9 @@ h5 {
 h6 {
   font-size: $font-size-h6;
 }
+iframe {
+  text-align: center;
+}
 
 @media all and (max-width: 319px) {
   body {

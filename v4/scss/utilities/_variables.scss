@@ -36,7 +36,6 @@ $font-size-h3: 1.5rem;                                // h3 font size
 $font-size-h4: 1rem;                                  // h4 font size
 $font-size-h5: 0.75rem;                               // h5 font size
 $font-size-h6: 0.563rem;                              // h6 font size
-
 $font-primary: "Raleway", sans-serif;                 // Default page font
 $font-secondary: "Oswald", sans-serif;                // h1-h6 font
 $line-height: 1.5;                                    // Line height
@@ -49,7 +48,7 @@ $transition-scroll: top 0.5s ease;                    // Scroll transition
 
 // Widths and heights
 $height-header: 56px;                                 // Header height
-
+$width-max-hero-article: 1920px;                      // Max width of article hero
 $width-max-p-s: 550px;                                // ParaMax width of paragraphs on small screens
 $width-max-p-m: 630px;                                // Max width of paragraphs on medium screens
 $width-max-website: 1080px;                           // Max width of website

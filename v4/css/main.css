@@ -185,6 +185,9 @@ h5 {
 h6 {
   font-size: 0.563rem; }
 
+iframe {
+  text-align: center; }
+
 @media all and (max-width: 319px) {
   body {
     background-color: #000;
@@ -361,6 +364,39 @@ h6 {
   .project-desc {
     padding: 40px;
     width: 50%; } }
+.article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; }
+  .article figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+    .article figure img {
+      width: 100%; }
+  .article section {
+    padding: 0 10px;
+    width: 98%; }
+  .article p, .article ul, .article ol {
+    text-align: justify; }
+
+@media all and (min-width: 768px) {
+  .article {
+    margin: 56px auto 0; }
+    .article section {
+      max-width: 1080px; } }
 .footer {
   display: flex;
   flex-flow: row wrap;

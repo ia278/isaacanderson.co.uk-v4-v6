@@ -1,0 +1,40 @@
+// ======================================
+//  Article styles
+// ======================================
+
+.article {
+  @include flexbox(column wrap, center);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  
+  figure {
+    @include flexbox(row wrap, center);
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;    
+    img {
+      width: 100%;
+    }
+  }
+  section {
+    padding: 0 10px;
+    width: 98%;
+  }
+  p, ul, ol {
+    text-align: justify;
+  }
+
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .article {
+    margin: $height-header auto 0;
+    section {
+      max-width: $width-max-website;
+    }
+  }
+}
+
