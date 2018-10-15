@@ -2,16 +2,13 @@
 //  Project styles
 // ====================================*/
 
-
 .project {
   @include flexbox(row wrap, center);
   margin: 0 auto;
   width: 100%;
-  a {
-    color: $color-text;
-  }
   &-container {
     @include flexbox(row wrap, center);
+    color: $color-text;
     height: 100%;
     text-decoration: none;
     width: 98%;
@@ -35,8 +32,6 @@
   }
 }
 
-
-
 @media all and (min-width: $breakpoint-m) {
   .project {
     &:nth-of-type(1) {
@@ -46,6 +41,7 @@
       width: 90%;              // This width change fixes scroll bar issue on hover (Firefox, IE)
       max-width: $width-max-website;
       &:hover {
+        color: $color-text;
         overflow: hidden;
         transition: all .3s ease-in-out;
         transform: scale(1.1);

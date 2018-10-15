@@ -22,6 +22,12 @@ body {
 //  flex: 0 1 auto;
 //  flex-direction: column;
 }
+a {
+  color: $color-link;
+  &:hover {
+    color: $color-link-hover;
+  }
+}
 blockquote {
   color: $color-quote;
   font-family: $font-primary;

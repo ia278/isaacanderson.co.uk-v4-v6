@@ -140,6 +140,11 @@ body {
   line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
+a {
+  color: #C33; }
+  a:hover {
+    color: #8f2424; }
+
 blockquote {
   color: #C33;
   font-family: "Raleway", sans-serif;
@@ -295,7 +300,7 @@ iframe {
 // ====================================*/
 #appy {
   background-color: #3A3C3F; }
-  #appy a {
+  #appy .project-desc {
     color: #FFF; }
 
 #dribbble:hover {
@@ -411,14 +416,13 @@ iframe {
   align-items: center;
   margin: 0 auto;
   width: 100%; }
-  .project a {
-    color: #000; }
   .project-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+    color: #000;
     height: 100%;
     text-decoration: none;
     width: 98%; }
@@ -447,6 +451,7 @@ iframe {
     width: 90%;
     max-width: 1080px; }
     .project-container:hover {
+      color: #000;
       overflow: hidden;
       transition: all .3s ease-in-out;
       transform: scale(1.1); }
@@ -485,8 +490,6 @@ iframe {
   .article section {
     padding: 0 10px;
     width: 98%; }
-    .article section a {
-      color: #C33; }
   .article blockquote {
     margin: 20px auto;
     max-width: 550px;
@@ -506,8 +509,6 @@ iframe {
 @media all and (min-width: 768px) {
   .article {
     margin: 56px auto 0; }
-    .article a:hover {
-      color: #8f2424; }
     .article section {
       max-width: 1080px; }
     .article blockquote, .article p, .article ol, .article ul {
