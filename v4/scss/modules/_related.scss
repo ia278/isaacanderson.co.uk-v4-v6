@@ -1,0 +1,31 @@
+// ======================================
+//  Related styles
+// ======================================
+
+.related {
+  @include flexbox(row wrap, center);
+  background-color: $color-bg-related;
+  margin: 20px auto 0;
+  width: 100%;
+  &-container {
+    @include flexbox(column wrap, center);
+    width: 98%;
+    h3 {
+      margin: 15px auto 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &-contents {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .related {
+    &-container {
+      max-width: $width-max-website;
+    }
+  }
+}

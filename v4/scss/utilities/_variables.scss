@@ -10,12 +10,13 @@ $breakpoint-m: 768px;                                 // Medium screen breakpoin
 
 $color-bg: #FFF;                                      // Background color
 $color-bg-header: #222;                               // Background header color
-$color-bg-footer: #EEE;                               // Background footer color
-$color-bg-project-appy: #3A3C3F;                      // Background project color (AppyParking)
-$color-bg-project-ebm: #ACF68B;                       // Background project color (EBM)
-$color-bg-project-polygon: #D1A3D2;                   // Background project color (Polygon)
-$color-bg-project-rules: #ACCCFF;                     // Background project color (New rules)
-$color-bg-project-website: #F9F871;                   // Background project color (Website)
+$color-bg-footer: #FBF5F3;                            // Background footer color
+$color-bg-related: #F2ECFF;                           // Background "related" color
+$color-bg-project-appy: #3A3C3F;                      // Background "project" color (AppyParking)
+$color-bg-project-ebm: #ACF68B;                       // Background "project" color (EBM)
+$color-bg-project-polygon: #D1A3D2;                   // Background "project" color (Polygon)
+$color-bg-project-rules: #ACCCFF;                     // Background "project" color (New rules)
+$color-bg-project-website: #F9F871;                   // Background "project" color (Website)
 $color-footer: #6D6968;                               // Footer text color
 $color-header: #FFF;                                  // Header text color
 $color-link: #C33;                                    // Link color
@@ -49,8 +50,8 @@ $transition-scroll: top 0.5s ease;                    // Scroll transition
 
 // Widths and heights
 $height-header: 56px;                                 // Header height
-$width-logo-project-s: 50%;                           // Project logo width (small screens)
-$width-logo-project-m: 225px;                         // Project logo width (medium screens)
+$width-logo-project-s: 50%;                           // "Project" logo width (small screens)
+$width-logo-project-m: 225px;                         // "Project" logo width (medium screens)
 $width-max-hero-article: 1920px;                      // Article hero max width
 $width-max-p-s: 550px;                                // Paragraph max width (small screens)
 $width-max-p-m: 630px;                                // Paragraph max width (medium screens)

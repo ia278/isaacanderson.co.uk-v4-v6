@@ -41,7 +41,6 @@
   font-style: italic;
 }   
 .list-card {
-  @include flexbox(column wrap, space-around);
   display: inline-block;
   margin: 20px auto;
   max-width: $width-max-p-s;
@@ -53,6 +52,7 @@
   }
   h4 {
     margin: 10px auto;
+    text-align: center;
   }
   p, .mini {
     margin: 10px auto 0;
@@ -66,6 +66,40 @@
 .mini {
   font-size: $font-size-h5;
 }
+
+
+
+
+.related-card {
+  color: $color-text;
+  display: inline-block;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  text-align: center;
+  vertical-align: top;
+  width: 90%;
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  p, .mini {
+    margin: 10px auto 0;
+    text-align: justify;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
+  }
+}
+
+
+
+
+
 .underline {
   text-decoration: underline;
 }

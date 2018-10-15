@@ -1,3 +1,8 @@
+// ======================================
+//  Footer styles
+// ======================================
+
+
 .footer {
   @include flexbox(row wrap, center);
   background-color: $color-bg-footer;
