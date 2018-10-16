@@ -1,0 +1,28 @@
+/* ======================================
+//  Error styles
+// ====================================*/
+
+.archive {
+  @include flexbox(row wrap, center);
+  margin: 0 auto;
+  width: 100%;
+  &-container {
+    @include flexbox(column wrap, center);
+    text-align: center;
+    width: 98%;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      width: 90%;
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .archive {
+    margin-top: $height-header;
+    &-container {
+      max-width: $width-max-website;
+    }
+  }
+}

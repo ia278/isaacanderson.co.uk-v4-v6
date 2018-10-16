@@ -198,6 +198,12 @@ h6 {
 iframe {
   text-align: center; }
 
+li {
+  margin: 10px auto; }
+
+ol, ul {
+  margin: 40px auto; }
+
 @media all and (max-width: 319px) {
   body {
     background-color: #000;
@@ -404,6 +410,7 @@ iframe {
           color: #C33;
           transition: 0.5s ease; }
       .header-nav ul li {
+        margin: 0;
         width: 80px; }
 
 @media all and (min-width: 768px) {
@@ -519,10 +526,8 @@ iframe {
     max-width: 550px;
     text-align: center; }
   .article li {
-    margin: 10px auto;
     padding: 0 10px; }
   .article ol, .article ul {
-    margin: 40px auto;
     max-width: 550px;
     text-align: justify; }
   .article p {
@@ -616,56 +621,34 @@ iframe {
   .footer-container {
     max-width: 1080px; } }
 /* ======================================
-//  About styles
+//  Error styles
 // ====================================*/
-.about {
+.archive {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin: 0 auto;
-  text-align: center;
   width: 100%; }
-  .about figure {
+  .archive-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 0;
-    max-width: 1920px;
-    overflow: hidden;
-    position: relative;
-    width: 100%; }
-    .about figure img {
-      width: 100%; }
-  .about-contents {
-    padding: 0 10px;
+    text-align: center;
     width: 98%; }
-  .about blockquote {
-    margin: 20px auto;
-    max-width: 550px;
-    text-align: center; }
-  .about li {
-    margin: 10px auto;
-    padding: 0 10px; }
-  .about ol, .about ul {
-    margin: 40px auto;
-    max-width: 550px;
-    text-align: justify; }
-  .about p {
-    margin: 20px auto;
-    max-width: 550px;
-    text-align: justify; }
+    .archive-container ul {
+      list-style-type: none;
+      padding: 0;
+      width: 90%; }
 
-@media all and (min-width: 1080px) {
-  .about {
-    margin: 56px auto 0; }
-    .about-contents {
-      max-width: 1080px; }
-    .about blockquote, .about p, .about ol, .about ul {
-      max-width: 630px; } }
+@media all and (min-width: 768px) {
+  .archive {
+    margin-top: 56px; }
+    .archive-container {
+      max-width: 1080px; } }
 /* ======================================
 //  Error styles
 // ====================================*/

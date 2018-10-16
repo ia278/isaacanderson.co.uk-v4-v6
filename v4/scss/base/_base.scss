@@ -84,6 +84,12 @@ h6 {
 iframe {
   text-align: center;
 }
+li {
+  margin: 10px auto;
+}
+ol, ul {
+  margin: 40px auto;
+}
 
 @media all and (max-width: 319px) {
   body {
