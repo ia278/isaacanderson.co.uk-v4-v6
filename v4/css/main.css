@@ -288,6 +288,8 @@ iframe {
   text-decoration: none;
   vertical-align: top;
   width: 90%; }
+  .related-card:hover {
+    color: #000; }
   .related-card img {
     overflow: hidden;
     width: 100%; }
@@ -446,6 +448,8 @@ iframe {
     height: 100%;
     text-decoration: none;
     width: 98%; }
+    .project-container:hover {
+      color: #000; }
   .project-image {
     display: flex;
     flex-flow: row wrap;

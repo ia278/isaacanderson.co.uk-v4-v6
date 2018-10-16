@@ -91,6 +91,9 @@
   text-decoration: none;
   vertical-align: top;
   width: 90%;
+  &:hover {
+    color: $color-text;
+  }
   img {
     overflow: hidden;
     width: 100%;

@@ -12,6 +12,12 @@
     height: 100%;
     text-decoration: none;
     width: 98%;
+
+    &:hover {
+      color: $color-text;
+    }
+
+    
   }
   &-image {
     @include flexbox(row wrap, center);
