@@ -642,7 +642,7 @@ ol, ul {
     align-content: flex-start;
     align-items: center;
     color: #000;
-    margin: 10px auto 20px;
+    margin: 20px auto;
     text-decoration: none;
     width: 250px; }
     .archive-card:hover {

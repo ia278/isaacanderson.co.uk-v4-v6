@@ -14,7 +14,7 @@
   &-card {
     @include flexbox(column wrap, center, inline-flex, flex-start);
     color: $color-text;
-    margin: 10px auto 20px;
+    margin: 20px auto;
     text-decoration: none;
     width: 250px;
     &:hover {
