@@ -214,6 +214,9 @@ ol, ul {
 /* ======================================
 //  Class styles
 // ====================================*/
+.border {
+  border: thin solid red; }
+
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
@@ -629,6 +632,7 @@ ol, ul {
   margin: 0 auto;
   width: 100%; }
   .archive-container {
+    min-height: calc(100vh - 100px - 56px);
     text-align: center;
     width: 98%; }
   .archive-card {
@@ -638,7 +642,7 @@ ol, ul {
     align-content: flex-start;
     align-items: center;
     color: #000;
-    margin: 20px auto 10px;
+    margin: 10px auto 20px;
     text-decoration: none;
     width: 250px; }
     .archive-card:hover {
@@ -648,6 +652,7 @@ ol, ul {
     .archive-card p {
       color: #C33; }
     .archive-card h4 {
+      padding: 0 10px;
       text-decoration: underline; }
     .archive-card h5 {
       color: #A09C9B;
@@ -694,7 +699,7 @@ ol, ul {
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  height: calc(100vh - 100px - 89px); }
+  min-height: calc(100vh - 100px - 89px); }
   .error-container {
     text-align: center;
     width: 98%; }

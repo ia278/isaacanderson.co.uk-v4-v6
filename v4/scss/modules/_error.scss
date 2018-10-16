@@ -6,7 +6,7 @@
   @include flexbox(row wrap, center);
   margin: 0 auto;
   width: 100%;
-  height: calc(100vh - #{$height-footer} - 89px);
+  min-height: calc(100vh - #{$height-footer} - 89px);
   &-container {
     text-align: center;
     width: 98%;
