@@ -681,14 +681,26 @@ ol, ul {
         padding-left: 20px;
         text-align: left;
         text-decoration: none;
-        width: 70%; }
+        width: 67%; }
         .archive-card h4:hover {
           text-decoration: underline; }
       .archive-card-info {
         flex-direction: column;
         align-items: flex-end;
         padding: 0;
-        width: 30%; } }
+        width: 33%; } }
+/* Archive grid allignment fix
+// ====================================*/
+/* Create "ghost" cards with pseudo-element and div */
+.archive-container::after, .alignment-div {
+  content: "";
+  display: inline-block;
+  width: 250px; }
+
+/* Change width for medium screens */
+@media all and (min-width: 768px) {
+  .archive-container::after, .alignment-div {
+    width: 350px; } }
 /* ======================================
 //  Error styles
 // ====================================*/
