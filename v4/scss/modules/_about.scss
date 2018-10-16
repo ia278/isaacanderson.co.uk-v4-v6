@@ -1,8 +1,8 @@
 /* ======================================
-//  Article styles (also used for "about")
+//  About styles
 // ====================================*/
 
-.article {
+.about {
   @include flexbox(column wrap, center);
   margin: 0 auto;
   text-align: center;
@@ -18,9 +18,12 @@
       width: 100%;
     }
   }
-  section {
+  &-contents {
     padding: 0 10px;
     width: 98%;
+  }
+  &-icons {
+    
   }
   blockquote {
     margin: 20px auto;
@@ -43,10 +46,10 @@
   }
 }
 
-@media all and (min-width: $breakpoint-m) {
-  .article {
+@media all and (min-width: $width-max-website) {
+  .about {
     margin: $height-header auto 0;
-    section {
+    &-contents {
       max-width: $width-max-website;
     }
     blockquote, p, ol, ul {

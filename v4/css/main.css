@@ -143,7 +143,8 @@ body {
 a {
   color: #C33; }
   a:hover {
-    color: #8f2424; }
+    color: #8f2424;
+    transition: 0.5s ease; }
 
 blockquote {
   color: #C33;
@@ -222,6 +223,24 @@ iframe {
 .hide {
   display: none; }
 
+.icons-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  fill: #C33;
+  margin: 20px auto;
+  max-width: 550px;
+  width: 250px; }
+  .icons-div a {
+    text-decoration: none; }
+    .icons-div a:hover {
+      fill: #8f2424; }
+  .icons-div .mini {
+    margin: 0;
+    text-align: center; }
+
 .images {
   text-align: center;
   max-width: 1080px; }
@@ -284,6 +303,7 @@ iframe {
       padding: 0 10px;
       width: 350px; }
       .related-card:hover {
+        color: #000;
         overflow: hidden;
         transition: all .3s ease-in-out;
         transform: scale(1.1); } }
@@ -463,7 +483,7 @@ iframe {
     padding: 40px;
     width: 50%; } }
 /* ======================================
-//  Article styles
+//  Article styles (also used for "about")
 // ====================================*/
 .article {
   display: flex;
@@ -591,6 +611,57 @@ iframe {
 @media all and (min-width: 768px) {
   .footer-container {
     max-width: 1080px; } }
+/* ======================================
+//  About styles
+// ====================================*/
+.about {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; }
+  .about figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+    .about figure img {
+      width: 100%; }
+  .about-contents {
+    padding: 0 10px;
+    width: 98%; }
+  .about blockquote {
+    margin: 20px auto;
+    max-width: 550px;
+    text-align: center; }
+  .about li {
+    margin: 10px auto;
+    padding: 0 10px; }
+  .about ol, .about ul {
+    margin: 40px auto;
+    max-width: 550px;
+    text-align: justify; }
+  .about p {
+    margin: 20px auto;
+    max-width: 550px;
+    text-align: justify; }
+
+@media all and (min-width: 1080px) {
+  .about {
+    margin: 56px auto 0; }
+    .about-contents {
+      max-width: 1080px; }
+    .about blockquote, .about p, .about ol, .about ul {
+      max-width: 630px; } }
 /* ======================================
 //  Error styles
 // ====================================*/

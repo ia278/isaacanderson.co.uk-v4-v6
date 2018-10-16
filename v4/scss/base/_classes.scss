@@ -20,6 +20,23 @@
 .hide {
   display: none;
 }
+.icons-div {
+  @include flexbox(row wrap, space-around);
+  fill: $color-link;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  width: $width-iconsdiv;
+  a {
+    text-decoration: none;
+    &:hover {
+      fill: $color-link-hover;
+    }
+  }
+  .mini {
+    margin: 0;
+    text-align: center;
+  }
+}
 .images {
   text-align: center;
   max-width: $width-max-website;
@@ -91,6 +108,7 @@
     padding: 0 10px;
     width: 350px;
     &:hover {
+      color: $color-text;
       overflow: hidden;
       transition: all .3s ease-in-out;
       transform: scale(1.1);
