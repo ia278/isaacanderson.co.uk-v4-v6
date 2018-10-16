@@ -214,9 +214,6 @@ ol, ul {
 /* ======================================
 //  Class styles
 // ====================================*/
-.border {
-  border: thin solid red; }
-
 .active {
   border-bottom: 3px solid #FFF; }
   .active:hover {
@@ -632,23 +629,60 @@ ol, ul {
   margin: 0 auto;
   width: 100%; }
   .archive-container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     text-align: center;
     width: 98%; }
-    .archive-container ul {
-      list-style-type: none;
-      padding: 0;
-      width: 90%; }
+  .archive-card {
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    color: #000;
+    margin: 20px auto 10px;
+    text-decoration: none;
+    width: 250px; }
+    .archive-card:hover {
+      color: #000; }
+    .archive-card h4, .archive-card h5, .archive-card p {
+      margin: 0; }
+    .archive-card p {
+      color: #C33; }
+    .archive-card h4 {
+      text-decoration: underline; }
+    .archive-card h5 {
+      color: #A09C9B;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase; }
+    .archive-card-info {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      padding: 5px 0;
+      width: 130px; }
 
 @media all and (min-width: 768px) {
   .archive {
     margin-top: 56px; }
     .archive-container {
-      max-width: 1080px; } }
+      max-width: 1080px; }
+    .archive-card {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      width: 350px; }
+      .archive-card h4 {
+        padding-left: 20px;
+        text-align: left;
+        text-decoration: none;
+        width: 70%; }
+        .archive-card h4:hover {
+          text-decoration: underline; }
+      .archive-card-info {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        width: 30%; } }
 /* ======================================
 //  Error styles
 // ====================================*/

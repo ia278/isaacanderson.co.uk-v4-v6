@@ -7,15 +7,41 @@
   margin: 0 auto;
   width: 100%;
   &-container {
-    @include flexbox(column wrap, center);
     text-align: center;
     width: 98%;
-    ul {
-      list-style-type: none;
-      padding: 0;
-      width: 90%;
+  }
+  &-card {
+    @include flexbox(column wrap, center, inline-flex, flex-start);
+    color: $color-text;
+    margin: 20px auto 10px;
+    text-decoration: none;
+    width: 250px;
+    &:hover {
+      color: $color-text;
+    }
+    h4, h5, p {
+      margin: 0;
+    }
+    p {
+      color: $color-quote;
+    }
+    h4 {
+      text-decoration: underline;
+    }
+    h5 {
+      color: #A09C9B;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      @include flexbox(row wrap, space-between);
+      padding: 5px 0;
+      width: 130px;
     }
   }
+
+
 }
 
 @media all and (min-width: $breakpoint-m) {
@@ -23,6 +49,26 @@
     margin-top: $height-header;
     &-container {
       max-width: $width-max-website;
+    }
+    &-card {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      width: 350px;
+      h4 {
+        padding-left: 20px;
+        text-align: left;
+        text-decoration: none;
+        width: 70%;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &-info {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        width: 30%;
+      }
     }
   }
 }
