@@ -621,7 +621,7 @@ ol, ul {
   .footer-container {
     max-width: 1080px; } }
 /* ======================================
-//  Error styles
+//  Archive styles
 // ====================================*/
 .archive {
   display: flex;
@@ -653,7 +653,8 @@ ol, ul {
       color: #C33; }
     .archive-card h4 {
       padding: 0 10px;
-      text-decoration: underline; }
+      text-decoration: underline;
+      width: 100%; }
     .archive-card h5 {
       color: #A09C9B;
       letter-spacing: 0.1rem;
