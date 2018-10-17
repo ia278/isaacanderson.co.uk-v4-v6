@@ -10,10 +10,12 @@
   &-container {
     @include flexbox(column wrap, center);
     width: 98%;
-    h3 {
-      margin: 15px auto 0;
+    h3, h4 {
       text-align: center;
       width: 100%;
+    }
+    h3 {
+      margin: 15px auto 0;
     }
   }
   &-contents {

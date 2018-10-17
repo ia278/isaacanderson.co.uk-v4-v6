@@ -1,7 +1,10 @@
 Redesign logo.
 Write javascript to show menu on upwards scroll.
-find fix to scroll bars appearing on hover (firefox, ie)
 Show links as visited when they have already been opened.
 Create logo to put on error page.
 create contact form (zem_contact_reborn)
 add svg envelope in icons div, when thoughts section is live
+
+sort reader view
+	header appears before logo
+	quote author doesnt have spacing

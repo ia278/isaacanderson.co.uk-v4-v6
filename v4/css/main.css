@@ -561,10 +561,11 @@ ol, ul {
     align-content: center;
     align-items: center;
     width: 98%; }
-    .related-container h3 {
-      margin: 15px auto 0;
+    .related-container h3, .related-container h4 {
       text-align: center;
       width: 100%; }
+    .related-container h3 {
+      margin: 15px auto 0; }
   .related-contents {
     text-align: center;
     width: 100%; }
