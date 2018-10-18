@@ -304,8 +304,7 @@ ol, ul {
     text-align: center;
     text-decoration: underline; }
   .related-card p, .related-card .mini {
-    margin: 10px auto 0;
-    text-align: justify; }
+    margin: 10px auto 0; }
   @media all and (min-width: 768px) {
     .related-card {
       padding: 0 10px;
