@@ -1,4 +1,5 @@
 // Constants
+const br = document.querySelectorAll(".related-contents br")
 const linksInArticle = document.querySelectorAll(".article-contents a");
 let prevScrollpos = window.pageYOffset;
 
@@ -7,13 +8,19 @@ let prevScrollpos = window.pageYOffset;
 const addTargetAttribute = () => {
   for (let i = 0; i < linksInArticle.length; i++) {
     linksInArticle[i].setAttribute("target", "_blank");
-    console.log(linksInArticle[0]);
+  }
+};
+
+const removeBr = () => {
+  for (let i = 0; i < br.length; i++) {
+    br[i].parentNode.removeChild(br[i]);
   }
 };
 
 
 // Invoke function
 addTargetAttribute();
+removeBr();
 
 
 

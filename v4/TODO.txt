@@ -9,4 +9,4 @@ sort reader view
 	header appears before logo
 	quote author doesnt have spacing
 
-any changes to mobile header height needs to be reflected in min height (about, error, archive)
+any changes to mobile header height needs to be reflected in min height error, archive)
