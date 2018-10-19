@@ -349,6 +349,9 @@ ol, ul {
   color: #00AB6C;
   transition: 0.5s ease; }
 
+#more {
+  background-color: #C87674; }
+
 #polygon {
   background-color: #D1A3D2; }
 

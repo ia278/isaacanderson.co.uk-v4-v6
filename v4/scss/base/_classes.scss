@@ -162,6 +162,9 @@
     transition: $transition-hover;
   }
 }
+#more {
+  background-color: $color-bg-project-more;
+}
 #polygon {
   background-color: $color-bg-project-polygon;
 }
