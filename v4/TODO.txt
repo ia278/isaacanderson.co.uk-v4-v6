@@ -1,5 +1,6 @@
 Redesign logo.
 Write javascript to show menu on upwards scroll.
+write javascript to always update the date.
 Show links as visited when they have already been opened.
 Create logo to put on error page.
 create contact form (zem_contact_reborn)
@@ -10,3 +11,10 @@ sort reader view
 	quote author doesnt have spacing
 
 any changes to mobile header height needs to be reflected in min height error, archive)
+
+SVG version (pen tool) of my first name?
+
+
+
+*** ADD PROJECT CARD GIVING LINK TO ALL WORK
+redirect to section when clicking (archive list)
