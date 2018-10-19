@@ -164,6 +164,9 @@
 }
 #more {
   background-color: $color-bg-project-more;
+  .project-desc {
+    color: $color-text-alt;    
+  }
 }
 #polygon {
   background-color: $color-bg-project-polygon;

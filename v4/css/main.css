@@ -350,7 +350,9 @@ ol, ul {
   transition: 0.5s ease; }
 
 #more {
-  background-color: #C87674; }
+  background-color: #222; }
+  #more .project-desc {
+    color: #FFF; }
 
 #polygon {
   background-color: #D1A3D2; }
