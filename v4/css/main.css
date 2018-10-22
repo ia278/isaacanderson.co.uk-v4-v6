@@ -172,6 +172,7 @@ canvas {
   height: 100%; }
 
 figcaption {
+  font-family: "Oswald", sans-serif;
   font-size: 0.75rem;
   font-weight: bold; }
 
