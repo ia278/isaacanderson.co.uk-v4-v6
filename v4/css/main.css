@@ -230,6 +230,14 @@ ol, ul {
 .hide {
   display: none; }
 
+@media all and (min-width: 768px) {
+  .hide-large {
+    display: none; } }
+
+@media all and (max-width: 768px) {
+  .hide-small {
+    display: none; } }
+
 .icons-div {
   display: flex;
   flex-flow: row wrap;

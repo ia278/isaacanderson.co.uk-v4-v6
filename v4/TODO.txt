@@ -15,6 +15,4 @@ any changes to mobile header height needs to be reflected in min height error, a
 SVG version (pen tool) of my first name?
 
 
-
-*** ADD PROJECT CARD GIVING LINK TO ALL WORK
-redirect to section when clicking (archive list)
+redirect to section when clicking section in archive list

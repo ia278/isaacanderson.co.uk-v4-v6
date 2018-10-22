@@ -20,6 +20,16 @@
 .hide {
   display: none;
 }
+.hide-large {
+  @media all and (min-width: $breakpoint-m) {
+    display: none;
+  }
+}
+.hide-small {
+  @media all and (max-width: $breakpoint-m) {
+    display: none;
+  }
+}
 .icons-div {
   @include flexbox(row wrap, space-around);
   fill: $color-link;
