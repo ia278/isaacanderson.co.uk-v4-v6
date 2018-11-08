@@ -347,8 +347,20 @@ ol, ul {
 #ebm {
   background-color: #ACF68B; }
 
+#facebook:hover {
+  color: #3B5998;
+  transition: 0.5s ease; }
+
 #github:hover {
   color: #6E5494;
+  transition: 0.5s ease; }
+
+#google-plus:hover {
+  color: #D34836;
+  transition: 0.5s ease; }
+
+#instagram:hover {
+  color: #CD486B;
   transition: 0.5s ease; }
 
 #linkedin:hover {

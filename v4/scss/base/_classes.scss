@@ -154,9 +154,27 @@
 #ebm {
   background-color: $color-bg-project-ebm;
 }
+#facebook {
+  &:hover {
+    color: $color-logo-facebook;
+    transition: $transition-hover;
+  }
+}
 #github {
   &:hover {
     color: $color-logo-github;
+    transition: $transition-hover;
+  }
+}
+#google-plus {
+  &:hover {
+    color: $color-logo-google-plus;
+    transition: $transition-hover;
+  }
+}
+#instagram {
+  &:hover {
+    color: $color-logo-instagram;
     transition: $transition-hover;
   }
 }
