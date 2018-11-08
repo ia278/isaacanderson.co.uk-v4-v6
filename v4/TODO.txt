@@ -16,3 +16,4 @@ SVG version (pen tool) of my first name?
 
 
 redirect to section when clicking section in archive list
+no target javascript for class .no-target
