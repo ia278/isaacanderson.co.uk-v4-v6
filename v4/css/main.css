@@ -295,6 +295,12 @@ ol, ul {
 .mini {
   font-size: 0.75rem; }
 
+.primary {
+  font-family: "Raleway", sans-serif; }
+
+.secondary {
+  font-family: "Oswald", sans-serif; }
+
 .related-card {
   color: #000;
   display: inline-block;
@@ -498,7 +504,8 @@ ol, ul {
     padding-bottom: 15px;
     text-align: center;
     width: 90%; }
-    .project-desc h3 {
+    .project-desc h2 {
+      font-size: 1.5rem;
       text-decoration: underline; }
 
 @media all and (min-width: 768px) {

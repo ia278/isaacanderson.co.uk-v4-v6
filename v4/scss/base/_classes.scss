@@ -92,6 +92,12 @@
 .mini {
   font-size: $font-size-h5;
 }
+.primary {
+  font-family: $font-primary;
+}
+.secondary {
+  font-family: $font-secondary;
+}
 .related-card {
   color: $color-text;
   display: inline-block;
