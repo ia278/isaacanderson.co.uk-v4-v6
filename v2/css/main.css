@@ -4,6 +4,7 @@
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #FFF;
