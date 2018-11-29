@@ -4,7 +4,8 @@
 
 // Breakpoints 
 
-$breakpoint-m: 768px;                                 // Medium screen breakpoint (>tablet)
+$breakpoint-m: 768px;                                 // Medium screen breakpoint (tablet)
+$breakpoint-l: 1330px;                                // Large screen breakpoint (>laptop)
 
 // Colors
 
@@ -36,6 +37,7 @@ $color-text-alt: #FFF;                                // Text color (dark backgr
 // Fonts
 
 $font-size-base: 20px;                                // Base font size
+$font-size-contents: 0.9rem;                          // Article contents list font size
 $font-size-fa: 1.1rem;                                // Font Awesome font size
 $font-size-h1: 3rem;                                  // h1 font size
 $font-size-h2: 2.25rem;                               // h2 font size

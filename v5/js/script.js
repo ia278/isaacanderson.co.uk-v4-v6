@@ -1,24 +1,20 @@
 // Constants
+const articleTOC = document.querySelector(".article-toc");
 const br = document.querySelectorAll(".related-contents br");
 const h2InArticle = document.querySelectorAll(".article h2");
 const linksInArticle = document.querySelectorAll(".article-contents a");
-const title = document.querySelector("h1");
-console.log(title);
+//const title = document.querySelector("h1");
+//console.log(title);
 
 
 // Functions
+
+
 const addTargetAttribute = () => {
 	for (let i = 0; i < linksInArticle.length; i++) {
 		linksInArticle[i].setAttribute("target", "_blank");
 	}
 };
-
-const removeBr = () => {
-	for (let i = 0; i < br.length; i++) {
-		br[i].parentNode.removeChild(br[i]);
-	}
-};
-
 const createHeaderList = () => {
 	const ol = document.createElement("OL");
 	for (let i = 0; i < h2InArticle.length; i++) {
@@ -35,12 +31,22 @@ const createHeaderList = () => {
 		li.appendChild(a);
 		ol.appendChild(li);
 	}
-	console.log(ol);
-	title.appendChild(ol);
+	const div = document.createElement("DIV");
+	div.appendChild(ol);
+	articleTOC.appendChild(div);
 };
 
 
-// Invoke function
+const removeBr = () => {
+	for (let i = 0; i < br.length; i++) {
+		br[i].parentNode.removeChild(br[i]);
+	}
+};
+
+// Invoke functions
 addTargetAttribute();
 createHeaderList();
 removeBr();
+
+
+// If number of h2s is one, dont run the script, as it's probably the "about page"
