@@ -41,18 +41,16 @@
   }
 	&-toc {
 		@include flexbox;
-//		font-size: 0.75rem;
-		font-size: 0.85rem;
+		font-size: $font-size-contents;
 		height: calc(100vh - #{$height-header});
 		max-width: 400px;
 		position: sticky;
 		top: $height-header;
 		width: calc(100% - 1080px);
 		div {
-			border: thin solid red;
 			font-family: $font-secondary;
 			ol {
-				padding-left: 25px;
+				padding-left: 35px;
 				margin: 0;
 				text-align: left;
 			}

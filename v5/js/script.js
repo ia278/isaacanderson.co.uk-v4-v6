@@ -3,8 +3,6 @@ const articleTOC = document.querySelector(".article-toc");
 const br = document.querySelectorAll(".related-contents br");
 const h2InArticle = document.querySelectorAll(".article h2");
 const linksInArticle = document.querySelectorAll(".article-contents a");
-//const title = document.querySelector("h1");
-//console.log(title);
 
 
 // Functions
@@ -23,7 +21,7 @@ const createHeaderList = () => {
 		const id = idText.toLowerCase();
 		h2InArticle[i].setAttribute("id", id);
 		
-		// Create a link, set href as ID, create list item from this link
+		// Create a link, set href as ID, create ol from links
 		const a = document.createElement("A");
 		a.innerHTML = h2InArticle[i].innerHTML;
 		a.setAttribute("href", `#${id}`);
@@ -31,6 +29,8 @@ const createHeaderList = () => {
 		li.appendChild(a);
 		ol.appendChild(li);
 	}
+	
+	// Create div, place ol in div
 	const div = document.createElement("DIV");
 	div.appendChild(ol);
 	articleTOC.appendChild(div);
@@ -47,6 +47,3 @@ const removeBr = () => {
 addTargetAttribute();
 createHeaderList();
 removeBr();
-
-
-// If number of h2s is one, dont run the script, as it's probably the "about page"

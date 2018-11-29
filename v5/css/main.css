@@ -131,7 +131,8 @@ template {
 
 html {
   font-family: "Raleway", sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  scroll-behavior: smooth; }
 
 body {
   background: #FFF;
@@ -580,10 +581,9 @@ ol, ul {
     top: 56px;
     width: calc(100% - 1080px); }
     .article-toc div {
-      border: thin solid red;
       font-family: "Oswald", sans-serif; }
       .article-toc div ol {
-        padding-left: 25px;
+        padding-left: 35px;
         margin: 0;
         text-align: left; }
 
