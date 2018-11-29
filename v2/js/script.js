@@ -1,6 +1,8 @@
 // Constants
+
 const navB = document.querySelector(".nav-b");
 const navBItemContainer = document.querySelector(".nav-b-item-container");
+
 
 // Functions
 const actionOnWindowResize = () => {
