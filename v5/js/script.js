@@ -17,8 +17,9 @@ const createHeaderList = () => {
 	const ol = document.createElement("OL");
 	for (let i = 0; i < h2InArticle.length; i++) {
 		// Create ID, add to headers in article
-		const idText = h2InArticle[i].innerHTML.split(" ").join("-");
-		const id = idText.toLowerCase();
+//		const idText = h2InArticle[i].innerHTML.split(" ").join("-");
+//		const id = idText.toLowerCase();
+		const id = `ia${i}`;
 		h2InArticle[i].setAttribute("id", id);
 		
 		// Create a link, set href as ID, create ol from links
