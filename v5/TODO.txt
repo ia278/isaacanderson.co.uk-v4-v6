@@ -1,15 +1,7 @@
 TO DO:
 
-Small
-
-- remove click event listener from sections/articles/footers after menu is hidden
 - no hover on small screens
 - buttons should stay color when clicked (active)
-- get accepted to dribbble
-
-
-Big
-
 - search results page (design like bbc)
 - redesign image section (images should always be 16 x 9)
 - maintenance page (get plugin)
@@ -23,15 +15,8 @@ Big
 - Create logo to put on error page.
 - create contact form (zem_contact_reborn)
 - add svg envelope in icons div, when thoughts section is live
-
-sort reader view
-	header appears before logo
-	quote author doesnt have spacing
-
-any changes to mobile header height needs to be reflected in min height error, archive)
-
-SVG version (pen tool) of my first name?
-
-
-redirect to section when clicking section in archive list
-no target javascript for class .no-target
+- sort reader view (header appears before logo, quote author doesnt have spacing)
+- any changes to mobile header height needs to be reflected in min height error, archive)
+- SVG version (pen tool) of my first name?
+- redirect to section when clicking section in archive list
+- no target javascript for class .no-target
