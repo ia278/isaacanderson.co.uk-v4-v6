@@ -5,8 +5,6 @@
 .border {
   border: thin solid red;
 }
-
-
 .active {
   border-bottom: 3px solid $color-header;
   &:hover {
@@ -203,7 +201,7 @@
   }
 }
 #polygon {
-  background-color: $color-bg-project-polygon;
+	@include background($color-bg-project-polygon, "../images/backgrounds/105.png");
 }
 #rules {
   background-color: $color-bg-project-rules;

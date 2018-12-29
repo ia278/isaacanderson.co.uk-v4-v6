@@ -384,7 +384,7 @@ ol, ul {
     color: #FFF; }
 
 #polygon {
-  background-color: #D1A3D2; }
+  background: #D1A3D2 url("../images/backgrounds/105.png") center/cover no-repeat fixed; }
 
 #rules {
   background-color: #ACCCFF; }
@@ -509,7 +509,7 @@ ol, ul {
       margin-top: 0; }
     .project-desc :last-child::after {
       content: "\203A \203A \203A";
-      margin-left: 12px; }
+      margin-left: 8px; }
     .project-desc h3 {
       font-size: 2.25rem;
       margin-bottom: 0.5em;

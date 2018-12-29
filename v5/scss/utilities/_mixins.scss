@@ -2,6 +2,11 @@
 //  Mixins
 // ======================================
 
+@mixin background($color: null, $url: null, $position: center, $size: cover, $repeat: no-repeat, $attachment: fixed) {
+	background: $color url($url) $position/$size $repeat $attachment;
+	@content;
+}
+
 @mixin center($width: 100%, $margin-top: 0, $width-max: null, $margin-bottom: 0) {
   margin: $margin-top auto $margin-bottom;
   max-width: $width-max;
