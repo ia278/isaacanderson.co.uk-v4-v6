@@ -582,7 +582,7 @@ ol, ul {
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 0.85rem;
+    font-size: 1rem;
     height: calc(100vh - 56px);
     max-width: 400px;
     position: sticky;
