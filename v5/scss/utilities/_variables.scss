@@ -49,9 +49,11 @@ $font-primary: "Raleway", sans-serif;                 // Default page font
 $font-secondary: "Oswald", sans-serif;                // h1-h6 font
 $line-height: 1.5;                                    // Line height
 
-// Transitions
+// Scaling and transitions
 
+$scale-hover-project: scale(1.1);                     // Hover scaling (projects only)
 $transition-hover: 0.5s ease;                         // Hover transition
+$transition-hover-project: all .3s ease-in-out;       // Hover transition (projects only)
 $transition-scroll: top 0.5s ease;                    // Scroll transition
 
 

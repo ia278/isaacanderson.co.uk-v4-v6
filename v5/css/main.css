@@ -505,8 +505,7 @@ ol, ul {
     padding-bottom: 15px;
     text-align: center;
     width: 90%; }
-    .project-desc h2 {
-      font-size: 1.5rem;
+    .project-desc h3 {
       text-decoration: underline; }
 
 @media all and (min-width: 768px) {
@@ -518,7 +517,7 @@ ol, ul {
     .project-container:hover {
       color: #000;
       overflow: hidden;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       transform: scale(1.1); }
   .project-image {
     margin: 0;

@@ -29,8 +29,7 @@
     padding-bottom: 15px;
     text-align: center;
     width: 90%;
-    h2 {
-      font-size: $font-size-h3;
+    h3 {
       text-decoration: underline;
     }
   }
@@ -48,8 +47,8 @@
       &:hover {
         color: $color-text;
         overflow: hidden;
-        transition: all .3s ease-in-out;
-        transform: scale(1.1);
+        transition: $transition-hover-project;
+        transform: $scale-hover-project;
       }
     }
     &-image {
