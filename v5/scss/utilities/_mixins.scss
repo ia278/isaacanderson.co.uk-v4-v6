@@ -2,8 +2,8 @@
 //  Mixins
 // ======================================
 
-@mixin background($color: null, $url: null, $position: center, $size: cover, $repeat: no-repeat, $attachment: fixed) {
-	background: $color url($url) $position/$size $repeat $attachment;
+@mixin background($color: null, $gradient: null, $url: null, $position: center, $size: cover, $repeat: no-repeat, $attachment: fixed) {
+	background: linear-gradient(rgba($color, $gradient), rgba($color, $gradient)), url($url) $position/$size $repeat $attachment;
 	@content;
 }
 

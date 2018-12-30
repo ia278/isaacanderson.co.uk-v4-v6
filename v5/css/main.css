@@ -343,7 +343,7 @@ ol, ul {
 //  ID styles
 // ====================================*/
 #appy {
-  background-color: #3A3C3F; }
+  background: linear-gradient(rgba(58, 60, 63, 0.6), rgba(58, 60, 63, 0.6)), url("../images/backgrounds/appy.png") center/cover no-repeat fixed; }
   #appy .project-desc {
     color: #FFF; }
 
@@ -352,7 +352,9 @@ ol, ul {
   transition: 0.5s ease; }
 
 #ebm {
-  background-color: #ACF68B; }
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/backgrounds/ebm.jpg") center/cover no-repeat fixed; }
+  #ebm .project-desc {
+    color: #FFF; }
 
 #facebook:hover {
   color: #3B5998;
@@ -384,13 +386,15 @@ ol, ul {
     color: #FFF; }
 
 #polygon {
-  background: #D1A3D2 url("../images/backgrounds/105.png") center/cover no-repeat fixed; }
+  background: linear-gradient(rgba(0, 161, 219, 0.6), rgba(0, 161, 219, 0.6)), url("../images/backgrounds/polygon2.jpg") center/cover no-repeat fixed; }
+  #polygon .project-desc {
+    color: #FFF; }
 
 #rules {
-  background-color: #ACCCFF; }
+  background: linear-gradient(rgba(172, 204, 255, 0.6), rgba(172, 204, 255, 0.6)), url("../images/backgrounds/rules.jpg") center/cover no-repeat fixed; }
 
 #website {
-  background-color: #F9F871; }
+  background: linear-gradient(rgba(249, 248, 113, 0.7), rgba(249, 248, 113, 0.7)), url("../images/backgrounds/website.png") center/cover no-repeat fixed; }
 
 /* ======================================
 //  Header styles

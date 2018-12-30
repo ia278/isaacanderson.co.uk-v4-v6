@@ -144,7 +144,7 @@
 // ====================================*/
 
 #appy {
-  background-color: $color-bg-project-appy;
+  @include background($color-bg-project-appy, 0.6, "../images/backgrounds/appy.png");
   .project-desc {
     color: $color-text-alt;    
   }
@@ -156,7 +156,10 @@
   }
 }
 #ebm {
-  background-color: $color-bg-project-ebm;
+  @include background($color-bg-project-ebm, 0.2, "../images/backgrounds/ebm.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
 }
 #facebook {
   &:hover {
@@ -201,11 +204,14 @@
   }
 }
 #polygon {
-	@include background($color-bg-project-polygon, "../images/backgrounds/105.png");
+	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
 }
 #rules {
-  background-color: $color-bg-project-rules;
+  @include background($color-bg-project-rules, 0.6, "../images/backgrounds/rules.jpg");
 }
 #website {
-  background-color: $color-bg-project-website;
+  @include background($color-bg-project-website, 0.7, "../images/backgrounds/website.png");
 }
