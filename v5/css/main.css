@@ -497,9 +497,11 @@ ol, ul {
     justify-content: center;
     align-content: center;
     align-items: center;
+    left: 0;
     height: 100%;
     overflow: hidden;
     position: absolute;
+    top: 0;
     width: 100%;
     z-index: -100; }
     .project-image img {

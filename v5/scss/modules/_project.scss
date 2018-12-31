@@ -9,9 +9,11 @@
   width: 100%;
 	&-image {
 		@include flexbox(row wrap, center);
+		left: 0;
 		height: 100%;
 		overflow: hidden;
 		position: absolute;
+		top: 0;
 		width: 100%;
 		z-index: -100;
 		img {
