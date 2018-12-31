@@ -385,6 +385,7 @@ ol, ul {
   #more .project-desc {
     color: #FFF; }
 
+<<<<<<< HEAD
 .background {
   -webkit-transform: translateZ(-1px);
   transform: translateZ(-1px); }
@@ -403,6 +404,12 @@ ol, ul {
   left: 0; }
 #polygon .project-desc {
   color: #FFF; }
+=======
+#polygon {
+  background: linear-gradient(rgba(0, 161, 219, 0.6), rgba(0, 161, 219, 0.6)), url("../images/backgrounds/polygon2.jpg") center/cover no-repeat fixed; }
+  #polygon .project-desc {
+    color: #FFF; }
+>>>>>>> parent of 6e93779... change bg images & colors
 
 #rules {
   background: linear-gradient(rgba(172, 204, 255, 0.6), rgba(172, 204, 255, 0.6)), url("../images/backgrounds/rules.jpg") center/cover no-repeat fixed; }
