@@ -7,6 +7,11 @@
 	@content;
 }
 
+@mixin background2($color: null, $gradient: null) {
+	background: linear-gradient(rgba($color, $gradient), rgba($color, $gradient));
+	@content;
+}
+
 @mixin center($width: 100%, $margin-top: 0, $width-max: null, $margin-bottom: 0) {
   margin: $margin-top auto $margin-bottom;
   max-width: $width-max;

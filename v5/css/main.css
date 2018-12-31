@@ -385,10 +385,16 @@ ol, ul {
   #more .project-desc {
     color: #FFF; }
 
-#polygon {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/backgrounds/polygon2.jpg") center/cover no-repeat fixed; }
-  #polygon .project-desc {
-    color: #FFF; }
+#polygon .project-image::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+#polygon .project-desc {
+  color: #FFF; }
 
 #rules {
   background: linear-gradient(rgba(172, 204, 255, 0.7), rgba(172, 204, 255, 0.7)), url("../images/backgrounds/rules.jpg") center/cover no-repeat fixed; }
@@ -483,7 +489,22 @@ ol, ul {
   align-content: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
   width: 100%; }
+  .project-image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -100; }
+    .project-image img {
+      min-height: 100%;
+      width: 100%; }
   .project-container {
     display: flex;
     flex-flow: row wrap;
@@ -496,17 +517,6 @@ ol, ul {
     width: 98%; }
     .project-container:hover {
       color: #000; }
-  .project-image {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 15px;
-    width: 50%; }
-    .project-image img {
-      height: 100%;
-      width: 100%; }
   .project-desc {
     padding: 80px;
     text-align: center;
@@ -533,10 +543,6 @@ ol, ul {
       overflow: hidden;
       transition: all 0.3s ease-in-out;
       transform: scale(1.1); }
-  .project-image {
-    margin: 0;
-    padding: 15px;
-    width: 225px; }
   .project-desc {
     padding: 70px;
     width: 90%; } }

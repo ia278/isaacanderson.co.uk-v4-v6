@@ -203,12 +203,28 @@
     color: $color-text-alt;    
   }
 }
+//#polygon {
+//	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
+//	.project-desc {
+//    color: $color-text-alt;    
+//  }
+//}
+
 #polygon {
-	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
+	.project-image::after {
+		background: linear-gradient(rgba($color-bg-project-polygon, 0.6), rgba($color-bg-project-polygon, 0.6));
+		position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+	}
 	.project-desc {
-    color: $color-text-alt;    
-  }
+		color: $color-text-alt;    
+	}
 }
+
 #rules {
   @include background($color-bg-project-rules, 0.7, "../images/backgrounds/rules.jpg");
 }

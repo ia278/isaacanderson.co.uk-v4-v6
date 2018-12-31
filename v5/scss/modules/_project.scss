@@ -5,7 +5,25 @@
 .project {
   @include flexbox(row wrap, center);
   margin: 0 auto;
+	position: relative;
   width: 100%;
+	&-image {
+		@include flexbox(row wrap, center);
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		z-index: -100;
+		img {
+			min-height: 100%;
+			width: 100%;
+		}
+	}
+	
+	
+	
+	
+	
   &-container {
     @include flexbox(row wrap, center);
     color: $color-text;
@@ -16,15 +34,15 @@
       color: $color-text;
     } 
   }
-  &-image {
-    @include flexbox(row wrap, center);
-    margin-top: 15px;
-    width: $width-logo-project-s;
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
+//  &-image {
+//    @include flexbox(row wrap, center);
+//    margin-top: 15px;
+//    width: $width-logo-project-s;
+//    img {
+//      height: 100%;
+//      width: 100%;
+//    }
+//  }
   &-desc {
     padding: 80px;
     text-align: center;
@@ -61,11 +79,6 @@
         transition: $transition-hover-project;
         transform: $scale-hover-project;
       }
-    }
-    &-image {
-      margin: 0;
-      padding: 15px;
-      width: $width-logo-project-m;
     }
     &-desc {
       padding: 70px;
