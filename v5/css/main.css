@@ -394,7 +394,7 @@ ol, ul {
   opacity: 0.8; }
 
 #polygon .project-image::after {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(rgba(0, 161, 219, 0.6), rgba(0, 161, 219, 0.6));
   position: absolute;
   content: "";
   height: 100%;
@@ -405,12 +405,10 @@ ol, ul {
   color: #FFF; }
 
 #rules {
-  background: linear-gradient(rgba(172, 204, 255, 0.7), rgba(172, 204, 255, 0.7)), url("../images/backgrounds/rules.jpg") center/cover no-repeat fixed; }
+  background: linear-gradient(rgba(172, 204, 255, 0.6), rgba(172, 204, 255, 0.6)), url("../images/backgrounds/rules.jpg") center/cover no-repeat fixed; }
 
 #website {
-  background: linear-gradient(rgba(204, 51, 51, 0.5), rgba(204, 51, 51, 0.5)), url("../images/backgrounds/website.jpg") center/cover no-repeat fixed; }
-  #website .project-desc {
-    color: #FFF; }
+  background: linear-gradient(rgba(249, 248, 113, 0.7), rgba(249, 248, 113, 0.7)), url("../images/backgrounds/website.png") center/cover no-repeat fixed; }
 
 /* ======================================
 //  Header styles
@@ -538,7 +536,8 @@ ol, ul {
       margin-left: 8px; }
     .project-desc h3 {
       font-size: 2.25rem;
-      margin-bottom: 0.5em; }
+      margin-bottom: 0.5em;
+      text-decoration: underline; }
     .project-desc p {
       margin-bottom: 0; }
 

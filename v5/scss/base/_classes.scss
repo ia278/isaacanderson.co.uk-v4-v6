@@ -242,11 +242,8 @@
 }
 
 #rules {
-  @include background($color-bg-project-rules, 0.7, "../images/backgrounds/rules.jpg");
+  @include background($color-bg-project-rules, 0.6, "../images/backgrounds/rules.jpg");
 }
 #website {
-  @include background($color-bg-project-website, 0.5, "../images/backgrounds/website.jpg");
-	.project-desc {
-    color: $color-text-alt;    
-  }
+  @include background($color-bg-project-website, 0.7, "../images/backgrounds/website.png");
 }
