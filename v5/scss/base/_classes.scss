@@ -210,6 +210,22 @@
 //  }
 //}
 
+.background {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+//  position: absolute;
+}
+
+.foreground {
+//  position: absolute;
+  background: #23819C;
+  opacity: 0.8;
+}
+
+
+
+
+
 #polygon {
 	.project-image::after {
 		background: linear-gradient(rgba($color-bg-project-polygon, 0.6), rgba($color-bg-project-polygon, 0.6));

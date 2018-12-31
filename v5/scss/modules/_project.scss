@@ -7,11 +7,12 @@
   margin: 0 auto;
 	position: relative;
   width: 100%;
+	perspective: 1px;
 	&-image {
 		@include flexbox(row wrap, center);
 		left: 0;
 		height: 100%;
-		overflow: hidden;
+//		overflow: hidden;
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -21,11 +22,6 @@
 			width: 100%;
 		}
 	}
-	
-	
-	
-	
-	
   &-container {
     @include flexbox(row wrap, center);
     color: $color-text;
@@ -36,15 +32,6 @@
       color: $color-text;
     } 
   }
-//  &-image {
-//    @include flexbox(row wrap, center);
-//    margin-top: 15px;
-//    width: $width-logo-project-s;
-//    img {
-//      height: 100%;
-//      width: 100%;
-//    }
-//  }
   &-desc {
     padding: 80px;
     text-align: center;
