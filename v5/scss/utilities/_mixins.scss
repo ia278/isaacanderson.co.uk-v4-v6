@@ -2,6 +2,16 @@
 //  Mixins
 // ======================================
 
+
+
+
+
+
+
+
+
+
+
 @mixin background($color: null, $gradient: null, $url: null, $position: center, $size: cover, $repeat: no-repeat, $attachment: fixed) {
 	background: linear-gradient(rgba($color, $gradient), rgba($color, $gradient)), url($url) $position/$size $repeat $attachment;
 	@content;
@@ -13,6 +23,7 @@
   width: $width;
   @content;
 }
+
 @mixin centerX($left: 50%, $width: 98%, $position: absolute) {
   left: $left;
   position: $position;
@@ -20,6 +31,7 @@
   width: $width;
   @content;
 }
+
 @mixin centerY($top: 50%, $width: 98%, $position: absolute) {
   position: $position;
   top: $top;
@@ -27,6 +39,7 @@
   width: $width;
   @content;
 }
+
 @mixin centerXY($left: 50%, $top: 50%, $width: 98%, $position: absolute) {
   left: $left;
   position: $position;
@@ -35,6 +48,7 @@
   width: $width;
   @content;
 }
+
 @mixin flexbox($flex-flow: row wrap, $justify-content: center, $display: flex, $align-content: center, $align-items: center) {
   display: $display;
   flex-flow: $flex-flow;
@@ -43,6 +57,7 @@
 	align-items: $align-items;
   @content;
 }
+
 @mixin reset ($a: false, $p: false) {
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-secondary;

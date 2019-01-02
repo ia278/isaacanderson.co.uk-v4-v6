@@ -1,5 +1,7 @@
 TO DO:
 
+- header for SEO (change li to h2 tags etc)
+- create hero on home (for SEO, research keywords)
 - no hover on small screens
 - buttons should stay color when clicked (active)
 - search results page (design like bbc)
