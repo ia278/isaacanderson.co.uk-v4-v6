@@ -203,47 +203,18 @@
     color: $color-text-alt;    
   }
 }
-//#polygon {
-//	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
-//	.project-desc {
-//    color: $color-text-alt;    
-//  }
-//}
-
-.background {
-  -webkit-transform: translateZ(-1px);
-  transform: translateZ(-1px);
-//  position: absolute;
-}
-
-.foreground {
-//  position: absolute;
-  background: #23819C;
-  opacity: 0.8;
-}
-
-
-
-
-
 #polygon {
-	.project-image::after {
-		background: linear-gradient(rgba($color-bg-project-polygon, 0.6), rgba($color-bg-project-polygon, 0.6));
-		position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-	}
+	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
 	.project-desc {
-		color: $color-text-alt;    
-	}
+    color: $color-text-alt;    
+  }
 }
-
 #rules {
-  @include background($color-bg-project-rules, 0.6, "../images/backgrounds/rules.jpg");
+  @include background($color-bg-project-rules, 0.7, "../images/backgrounds/rules.jpg");
 }
 #website {
-  @include background($color-bg-project-website, 0.7, "../images/backgrounds/website.png");
+  @include background($color-bg-project-website, 0.5, "../images/backgrounds/website.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
 }

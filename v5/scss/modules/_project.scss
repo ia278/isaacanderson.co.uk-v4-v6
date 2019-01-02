@@ -5,23 +5,7 @@
 .project {
   @include flexbox(row wrap, center);
   margin: 0 auto;
-	position: relative;
   width: 100%;
-	perspective: 1px;
-	&-image {
-		@include flexbox(row wrap, center);
-		left: 0;
-		height: 100%;
-//		overflow: hidden;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: -100;
-		img {
-			min-height: 100%;
-			width: 100%;
-		}
-	}
   &-container {
     @include flexbox(row wrap, center);
     color: $color-text;
@@ -31,6 +15,15 @@
     &:hover {
       color: $color-text;
     } 
+  }
+  &-image {
+    @include flexbox(row wrap, center);
+    margin-top: 15px;
+    width: $width-logo-project-s;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
   &-desc {
     padding: 80px;
@@ -46,7 +39,6 @@
     h3 {
 			font-size: $font-size-h2;
 			margin-bottom: 0.5em;
-      text-decoration: underline;
     }
 		p {
 			margin-bottom: 0;        // Required to center "project-desc" div with padding
@@ -69,6 +61,11 @@
         transition: $transition-hover-project;
         transform: $scale-hover-project;
       }
+    }
+    &-image {
+      margin: 0;
+      padding: 15px;
+      width: $width-logo-project-m;
     }
     &-desc {
       padding: 70px;
