@@ -1,0 +1,39 @@
+/* ======================================
+//  Background styles
+// ====================================*/
+
+#appy {
+  @include background($color-bg-project-appy, 0.6, "../images/backgrounds/appy.png");
+  .project-desc {
+    color: $color-text-alt;    
+  }
+}
+
+#ebm {
+  @include background($color-bg-project-ebm, 0.2, "../images/backgrounds/ebm.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
+}
+
+#more {
+  background-color: $color-bg-project-more;
+  .project-desc {
+    color: $color-text-alt;    
+  }
+}
+#polygon {
+	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
+}
+#rules {
+  @include background($color-bg-project-rules, 0.7, "../images/backgrounds/rules.jpg");
+}
+#website {
+  @include background($color-bg-project-website, 0.5, "../images/backgrounds/website.jpg");
+	.project-desc {
+    color: $color-text-alt;    
+  }
+}
