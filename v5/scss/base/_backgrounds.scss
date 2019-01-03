@@ -23,7 +23,7 @@
   }
 }
 #polygon {
-	@include background($color-bg-project-polygon, 0.6, "../images/backgrounds/polygon2.jpg");
+	@include background($color-bg-project-polygon, 0.55, "../images/backgrounds/polygon3.jpg");
 	.project-desc {
     color: $color-text-alt;    
   }
@@ -32,7 +32,7 @@
   @include background($color-bg-project-rules, 0.7, "../images/backgrounds/rules.jpg");
 }
 #website {
-  @include background($color-bg-project-website, 0.5, "../images/backgrounds/website.jpg");
+  @include background($color-bg-project-website, 0.4, "../images/backgrounds/website.jpg");
 	.project-desc {
     color: $color-text-alt;    
   }

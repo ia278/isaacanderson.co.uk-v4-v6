@@ -1,13 +1,14 @@
 TO DO:
 
-- no hover on small screens
+- restructure git profile so all versions of the site are in one repo
+- project forms should have dynamic tags (changing excerpt info in article should change info on homepage)
+- JS to automatically insert classes on excerpt ("mini" for related articles, "bold secondary" for projects on homepage)
 - buttons should stay color when clicked (active)
 - search results page (design like bbc)
 - redesign image section (images should always be 16 x 9)
 - maintenance page (get plugin)
 - blog post section
 - npm and gulp for auto ES5/es6 and webkit 
-- mobile menu change to hover instead of click (click messes up print view) 
 - redesign logo
 - Write javascript to show menu on upwards scroll.
 - write javascript to always update the date.
