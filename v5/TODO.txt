@@ -1,5 +1,6 @@
 TO DO:
 
+- insert class="mini" into list-card items automatically
 - restructure git profile so all versions of the site are in one repo
 - project forms should have dynamic tags (changing excerpt info in article should change info on homepage)
 - JS to automatically insert classes on excerpt ("mini" for related articles, "bold secondary" for projects on homepage)

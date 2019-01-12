@@ -285,7 +285,7 @@ ol, ul {
   .list-card h4 {
     margin: 10px auto;
     text-align: center; }
-  .list-card p, .list-card .mini {
+  .list-card p, .list-card ol, .list-card ul, .list-card .mini {
     margin: 10px auto 0;
     text-align: justify; }
   @media all and (min-width: 768px) {
