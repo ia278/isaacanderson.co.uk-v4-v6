@@ -8,20 +8,29 @@
     color: $color-text-alt;    
   }
 }
-
 #ebm {
   @include background($color-bg-project-ebm, 0.2, "../images/backgrounds/ebm.jpg");
 	.project-desc {
     color: $color-text-alt;    
   }
 }
-
 #more {
   background-color: $color-bg-project-more;
   .project-desc {
     color: $color-text-alt;    
   }
 }
+
+#perlego {
+	@include background($color-bg-project-perlego, 0.7, "../images/backgrounds/perlego.png");
+	.project-desc {
+    color: $color-text-alt;    
+  }
+}
+
+
+
+
 #polygon {
 	@include background($color-bg-project-polygon, 0.55, "../images/backgrounds/polygon3.jpg");
 	.project-desc {

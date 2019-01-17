@@ -16,6 +16,11 @@
   #more .project-desc {
     color: #FFF; }
 
+#perlego {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../images/backgrounds/perlego.png") center/cover no-repeat fixed; }
+  #perlego .project-desc {
+    color: #FFF; }
+
 #polygon {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/backgrounds/polygon3.jpg") center/cover no-repeat fixed; }
   #polygon .project-desc {
