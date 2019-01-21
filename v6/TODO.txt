@@ -1,0 +1,24 @@
+TO DO:
+
+- insert class="mini" into list-card items automatically
+- restructure git profile so all versions of the site are in one repo
+- project forms should have dynamic tags (changing excerpt info in article should change info on homepage)
+- JS to automatically insert classes on excerpt ("mini" for related articles, "bold secondary" for projects on homepage)
+- buttons should stay color when clicked (active)
+- search results page (design like bbc)
+- redesign image section (images should always be 16 x 9)
+- maintenance page (get plugin)
+- blog post section
+- npm and gulp for auto ES5/es6 and webkit 
+- redesign logo
+- Write javascript to show menu on upwards scroll.
+- write javascript to always update the date.
+- Show links as visited when they have already been opened.
+- Create logo to put on error page.
+- create contact form (zem_contact_reborn)
+- add svg envelope in icons div, when thoughts section is live
+- sort reader view (header appears before logo, quote author doesnt have spacing)
+- any changes to mobile header height needs to be reflected in min height error, archive)
+- SVG version (pen tool) of my first name?
+- redirect to section when clicking section in archive list
+- no target javascript for class .no-target
