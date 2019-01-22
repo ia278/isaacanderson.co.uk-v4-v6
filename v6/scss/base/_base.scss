@@ -1,0 +1,107 @@
+/* ======================================
+//  Base element styles
+// ====================================*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+  font-family: $font-primary;
+  font-size: 20px;
+	scroll-behavior: smooth;
+}
+body {
+  background: $color-bg;
+  box-sizing: border-box;
+  color: $color-text;
+	line-height: $line-height;
+  text-rendering: optimizeLegibility;
+  
+  // Flexbox IE11 workaround
+  
+//  display: flex;
+//  flex: 0 1 auto;
+//  flex-direction: column;
+}
+a {
+  color: $color-link;
+  &:hover {
+    color: $color-link-hover;
+    transition: $transition-hover;
+  }
+}
+blockquote {
+  color: $color-quote;
+  font-family: $font-primary;
+  font-size: $font-size-h3;
+  font-weight: bold;
+  margin: 15px auto;
+  span {    
+    display: block;
+    font-size: $font-size-h5;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  &::before, &::after {
+    background-color: $color-quote;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 20px auto;
+    width: 10%;
+  }
+}
+canvas {
+  display: block;
+  height: 100%;
+//  visibility: hidden;    
+}
+figcaption {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-size-h5;
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+}
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+iframe {
+  text-align: center;
+}
+li {
+  margin: 10px auto;
+}
+ol, ul {
+  margin: 40px auto;
+}
+
+@media all and (max-width: 319px) {
+  body {
+    background-color: #000;
+    display: none;
+  }
+}
+@media all and (max-width: $breakpoint-m - 1px) {
+  html {
+    font-size: 16px;
+  }
+}

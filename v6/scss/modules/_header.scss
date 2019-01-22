@@ -1,0 +1,112 @@
+/* ======================================
+//  Header styles
+// ====================================*/
+
+.header {
+	@include flexbox(row wrap, center);
+	background: $color-header;
+	font-family: $font-secondary;
+	font-size: $font-size-h5;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+  z-index: 1000;
+	&-container {
+    @include flexbox(row wrap, space-between);
+		height: 100%;
+    width: 100%;
+  }
+	&-logo {
+    @include flexbox(row wrap, center);
+		margin-left: 15px;
+		order: -2;
+    width: $width-logo;    // Required for IE to display SVG
+    svg {
+      fill: invert($color-header);
+    }
+  }
+	&-links {
+		@include flexbox(column wrap, space-around);
+		background: $color-bg-header;
+		font-weight: 700;
+		height: $height-header-s;
+		letter-spacing: 3px;
+    width: 100%;
+    ul {
+      @include flexbox(row wrap, space-between);
+			height: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+			text-align: center;
+			width: 100%;
+			li {
+				@include flexbox(column wrap, center);
+				height: 100%;
+				margin-top: 0;
+				margin-bottom: 0;
+				a {
+					color: $color-header;
+					padding-top: 6px;
+					padding-bottom: 6px;
+					text-decoration: none;
+					&:hover {
+						color: $color-link;
+						transition: $transition-hover;
+					}
+				}	
+      }
+    }
+  }
+	&-search {
+		@include flexbox(row wrap, center);
+		margin-right: 15px;
+		order: -1;
+		padding: 10px 0;
+		width: $width-logo;    // Required for IE to display SVG
+		svg {
+			fill: invert($color-header);
+		}
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .header {
+		background: $color-bg-header;
+    height: $height-header-m;
+    &-container {
+      max-width: $width-max-website;
+    }
+    &-logo {
+			order: 0;
+			svg {
+				fill: $color-header;
+			}
+    }
+    &-links {
+			height: 100%;
+			order: 0;
+			width: calc(90% - #{$width-logo} - #{$width-logo});
+			ul {
+				max-width: 600px;
+				li a {
+					padding-top: 12px;
+					padding-bottom: 12px;
+				}
+			}
+    }
+		&-search {
+			order: 0;
+			svg {
+				fill: $color-header;
+			}
+    }
+  }
+}
+
+@media all and (max-width: 390px) {
+	.header {
+		font-size: $font-size-h6;
+	}
+}   // Reduced to prevent a second line of links.

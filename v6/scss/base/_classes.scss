@@ -1,0 +1,188 @@
+/* ======================================
+//  Class styles
+// ====================================*/
+
+.border {
+  border: thin solid red;
+}
+.active {
+  border-top: 3px solid $color-header;
+	color: $color-link;
+  &:hover {
+    border-top: 3px solid $color-link;
+    transition: $transition-hover;
+  }
+}
+.bold {
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.hide-large {
+  @media all and (min-width: $breakpoint-m) {
+    display: none;
+  }
+}
+.hide-small {
+  @media all and (max-width: $breakpoint-m) {
+    display: none;
+  }
+}
+.icons-div {
+  @include flexbox(row wrap, space-around);
+  fill: $color-link;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  width: $width-iconsdiv;
+  a {
+    text-decoration: none;
+    &:hover {
+      fill: $color-link-hover;
+    }
+  }
+  .mini {
+    margin: 0;
+    text-align: center;
+  }
+}
+.images {
+  text-align: center;
+  max-width: $width-max-website;
+  &-one {
+    width: 98.5%;
+  }
+  &-two {
+    width: 49%;
+  }
+  &-three {
+    width: 32%;
+  }
+  &-four {
+    width: 23.5%;
+  }
+}
+.italic {
+  font-style: italic;
+}   
+.list-card {
+  display: inline-block;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  vertical-align: top;
+  width: 100%;
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  p, ol, ul, .mini {
+    margin: 10px auto 0;
+    text-align: justify;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
+  }
+}
+.mini {
+  font-size: $font-size-h5;
+}
+.primary {
+  font-family: $font-primary;
+}
+.secondary {
+  font-family: $font-secondary;
+}
+.related-card {
+  color: $color-text;
+  display: inline-block;
+  margin: 20px auto 30px;
+  max-width: $width-max-p-s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 90%;
+  &:hover {
+    color: $color-text;
+  }
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: underline;
+  }
+  p, .mini {
+    margin: 10px auto 0;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
+    &:hover {
+      color: $color-text;
+      overflow: hidden;
+      transition: all .3s ease-in-out;
+      transform: scale(1.1);
+    }
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-double {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+/* ======================================
+//  ID styles
+// ====================================*/
+
+#dribbble {
+  &:hover {
+    color: $color-logo-dribbble;
+    transition: $transition-hover;
+  }
+}
+#facebook {
+  &:hover {
+    color: $color-logo-facebook;
+    transition: $transition-hover;
+  }
+}
+#github {
+  &:hover {
+    color: $color-logo-github;
+    transition: $transition-hover;
+  }
+}
+#google-plus {
+  &:hover {
+    color: $color-logo-google-plus;
+    transition: $transition-hover;
+  }
+}
+#instagram {
+  &:hover {
+    color: $color-logo-instagram;
+    transition: $transition-hover;
+  }
+}
+#linkedin {
+  &:hover {
+    color: $color-logo-linkedin;
+    transition: $transition-hover;
+  }
+}
+#medium {
+  &:hover {
+    color: $color-logo-medium;
+    transition: $transition-hover;
+  }
+}

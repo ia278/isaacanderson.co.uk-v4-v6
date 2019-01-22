@@ -1,0 +1,72 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Breakpoints 
+
+$breakpoint-m: 768px;                                      // Medium screen breakpoint (tablet)
+$breakpoint-l: 1330px;                                     // Large screen breakpoint (>laptop)
+
+// Colors
+
+$color-bg: #FFF;                                           // Background color
+$color-bg-header: #222;                                    // Background header color
+$color-bg-footer: #FBF5F3;                                 // Background footer color
+$color-bg-related: #F2ECFF;                                // Background "related" color
+$color-bg-project-appy: #3A3C3F;                           // Background "project" color (AppyParking)
+$color-bg-project-ebm: #000;                               // Background "project" color (EBM)
+$color-bg-project-more: #222;                              // Background "project" color (More Projects)
+$color-bg-project-perlego: #111;                           // Background "project" color (Perlego)
+$color-bg-project-polygon: #000;                           // Background "project" color (Polygon)
+$color-bg-project-rules: #ACCCFF;                          // Background "project" color (New rules)
+$color-bg-project-website: #BA7379;                        // Background "project" color (Website)
+$color-footer: #6D6968;                                    // Footer text color
+$color-header: #FFF;                                       // Header text color
+$color-link: #C33;                                         // Link color
+$color-link-hover: darken($color-link, 15%);               // Link color (hover)
+$color-logo-dribbble: #EA4C89;                             // Dribbble color
+$color-logo-facebook: #3B5998;                             // Facebook color
+$color-logo-github: #6E5494;                               // Github color
+$color-logo-google-plus: #D34836;                          // Google Plus color
+$color-logo-instagram: #CD486B;                            // Instagram color
+$color-logo-linkedin: #0077B5;                             // LinkedIn color
+$color-logo-medium: #00AB6C;                               // Medium color
+$color-quote: #C33;                                        // Quote color
+$color-text: #000;                                         // Text color
+$color-text-alt: #FFF;                                     // Text color (dark backgrounds)
+
+// Fonts
+
+$font-size-base: 20px;                                     // Base font size
+$font-size-contents: 1rem;                                 // Article contents list font size
+$font-size-fa: 1.1rem;                                     // Font Awesome font size
+$font-size-h1: 3rem;                                       // h1 font size
+$font-size-h2: 2.25rem;                                    // h2 font size
+$font-size-h3: 1.5rem;                                     // h3 font size
+$font-size-h4: 1rem;                                       // h4 font size
+$font-size-h5: 0.75rem;                                    // h5 font size
+$font-size-h6: 0.563rem;                                   // h6 font size
+$font-size-header: 16px;                                   // Header font size
+$font-primary: "Raleway", sans-serif;                      // Default page font
+$font-secondary: "Montserrat", sans-serif;                 // h1-h6 font
+$font-tertiary: "Josefin Sans", sans-serif;                // Hero font
+$line-height: 1.5;                                         // Line height
+
+// Scaling and transitions
+
+$scale-hover-project: scale(1.1);                          // Hover scaling (projects only)
+$transition-hover: 0.5s ease;                              // Hover transition
+$transition-hover-project: all .3s ease-in-out;            // Hover transition (projects only)
+$transition-scroll: top 0.5s ease;                         // Scroll transition
+
+
+// Widths and heights
+$height-footer: 100px;                                     // Footer height
+$height-header-s: 36px;                                    // Header height (small screens, bottom section only)
+$height-header-m: 56px;                                    // Header height (medium screens)
+$width-iconsdiv: 250px;                                    // "Icons-div" width
+$width-logo: 80px;                                         // Logo width
+$width-max-hero-article: 1920px;                           // Article hero max width
+$width-max-p-s: 550px;                                     // Paragraph max width (small screens)
+$width-max-p-m: 630px;                                     // Paragraph max width (medium screens)
+$width-max-website: 1080px;                                // Max width of website
