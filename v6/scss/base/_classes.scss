@@ -12,7 +12,25 @@
     border-top: 3px solid $color-link;
     transition: $transition-hover;
   }
+	
 }
+
+.activate {
+	&::before {
+		background-color: #fff;
+		content: "";
+		position: absolute;
+		left: 0;
+		height: 4px;
+		top: 0;
+		width: 100%;
+	}
+	&:hover::before {
+		background-color: $color-link;
+		transition: $transition-hover;
+	}
+}
+
 .bold {
   font-weight: bold;
 }

@@ -12,6 +12,14 @@
 	top: 0;
 	width: 100%;
   z-index: 1000;
+	a {
+		color: $color-header;
+		text-decoration: none;
+		&:hover {
+			color: $color-link;
+			transition: $transition-hover;
+		}
+	}
 	&-container {
     @include flexbox(row wrap, space-between);
 		height: 100%;
@@ -39,6 +47,7 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+			
 			text-align: center;
 			width: 100%;
 			li {
@@ -46,16 +55,7 @@
 				height: 100%;
 				margin-top: 0;
 				margin-bottom: 0;
-				a {
-					color: $color-header;
-					padding-top: 6px;
-					padding-bottom: 6px;
-					text-decoration: none;
-					&:hover {
-						color: $color-link;
-						transition: $transition-hover;
-					}
-				}	
+				position: relative;
       }
     }
   }
@@ -90,10 +90,6 @@
 			width: calc(90% - #{$width-logo} - #{$width-logo});
 			ul {
 				max-width: 600px;
-				li a {
-					padding-top: 12px;
-					padding-bottom: 12px;
-				}
 			}
     }
 		&-search {

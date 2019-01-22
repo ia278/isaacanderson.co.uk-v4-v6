@@ -12,7 +12,6 @@ TO DO:
 - npm and gulp for auto ES5/es6 and webkit 
 - redesign logo
 - Write javascript to show menu on upwards scroll.
-- write javascript to always update the date.
 - Show links as visited when they have already been opened.
 - Create logo to put on error page.
 - create contact form (zem_contact_reborn)
@@ -22,3 +21,7 @@ TO DO:
 - SVG version (pen tool) of my first name?
 - redirect to section when clicking section in archive list
 - no target javascript for class .no-target
+
+- Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
+- Add jQuery for search bar
+- 
