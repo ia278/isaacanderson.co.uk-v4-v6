@@ -5,17 +5,8 @@
 .border {
   border: thin solid red;
 }
-.active {
-  border-top: 3px solid $color-header;
-	color: $color-link;
-  &:hover {
-    border-top: 3px solid $color-link;
-    transition: $transition-hover;
-  }
-	
-}
 
-.activate {
+.active {
 	&::before {
 		background-color: #fff;
 		content: "";

@@ -67,6 +67,7 @@
 		width: $width-logo;    // Required for IE to display SVG
 		svg {
 			fill: invert($color-header);
+			fill: $color-header; // Hide to show search icon
 		}
   }
 }
@@ -96,6 +97,7 @@
 			order: 0;
 			svg {
 				fill: $color-header;
+				fill: $color-bg-header;  // Hide to show search icon
 			}
     }
   }

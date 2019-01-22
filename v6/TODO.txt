@@ -23,5 +23,6 @@ TO DO:
 - no target javascript for class .no-target
 
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
+- Show search icon by changing colors
 - Add jQuery for search bar
 - 

@@ -220,14 +220,7 @@ ol, ul {
 .border {
   border: thin solid red; }
 
-.active {
-  border-top: 3px solid #FFF;
-  color: #C33; }
-  .active:hover {
-    border-top: 3px solid #C33;
-    transition: 0.5s ease; }
-
-.activate::before {
+.active::before {
   background-color: #fff;
   content: "";
   position: absolute;
@@ -235,7 +228,7 @@ ol, ul {
   height: 4px;
   top: 2px;
   width: 100%; }
-.activate:hover::before {
+.active:hover::before {
   background-color: #C33;
   transition: 0.5s ease; }
 
@@ -469,7 +462,8 @@ ol, ul {
     padding: 10px 0;
     width: 80px; }
     .header-search svg {
-      fill: black; }
+      fill: black;
+      fill: #FFF; }
 
 @media all and (min-width: 768px) {
   .header {
@@ -490,7 +484,8 @@ ol, ul {
     .header-search {
       order: 0; }
       .header-search svg {
-        fill: #FFF; } }
+        fill: #FFF;
+        fill: #222; } }
 @media all and (max-width: 390px) {
   .header {
     font-size: 0.563rem; } }
