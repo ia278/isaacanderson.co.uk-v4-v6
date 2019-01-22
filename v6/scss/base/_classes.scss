@@ -55,19 +55,22 @@
     text-align: center;
   }
 }
-.images {
+.img {
   text-align: center;
   max-width: $width-max-website;
-  &-one {
+  &-100 {
     width: 98.5%;
   }
-  &-two {
+	&-75 {
+    width: 75%;
+  }
+  &-50 {
     width: 49%;
   }
-  &-three {
+  &-33 {
     width: 32%;
   }
-  &-four {
+  &-25 {
     width: 23.5%;
   }
 }

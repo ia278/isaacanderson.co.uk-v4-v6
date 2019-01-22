@@ -1,0 +1,10 @@
+/* ======================================
+//  Background styles
+// ====================================*/
+
+.hero {
+	@include background($color-bg-project-polygon, 0.55, "../images/backgrounds/laptop.jpg");
+	h1, p {
+    color: $color-text-alt;    
+  }
+}

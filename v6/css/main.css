@@ -264,16 +264,18 @@ ol, ul {
     margin: 0;
     text-align: center; }
 
-.images {
+.img {
   text-align: center;
   max-width: 1080px; }
-  .images-one {
+  .img-100 {
     width: 98.5%; }
-  .images-two {
+  .img-75 {
+    width: 75%; }
+  .img-50 {
     width: 49%; }
-  .images-three {
+  .img-33 {
     width: 32%; }
-  .images-four {
+  .img-25 {
     width: 23.5%; }
 
 .italic {
@@ -489,5 +491,39 @@ ol, ul {
 @media all and (max-width: 390px) {
   .header {
     font-size: 0.563rem; } }
+/* ======================================
+//  Hero styles
+// ====================================*/
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: calc(36px + 40px) auto 0;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 36px - 40px); }
+  .hero-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 95%; }
+    .hero-container h1 {
+      font-family: "Josefin Sans", sans-serif;
+      margin: 0;
+      width: 100%; }
+    .hero-container p {
+      margin-bottom: 0;
+      width: 90%; }
+
+@media all and (min-width: 768px) {
+  .hero {
+    margin-top: 56px;
+    min-height: calc(100vh - 56px); }
+    .hero-container {
+      max-width: 1080px; } }
 
 /*# sourceMappingURL=main.css.map */

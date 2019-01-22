@@ -1,0 +1,34 @@
+/* ======================================
+//  Hero styles
+// ====================================*/
+
+.hero {
+	@include flexbox(row wrap, center);
+	margin: calc(#{$height-header-s} + 40px) auto 0;       // 40px is height of logo, written inline (SVG).
+	text-align: center;
+	width: 100%;
+	height: calc(100vh - #{$height-header-s} - 40px);      // 40px is height of logo, written inline (SVG).
+	&-container {
+		@include flexbox(row wrap, center);
+    width: 95%;
+		h1 {
+			font-family: $font-tertiary;
+			margin: 0;
+			width: 100%;
+		}
+		p {
+			margin-bottom: 0;
+			width: 90%;
+		}
+	}
+}
+
+@media all and (min-width: $breakpoint-m) {
+	.hero {
+		margin-top: $height-header-m;
+		min-height: calc(100vh - #{$height-header-m});
+		&-container {
+			max-width: $width-max-website;
+		}
+	}
+}
