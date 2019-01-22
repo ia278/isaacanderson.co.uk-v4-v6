@@ -32,6 +32,7 @@ $color-logo-instagram: #CD486B;                            // Instagram color
 $color-logo-linkedin: #0077B5;                             // LinkedIn color
 $color-logo-medium: #00AB6C;                               // Medium color
 $color-quote: #C33;                                        // Quote color
+$color-section: #D3D3D3;                                   // Section tag color
 $color-text: #000;                                         // Text color
 $color-text-alt: #FFF;                                     // Text color (dark backgrounds)
 
@@ -57,7 +58,7 @@ $line-height: 1.5;                                         // Line height
 $scale-hover-project: scale(1.1);                          // Hover scaling (projects only)
 $transition-hover: 0.5s ease;                              // Hover transition
 $transition-hover-project: all .3s ease-in-out;            // Hover transition (projects only)
-$transition-scroll: top 0.5s ease;                         // Scroll transition
+$transition-scroll: top 0.5s ease;                         // Hyperlink scroll transition
 
 
 // Widths and heights

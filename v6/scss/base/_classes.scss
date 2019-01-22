@@ -5,10 +5,9 @@
 .border {
   border: thin solid red;
 }
-
 .active {
 	&::before {
-		background-color: #fff;
+		background-color: $color-header;
 		content: "";
 		position: absolute;
 		left: 0;
@@ -21,9 +20,21 @@
 		transition: $transition-hover;
 	}
 }
-
 .bold {
   font-weight: bold;
+}
+.card-tag {
+	background-color: $color-section;
+	font-size: $font-size-h6;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	padding: 6px;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $color-bg-header;
+		color: $color-header;
+	}
 }
 .hide {
   display: none;
