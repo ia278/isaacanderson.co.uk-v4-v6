@@ -233,7 +233,7 @@ ol, ul {
   position: absolute;
   left: 0;
   height: 4px;
-  top: 0;
+  top: 2px;
   width: 100%; }
 .activate:hover::before {
   background-color: #C33;
