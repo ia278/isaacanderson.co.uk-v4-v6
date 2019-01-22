@@ -2,8 +2,6 @@
 //  Hero styles
 // ====================================*/
 
-// PUT LETTER SPACING STYLES IN BASE
-
 .latest {
 	@include flexbox(row wrap, center);
 	margin: 0 auto;

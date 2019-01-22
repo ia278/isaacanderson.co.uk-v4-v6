@@ -184,12 +184,10 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2.25rem;
-  letter-spacing: 4px; }
+  font-size: 2.25rem; }
 
 h3 {
-  font-size: 1.5rem;
-  letter-spacing: 3px; }
+  font-size: 1.5rem; }
 
 h4 {
   font-size: 1rem; }
@@ -198,8 +196,7 @@ h5 {
   font-size: 0.75rem; }
 
 h6 {
-  font-size: 0.563rem;
-  letter-spacing: 2px; }
+  font-size: 0.563rem; }
 
 iframe {
   text-align: center; }

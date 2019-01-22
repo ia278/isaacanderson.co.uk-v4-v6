@@ -53,6 +53,12 @@ $font-secondary: "Montserrat", sans-serif;                 // h1-h6 font
 $font-tertiary: "Josefin Sans", sans-serif;                // Hero font
 $line-height: 1.5;                                         // Line height
 
+// Letter spacing
+
+$spacing-letter-h3: 4px;                                   // Letter spacing (h3 tags)
+$spacing-letter-h4: 3px;                                   // Letter spacing (h4 tags)
+$spacing-letter-h6: 2px;                                   // Letter spacing (h6 tags)
+
 // Scaling and transitions
 
 $scale-hover-project: scale(1.1);                          // Hover scaling (projects only)
