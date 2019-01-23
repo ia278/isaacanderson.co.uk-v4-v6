@@ -1,8 +1,8 @@
 /* ======================================
-//  Hero styles
+//  Posts styles
 // ====================================*/
 
-.latest {
+.posts {
 	@include flexbox(row wrap, center);
 	margin: 0 auto;
 	padding: 20px 0;
@@ -11,18 +11,21 @@
 		color: $color-text;
 		text-decoration: none;
 	}
+	button {
+		margin-top: 25px;
+	}
 	&-container {
 		@include flexbox(row wrap, center);
     width: 98%;
 	}
-	&-posts {
+	&-listing {
 		@include flexbox(row wrap, center, $align-items: flex-start);   
 		width: 98%;
 	}
 	&-card {
 		margin: 20px 2px; 
 		padding: 5px;
-		width: 99%;
+		width: $width-form-s;
 		img {
 			width: 100%;
 		}
@@ -47,7 +50,7 @@
 }
 
 @media all and (min-width: $breakpoint-s) {
-	.latest {
+	.posts {
 		&-card {
 			width: 48%;
 		}
@@ -55,7 +58,7 @@
 }
 
 @media all and (min-width: $breakpoint-m) {
-	.latest {
+	.posts {
 		&-container {
 			max-width: $width-max-website;
 		}

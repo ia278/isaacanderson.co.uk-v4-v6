@@ -23,11 +23,36 @@
 .alignment-only {
 	display: inline-block;
 	margin: 0;
-	width: 32%;
+	width: $width-form-s;
+	@media all and (min-width: $breakpoint-s) {
+		width: $width-card-s;
+	}
+	@media all and (min-width: $breakpoint-m) {
+		width: $width-card-m;
+	}
 }
 .bold {
   font-weight: bold;
 }
+.button {
+	&-light {
+		background: $color-text-alt;
+		border: 1px solid $color-text-alt;
+		color: $color-text;
+	}
+	&-long {
+		max-width: $width-max-form-s;
+		width: $width-form-s;
+	}
+	&-normal {
+		background: transparent;
+		border: 1px solid $color-text;
+		color: $color-bg-footer;
+	}
+	&-short {}
+	&-square {}
+}
+
 .card-tag {
 	background-color: $color-section;
 	font-size: $font-size-h6;
