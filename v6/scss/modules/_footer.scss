@@ -4,13 +4,12 @@
 
 .footer {
 	@include flexbox(row wrap, center);
+	@include positioning;
 	background: $color-bg-footer;
 	color: $color-text-alt;
 	font-family: $font-secondary;
 	font-weight: bold;
-	margin: 0 auto;
 	text-transform: uppercase;
-	width: 100%;
 	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
 	&-container {
 		@include flexbox(row wrap, space-around, $align-items: flex-end);
@@ -59,7 +58,6 @@
       }
     }
 	}
-
 }
 
 @media all and (min-width: $breakpoint-m) {

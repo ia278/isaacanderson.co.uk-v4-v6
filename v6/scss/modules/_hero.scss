@@ -4,9 +4,8 @@
 
 .hero {
 	@include flexbox(row wrap, center);
-	margin: calc(#{$height-header-s} + #{$height-logo}) auto 0;       // 40px is height of logo, written inline (SVG).
+	@include positioning(margin-top);
 	text-align: center;
-	width: 100%;
 	height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
 	&-container {
 		@include flexbox(row wrap, center);
@@ -25,7 +24,6 @@
 
 @media all and (min-width: $breakpoint-m) {
 	.hero {
-		margin-top: $height-header-m;
 		min-height: calc(100vh - #{$height-header-m});
 		&-container {
 			max-width: $width-max-website;

@@ -56,13 +56,8 @@ button {
 	text-transform: uppercase;
 	width: 100%;
 }
-canvas {
-  display: block;
-  height: 100%;
-//  visibility: hidden;    
-}
 figcaption {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: $font-size-h5;
   font-weight: bold;
 }

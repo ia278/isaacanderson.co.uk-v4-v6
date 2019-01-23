@@ -1,0 +1,66 @@
+/* ======================================
+//  Featured styles
+// ====================================*/
+
+.featured {
+	@include flexbox(row wrap, center);
+	@include positioning(margin-top);
+	a {
+		color: $color-text-alt;
+		text-decoration: none;
+		&:hover {
+			background-color: rgba($color-overlay, 0.6);
+		}
+	}
+	&-container {
+		@include flexbox(row wrap, center);
+		width: 98%;
+		}
+	&-listing {
+		@include flexbox(row wrap, center);
+		width: 100%;
+	}
+	&-card {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+		display: inline-block;
+		height: 250px;
+		margin: 2px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		&:first-child {
+			width: 100%; 
+		}
+		h3 {
+			@include centerX($width: 100%) {
+				bottom: 0;
+			};
+			font-size: $font-size-h4;
+			letter-spacing: $spacing-letter-h4;
+			padding: 0 10px;
+			text-transform: uppercase;
+		}
+		img {
+			// object-fit not compatible with IE11
+			@include centerXY($width: null, $scale: 0.1);
+			min-height: 1000%;
+			min-width: 1000%;
+			z-index: -1;
+		}
+	}
+}
+
+@media all and (min-width: $breakpoint-m) {
+	.featured {
+		&-container {
+			max-width: $width-max-website;
+		}
+		&-card {
+			width: calc(50% - 4px);
+			&:first-child {
+				height: 375px;
+			}
+		}
+	}
+}

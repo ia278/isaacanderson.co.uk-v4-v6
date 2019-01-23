@@ -177,12 +177,8 @@ button {
   text-transform: uppercase;
   width: 100%; }
 
-canvas {
-  display: block;
-  height: 100%; }
-
 figcaption {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   font-weight: bold; }
 
@@ -279,17 +275,28 @@ ol, ul {
 .bold {
   font-weight: bold; }
 
-.button-light {
-  background: #FFF;
-  border: 1px solid #FFF;
-  color: #000; }
-.button-long {
-  max-width: 450px;
-  width: 90%; }
-.button-normal {
-  background: transparent;
-  border: 1px solid #000;
-  color: #313439; }
+.button, .button-light, .button-long, .button-normal {
+  border-radius: 8px;
+  font: bold 0.75rem "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+  .button-light {
+    background: #FFF;
+    border: 1px solid #FFF;
+    color: #000; }
+  .button-long {
+    max-width: 450px;
+    width: 90%; }
+  .button-normal {
+    background: transparent;
+    border: 1px solid #000;
+    color: #313439; }
+    .button-normal:hover {
+      background: #000;
+      color: #cecbc6; }
 
 .card-tag {
   background-color: #D3D3D3;
@@ -313,16 +320,18 @@ ol, ul {
 .divider, .divider-light {
   width: 98%;
   overflow-x: hidden; }
-  .divider h2, .divider-light h2 {
+  .divider h1, .divider h2, .divider-light h1, .divider-light h2 {
     display: inline-block;
+    font-size: 1.563rem;
+    letter-spacing: 4px;
     padding-right: 30px;
     position: relative;
     text-transform: uppercase; }
-    .divider h2::after, .divider-light h2::after {
+    .divider h1::after, .divider h2::after, .divider-light h1::after, .divider-light h2::after {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       width: 1080px;
+      transform: translateY(-50%);
       background-color: #000;
       content: "";
       display: block;
@@ -596,10 +605,14 @@ ol, ul {
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 20px 0;
+  width: 100%;
   margin: calc(36px + 40px) auto 0;
   text-align: center;
-  width: 100%;
   height: calc(100vh - 36px - 40px); }
+  @media all and (min-width: 768px) {
+    .hero {
+      margin-top: 56px; } }
   .hero-container {
     display: flex;
     flex-flow: row wrap;
@@ -617,10 +630,80 @@ ol, ul {
 
 @media all and (min-width: 768px) {
   .hero {
-    margin-top: 56px;
     min-height: calc(100vh - 56px); }
     .hero-container {
       max-width: 1080px; } }
+/* ======================================
+//  Featured styles
+// ====================================*/
+.featured {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0; }
+  @media all and (min-width: 768px) {
+    .featured {
+      margin-top: 56px; } }
+  .featured a {
+    color: #FFF;
+    text-decoration: none; }
+    .featured a:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+  .featured-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+  .featured-listing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%; }
+  .featured-card {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    display: inline-block;
+    height: 250px;
+    margin: 2px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+    .featured-card:first-child {
+      width: 100%; }
+    .featured-card h3 {
+      left: 50%;
+      position: absolute;
+      width: 100%;
+      transform: translateX(-50%);
+      bottom: 0;
+      font-size: 1rem;
+      letter-spacing: 3px;
+      padding: 0 10px;
+      text-transform: uppercase; }
+    .featured-card img {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(0.1);
+      min-height: 1000%;
+      min-width: 1000%;
+      z-index: -1; }
+
+@media all and (min-width: 768px) {
+  .featured-container {
+    max-width: 1080px; }
+  .featured-card {
+    width: calc(50% - 4px); }
+    .featured-card:first-child {
+      height: 375px; } }
 /* ======================================
 //  Posts styles
 // ====================================*/
@@ -630,14 +713,14 @@ ol, ul {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 0 auto;
   padding: 20px 0;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
   .posts a {
     color: #000;
     text-decoration: none; }
-  .posts button {
-    margin-top: 25px; }
+  .posts .button, .posts .button-light, .posts .button-long, .posts .button-normal {
+    margin: 25px auto; }
   .posts-container {
     display: flex;
     flex-flow: row wrap;
@@ -671,6 +754,13 @@ ol, ul {
           transition: 0.5s ease; }
     .posts-card p {
       font-size: 0.75rem; }
+  .posts-navigation {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
 
 @media all and (min-width: 550px) {
   .posts-card {
@@ -689,13 +779,14 @@ ol, ul {
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
   background: #313439;
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  margin: 0 auto;
   text-transform: uppercase;
-  width: 100%;
   min-height: calc(100vh - 36px - 40px); }
   .footer-container {
     display: flex;

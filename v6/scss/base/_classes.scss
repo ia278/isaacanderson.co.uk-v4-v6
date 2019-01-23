@@ -35,19 +35,33 @@
   font-weight: bold;
 }
 .button {
+	border-radius: 8px;
+	font: bold $font-size-h5 $font-secondary;
+	letter-spacing: $spacing-letter-h4;
+	padding: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
 	&-light {
+		@extend .button;
 		background: $color-text-alt;
 		border: 1px solid $color-text-alt;
 		color: $color-text;
 	}
 	&-long {
+		@extend .button;
 		max-width: $width-max-form-s;
 		width: $width-form-s;
 	}
 	&-normal {
+		@extend .button;
 		background: transparent;
 		border: 1px solid $color-text;
 		color: $color-bg-footer;
+		&:hover {
+			background: $color-text;
+			color: invert($color-bg-footer);
+		}
 	}
 	&-short {}
 	&-square {}
@@ -76,8 +90,10 @@
 .divider, .divider-light {
 	width: 98%;
 	overflow-x: hidden;
-	h2 {
+	h1, h2 {
 		display: inline-block;
+		font-size: $font-size-h2;
+		letter-spacing: $spacing-letter-h2;
 		padding-right: 30px;
 		position: relative;
 		text-transform: uppercase;

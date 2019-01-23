@@ -4,15 +4,13 @@
 
 .posts {
 	@include flexbox(row wrap, center);
-	margin: 0 auto;
-	padding: 20px 0;
-	width: 100%;
+	@include positioning;
 	a {
 		color: $color-text;
 		text-decoration: none;
 	}
-	button {
-		margin-top: 25px;
+	.button {
+		margin: 25px auto;
 	}
 	&-container {
 		@include flexbox(row wrap, center);
@@ -46,6 +44,10 @@
 		p {
 			font-size: $font-size-h5;
 		}
+	}
+	&-navigation {
+		@include flexbox(column wrap, center);
+		width: 98%;
 	}
 }
 

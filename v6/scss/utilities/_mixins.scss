@@ -15,22 +15,26 @@
 @mixin centerX($left: 50%, $width: 98%, $position: absolute) {
   left: $left;
   position: $position;
+	width: $width;
   transform: translateX(-$left);
-  width: $width;
   @content;
 }
 @mixin centerY($top: 50%, $width: 98%, $position: absolute) {
   position: $position;
   top: $top;
+	width: $width;
   transform: translateY(-$top);
-  width: $width;
   @content;
 }
-@mixin centerXY($left: 50%, $top: 50%, $width: 98%, $position: absolute) {
+@mixin centerXY($left: 50%, $top: 50%, $width: 98%, $position: absolute, $scale: null) {
   left: $left;
   position: $position;
   top: $top;
-  transform: translate(-$left, -$top);
+	@if $scale {
+		transform: translateX(-$left) translateY(-$top) scale($scale);		
+	} @else {
+		transform: translate(-$left, -$top);
+	}
   width: $width;
   @content;
 }
@@ -42,20 +46,17 @@
 	align-items: $align-items;
   @content;
 }
-@mixin reset ($a: false, $p: false) {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $font-secondary;
-    margin: 0;
-  }
-  @if $a {
-    a {
-      text-decoration: none;
-    }
-  }
-  @if $p {
-    p {
-      margin: 0;
-    }
-  }
-  @content;
+
+@mixin positioning ($margin-top: null) {
+	padding: 20px 0;
+	width: 100%;
+	@if $margin-top == margin-top {
+		margin: calc(#{$height-header-s} + #{$height-logo}) auto 0;
+		@media all and (min-width: $breakpoint-m) {
+			margin-top: $height-header-m;
+		}
+	} @else {
+		margin: 0 auto;
+	}
+	@content;
 }
