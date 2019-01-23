@@ -4,10 +4,10 @@
 
 .hero {
 	@include flexbox(row wrap, center);
-	margin: calc(#{$height-header-s} + 40px) auto 0;       // 40px is height of logo, written inline (SVG).
+	margin: calc(#{$height-header-s} + #{$height-logo}) auto 0;       // 40px is height of logo, written inline (SVG).
 	text-align: center;
 	width: 100%;
-	height: calc(100vh - #{$height-header-s} - 40px);      // 40px is height of logo, written inline (SVG).
+	height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
 	&-container {
 		@include flexbox(row wrap, center);
     width: 95%;

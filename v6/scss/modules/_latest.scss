@@ -12,34 +12,15 @@
 		text-decoration: none;
 	}
 	&-container {
-		@include flexbox(column wrap, center);
+		@include flexbox(row wrap, center);
     width: 98%;
 	}
-	&-divider {
-		width: 98%;
-		overflow-x: hidden;
-		h2 {
-			display: inline-block;
-			font-size: $font-size-h3;
-			padding-right: 30px;
-			position: relative;
-			text-transform: uppercase;
-			&::after {
-				@include centerY($width: $width-max-website);
-				background-color: #000;
-				content: "";
-				display: block;
-				height: 6px;
-				left: 100%;
-			}
-		}
-	}
 	&-posts {
-		@include flexbox(row wrap, center, flex, flex-start, flex-start);
+		@include flexbox(row wrap, center, $align-items: flex-start);   
 		width: 98%;
 	}
 	&-card {
-		margin: 20px 0;
+		margin: 20px 2px; 
 		padding: 5px;
 		width: 99%;
 		img {
@@ -47,14 +28,15 @@
 		}
 		h3 {
 			font-size: $font-size-h4;
+			letter-spacing: $spacing-letter-h4;
 			
 			margin: 0;
 			text-transform: uppercase;
 			a {
-				color: #000;
+				color: $color-text;
 				text-decoration: none;
 				&:hover {
-					color: #c33;
+					color: $color-link;
 					transition: $transition-hover;
 				}
 			}
@@ -65,15 +47,21 @@
 	}
 }
 
+@media all and (min-width: $breakpoint-s) {
+	.latest {
+		&-card {
+			width: 48%;
+		}
+	}
+}
+
 @media all and (min-width: $breakpoint-m) {
 	.latest {
 		&-container {
 			max-width: $width-max-website;
 		}
 		&-card {
-			width: 33%;
+			width: 32%;
 		}
 	}
 }
-
-

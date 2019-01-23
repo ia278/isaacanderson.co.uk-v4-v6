@@ -1,0 +1,79 @@
+/* ======================================
+//  Footer styles
+// ====================================*/
+
+.footer {
+	@include flexbox(row wrap, center);
+	background: $color-bg-footer;
+	color: $color-text-alt;
+	font-family: $font-secondary;
+	font-weight: bold;
+	letter-spacing: $spacing-letter-h4;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 100%;
+	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
+	&-container {
+		@include flexbox(row wrap, space-around, $align-items: flex-end);
+    width: 98%;
+	}
+	&-form {
+		@include flexbox(column wrap, center);
+		margin-bottom: 30px;
+		max-width: $width-max-form-s;
+		padding: 15px 0 0;
+		width: 90%;
+		button {
+			background: $color-text-alt;
+			border: 1px solid $color-text-alt;
+			color: $color-bg-footer;		
+		}
+		input {			
+			margin-bottom: 25px;
+		}
+		textarea {
+			height: 280px;
+			margin-bottom: 25px;
+			resize: none;
+		}
+	}
+	&-links {
+		color: #fff;
+		font-weight: normal;
+		margin-bottom: 30px;
+		text-align: center;
+		width: 90%;
+		ul {
+      @include flexbox(row wrap, center);
+      list-style-type: none;
+      margin: 10px 0 5px;
+      padding: 0;
+      li {
+        font-size: $font-size-fa;
+        margin: 0 10px;
+        text-align: center;
+        width: 30px;
+        a {
+          color: $color-text-alt;
+          text-decoration: none;
+        }
+      }
+    }
+	}
+
+}
+
+@media all and (min-width: $breakpoint-m) {
+	.footer {
+		min-height: calc(100vh - #{$height-header-m});
+		&-container {
+			max-width: $width-max-website;
+		}
+		&-form {
+			order: 2;
+		}
+		&-links {
+			width: 280px;
+		}
+	}
+}

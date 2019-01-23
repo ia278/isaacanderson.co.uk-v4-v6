@@ -47,6 +47,19 @@ blockquote {
     width: 10%;
   }
 }
+button {
+	background: $color-text-alt;
+	border: 1px solid $color-text-alt;
+	color: $color-bg-footer;
+	// Constants
+	border-radius: 8px;
+	font: bold $font-size-h5 $font-secondary;
+	letter-spacing: $spacing-letter-h4;
+	padding: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
 canvas {
   display: block;
   height: 100%;
@@ -69,18 +82,44 @@ h2 {
 }
 h3 {
   font-size: $font-size-h3;
+	letter-spacing: $spacing-letter-h3;
+	
 }
 h4 {
   font-size: $font-size-h4;
+	letter-spacing: $spacing-letter-h4;
 }
 h5 {
   font-size: $font-size-h5;
 }
 h6 {
   font-size: $font-size-h6;
+	letter-spacing: $spacing-letter-h6;
 }
 iframe {
   text-align: center;
+}
+input, textarea {
+	background: transparent;
+	border: 1px solid $color-text-alt;
+	border-radius: 8px;
+	color: $color-text-alt;
+	padding: 8px;
+	text-align: left;
+	width: 100%;
+	&:focus {
+		box-shadow: 0 0 3px	2px #fff;
+		outline: none;
+	}
+}
+label {
+	color: $color-text-alt;
+	font-size: $font-size-h5;
+	letter-spacing: $spacing-letter-h4;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	width: 100%;
 }
 li {
   margin: 10px auto;

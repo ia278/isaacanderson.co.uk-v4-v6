@@ -9,13 +9,19 @@ TO DO:
 - maintenance page (get plugin)
 - npm and gulp for auto ES5/es6 and webkit 
 - Show links as visited when they have already been opened.
-- create contact form (zem_contact_reborn)
 - sort reader view (header appears before logo, quote author doesnt have spacing)
 - any changes to mobile header height needs to be reflected in min height error, archive)
 - redirect to section when clicking section in archive list
 - no target javascript for class .no-target
 
+
+
+
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon by changing colors
 - Add jQuery for search bar
 - 
+
+NOTES
+
+- Changing the height of the logo requires the variable to also be changed, as this will update margins and headers.

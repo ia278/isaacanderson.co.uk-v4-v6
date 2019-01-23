@@ -20,6 +20,11 @@
 		transition: $transition-hover;
 	}
 }
+.alignment-only {
+	display: inline-block;
+	margin: 0;
+	width: 32%;
+}
 .bold {
   font-weight: bold;
 }
@@ -27,15 +32,49 @@
 	background-color: $color-section;
 	font-size: $font-size-h6;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: $spacing-letter-h6;
 	margin-bottom: 5px;
-	padding: 6px;
+	padding: 7px;
 	text-transform: uppercase;
 	&:hover {
 		background-color: $color-bg-header;
 		color: $color-header;
 	}
 }
+.copyright {
+	font-size: $font-size-h6;
+	font-weight: bold;
+	letter-spacing: $spacing-letter-h6;
+	margin-bottom: 0;
+}
+.divider, .divider-light {
+	width: 98%;
+	overflow-x: hidden;
+	h2 {
+		display: inline-block;
+		font-size: $font-size-h3;
+		letter-spacing: $spacing-letter-h3;
+		padding-right: 30px;
+		position: relative;
+		text-transform: uppercase;
+		&::after {
+			@include centerY($width: $width-max-website);
+			background-color: #000;
+			content: "";
+			display: block;
+			height: 6px;
+			left: 100%;
+		}
+	}
+}
+.divider-light {
+	h2 {
+		&::after {
+			background-color: $color-text-alt;
+		}
+	}
+}
+
 .hide {
   display: none;
 }
