@@ -12,7 +12,7 @@
 		@include flexbox(row wrap, center);
     width: 95%;
 		h1 {
-			font-family: $font-tertiary;
+			font: bold $font-size-super $font-tertiary;
 			margin: 0;
 			width: 100%;
 		}

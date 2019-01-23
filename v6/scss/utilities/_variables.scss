@@ -42,13 +42,13 @@ $color-text-alt: #FFF;                                     // Text color (dark b
 $font-size-base: 20px;                                     // Base font size
 $font-size-contents: 1rem;                                 // Article contents list font size
 $font-size-fa: 1.1rem;                                     // Font Awesome font size
-$font-size-h1: 3rem;                                       // h1 font size
-$font-size-h2: 2.25rem;                                    // h2 font size
-$font-size-h3: 1.5rem;                                     // h3 font size
+$font-size-h1: 1.953rem;                                   // h1 font size
+$font-size-h2: 1.563rem;                                   // h2 font size
+$font-size-h3: 1.25rem;                                    // h3 font size
 $font-size-h4: 1rem;                                       // h4 font size
-$font-size-h5: 0.75rem;                                    // h5 font size
-$font-size-h6: 0.563rem;                                   // h6 font size
-$font-size-header: 16px;                                   // Header font size
+$font-size-h5: 0.75rem;                                     // h5 font size
+$font-size-h6: 0.6rem;                                    // h6 font size
+$font-size-super: 3rem;                                    // Super font size
 $font-primary: "Raleway", sans-serif;                      // Default page font
 $font-secondary: "Montserrat", sans-serif;                 // h1-h6 font
 $font-tertiary: "Josefin Sans", sans-serif;                // Hero font
@@ -56,8 +56,9 @@ $line-height: 1.5;                                         // Line height
 
 // Letter spacing
 
-$spacing-letter-h3: 4px;                                   // Letter spacing (h3 tags)
+$spacing-letter-h2: 4px;                                   // Letter spacing (h2 tags)
 $spacing-letter-h4: 3px;                                   // Letter spacing (h4 tags)
+$spacing-letter-h5: 3px;                                   // Letter spacing (h5 tags)
 $spacing-letter-h6: 2px;                                   // Letter spacing (h6 tags)
 
 // Scaling and transitions

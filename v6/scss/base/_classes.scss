@@ -46,14 +46,13 @@
 	font-weight: bold;
 	letter-spacing: $spacing-letter-h6;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 .divider, .divider-light {
 	width: 98%;
 	overflow-x: hidden;
 	h2 {
 		display: inline-block;
-		font-size: $font-size-h3;
-		letter-spacing: $spacing-letter-h3;
 		padding-right: 30px;
 		position: relative;
 		text-transform: uppercase;

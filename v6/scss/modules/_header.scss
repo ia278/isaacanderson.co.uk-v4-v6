@@ -5,9 +5,9 @@
 .header {
 	@include flexbox(row wrap, center);
 	background: $color-header;
-	font-family: $font-secondary;
-	font-size: $font-size-h5;
+	font: 700 $font-size-h5 $font-secondary;
 	left: 0;
+	letter-spacing: $spacing-letter-h5;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -37,9 +37,8 @@
 	&-links {
 		@include flexbox(column wrap, space-around);
 		background: $color-bg-header;
-		font-weight: 700;
 		height: $height-header-s;
-		letter-spacing: 3px;
+		text-transform: uppercase;
     width: 100%;
     ul {
       @include flexbox(row wrap, space-between);

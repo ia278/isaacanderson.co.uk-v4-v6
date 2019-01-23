@@ -8,7 +8,6 @@
 	color: $color-text-alt;
 	font-family: $font-secondary;
 	font-weight: bold;
-	letter-spacing: $spacing-letter-h4;
 	margin: 0 auto;
 	text-transform: uppercase;
 	width: 100%;
@@ -38,7 +37,7 @@
 		}
 	}
 	&-links {
-		color: #fff;
+		color: $color-text-alt;
 		font-weight: normal;
 		margin-bottom: 15px;
 		text-align: center;

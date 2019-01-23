@@ -150,7 +150,7 @@ a {
 blockquote {
   color: #C33;
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin: 15px auto; }
   blockquote span {
@@ -193,14 +193,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 1.953rem; }
 
 h2 {
-  font-size: 2.25rem; }
+  font-size: 1.563rem;
+  letter-spacing: 4px; }
 
 h3 {
-  font-size: 1.5rem;
-  letter-spacing: 4px; }
+  font-size: 1.25rem; }
 
 h4 {
   font-size: 1rem;
@@ -210,7 +210,7 @@ h5 {
   font-size: 0.75rem; }
 
 h6 {
-  font-size: 0.563rem;
+  font-size: 0.6rem;
   letter-spacing: 2px; }
 
 iframe {
@@ -278,7 +278,7 @@ ol, ul {
 
 .card-tag {
   background-color: #D3D3D3;
-  font-size: 0.563rem;
+  font-size: 0.6rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 5px;
@@ -289,18 +289,17 @@ ol, ul {
     color: #FFF; }
 
 .copyright {
-  font-size: 0.563rem;
+  font-size: 0.6rem;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-transform: uppercase; }
 
 .divider, .divider-light {
   width: 98%;
   overflow-x: hidden; }
   .divider h2, .divider-light h2 {
     display: inline-block;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
     padding-right: 30px;
     position: relative;
     text-transform: uppercase; }
@@ -471,9 +470,9 @@ ol, ul {
   align-content: center;
   align-items: center;
   background: #FFF;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
+  font: 700 0.75rem "Montserrat", sans-serif;
   left: 0;
+  letter-spacing: 3px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -510,9 +509,8 @@ ol, ul {
     align-content: center;
     align-items: center;
     background: #222;
-    font-weight: 700;
     height: 36px;
-    letter-spacing: 3px;
+    text-transform: uppercase;
     width: 100%; }
     .header-links ul {
       display: flex;
@@ -573,7 +571,7 @@ ol, ul {
         fill: #222; } }
 @media all and (max-width: 390px) {
   .header {
-    font-size: 0.563rem; } }
+    font-size: 0.6rem; } }
 /* ======================================
 //  Hero styles
 // ====================================*/
@@ -595,7 +593,7 @@ ol, ul {
     align-items: center;
     width: 95%; }
     .hero-container h1 {
-      font-family: "Josefin Sans", sans-serif;
+      font: bold 3rem "Josefin Sans", sans-serif;
       margin: 0;
       width: 100%; }
     .hero-container p {
@@ -678,7 +676,6 @@ ol, ul {
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  letter-spacing: 3px;
   margin: 0 auto;
   text-transform: uppercase;
   width: 100%;
@@ -711,7 +708,7 @@ ol, ul {
       margin-bottom: 25px;
       resize: none; }
   .footer-links {
-    color: #fff;
+    color: #FFF;
     font-weight: normal;
     margin-bottom: 15px;
     text-align: center;
