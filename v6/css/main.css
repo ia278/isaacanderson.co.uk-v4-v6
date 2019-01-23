@@ -713,7 +713,7 @@ ol, ul {
   .footer-links {
     color: #fff;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
     width: 90%; }
     .footer-links ul {
@@ -742,6 +742,7 @@ ol, ul {
     .footer-form {
       order: 2; }
     .footer-links {
+      margin-bottom: 30px;
       width: 280px; } }
 
 /*# sourceMappingURL=main.css.map */
