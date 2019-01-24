@@ -261,17 +261,6 @@ ol, ul {
   background-color: #C33;
   transition: 0.5s ease; }
 
-.alignment-only {
-  display: inline-block;
-  margin: 0;
-  width: 90%; }
-  @media all and (min-width: 550px) {
-    .alignment-only {
-      width: 48%; } }
-  @media all and (min-width: 768px) {
-    .alignment-only {
-      width: 32%; } }
-
 .bold {
   font-weight: bold; }
 
@@ -639,6 +628,101 @@ ol, ul {
     .hero-container {
       max-width: 1080px; } }
 /* ======================================
+//  Archive styles
+// ====================================*/
+.archive {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0; }
+  @media all and (min-width: 768px) {
+    .archive {
+      margin-top: 56px; } }
+  .archive a {
+    color: #000;
+    text-decoration: none; }
+  .archive .button, .archive .button-light, .archive .button-long, .archive .button-normal {
+    margin: 25px auto; }
+  .archive-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+  .archive-listing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+    padding: 15px 0;
+    width: 98%; }
+  .archive-card {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+    max-width: 450px;
+    width: 90%; }
+    .archive-card p {
+      font-size: 0.75rem; }
+    .archive-card-info {
+      padding-left: 10px;
+      width: calc(100% - 90px); }
+      .archive-card-info h3 {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        margin: 0;
+        padding: 1px 0;
+        text-transform: uppercase; }
+        .archive-card-info h3 a {
+          color: #000;
+          text-decoration: none; }
+          .archive-card-info h3 a:hover {
+            color: #C33;
+            transition: 0.5s ease; }
+    .archive-card-tags {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: flex-end;
+      width: 90px; }
+      .archive-card-tags a {
+        margin: 0; }
+      .archive-card-tags p {
+        color: #C33;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-align: right; }
+    .archive-card-align {
+      margin: 0; }
+  .archive-navigation {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+
+@media all and (min-width: 768px) {
+  .archive-container {
+    max-width: 1080px; }
+  .archive-card {
+    max-width: 450px;
+    width: 49%; }
+    .archive-card-info {
+      width: calc(100% - 100px); }
+    .archive-card-tags {
+      width: 100px; } }
+/* ======================================
 //  Error styles
 // ====================================*/
 .error {
@@ -824,6 +908,9 @@ ol, ul {
           transition: 0.5s ease; }
     .posts-card p {
       font-size: 0.75rem; }
+    .posts-card-align {
+      margin: 0;
+      padding: 0; }
   .posts-navigation {
     display: flex;
     flex-flow: column wrap;

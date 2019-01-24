@@ -1,0 +1,91 @@
+/* ======================================
+//  Archive styles
+// ====================================*/
+
+.archive {
+	@include flexbox(row wrap, center);
+	@include positioning(margin-top);
+	a {
+		color: $color-text;
+		text-decoration: none;
+	}
+	.button {
+		margin: 25px auto;
+	}
+	&-container {
+		@include flexbox(row wrap, center);
+    width: 98%;
+	}
+	&-listing {
+		@include flexbox(row wrap, space-around, $align-items: flex-start);
+		padding: 15px 0;
+		width: 98%;
+	}
+	&-card {
+		@include flexbox(row-reverse wrap, center, $align-items: flex-start);
+		margin: 10px 0;
+		max-width: $width-max-form-s;
+		width: $width-form-s;
+		p {
+			font-size: $font-size-h5;
+		}
+		&-info {
+			padding-left: 10px;
+			width: calc(100% - 90px);
+			h3 {
+				font-size: $font-size-h4;
+				letter-spacing: $spacing-letter-h4;
+				margin: 0;
+				padding: 1px 0;    // Equals height of h3 with grey section tag
+				text-transform: uppercase;
+				a {
+					color: $color-text;
+					text-decoration: none;
+					&:hover {
+						color: $color-link;
+						transition: $transition-hover;
+					}
+				}
+			}
+		}
+		&-tags {
+			@include flexbox(column wrap, space-between, $align-items: flex-end);
+			width: 90px;
+			a {
+				margin: 0;
+			}
+			p {
+				color: $color-link;
+				font-weight: bold;
+				margin-bottom: 0;
+				text-align: right;
+				
+			}
+		}
+		&-align {
+			margin: 0;
+		}
+	}
+	&-navigation {
+		@include flexbox(column wrap, center);
+		width: 98%;
+	}
+}
+
+@media all and (min-width: $breakpoint-m) {
+	.archive {
+		&-container {
+			max-width: $width-max-website;
+		}
+		&-card {
+			max-width: $width-max-form-s;
+			width: 49%;
+			&-info {
+				width: calc(100% - 100px);
+			}
+			&-tags {
+				width: 100px;
+			}
+		}
+	}
+}

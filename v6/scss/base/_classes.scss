@@ -20,17 +20,6 @@
 		transition: $transition-hover;
 	}
 }
-.alignment-only {
-	display: inline-block;
-	margin: 0;
-	width: $width-form-s;
-	@media all and (min-width: $breakpoint-s) {
-		width: $width-card-s;
-	}
-	@media all and (min-width: $breakpoint-m) {
-		width: $width-card-m;
-	}
-}
 .bold {
   font-weight: bold;
 }
