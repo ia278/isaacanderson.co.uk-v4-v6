@@ -402,6 +402,25 @@ ol, ul {
 .mini {
   font-size: 0.75rem; }
 
+.pagination, .see-more {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 98%; }
+  .pagination ul, .see-more ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 95%; }
+    .pagination ul li, .see-more ul li {
+      display: inline-block;
+      font-weight: bold; }
+  .pagination .current, .see-more .current {
+    width: calc(46px / 2); }
+
 .primary {
   font-family: "Raleway", sans-serif; }
 
@@ -911,13 +930,6 @@ ol, ul {
     .posts-card-align {
       margin: 0;
       padding: 0; }
-  .posts-navigation {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 98%; }
 
 @media all and (min-width: 550px) {
   .posts-card {

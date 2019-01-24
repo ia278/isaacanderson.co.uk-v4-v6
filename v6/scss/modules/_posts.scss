@@ -49,10 +49,6 @@
 			padding: 0;
 		}
 	}
-	&-navigation {
-		@include flexbox(column wrap, center);
-		width: 98%;
-	}
 }
 
 @media all and (min-width: $breakpoint-s) {

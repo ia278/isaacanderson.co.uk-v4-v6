@@ -184,6 +184,24 @@
 .mini {
   font-size: $font-size-h5;
 }
+.pagination, .see-more {
+	@include flexbox(column wrap, center);
+	width: 98%;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 95%;
+		li {
+			display: inline-block;
+			font-weight: bold;
+		}
+	}
+	.current {
+		width: calc(#{$height-input} / 2);
+	}
+}
 .primary {
   font-family: $font-primary;
 }
