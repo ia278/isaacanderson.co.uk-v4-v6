@@ -36,12 +36,13 @@
 }
 .button {
 	border-radius: 8px;
+	display: inline-block;
 	font: bold $font-size-h5 $font-secondary;
 	letter-spacing: $spacing-letter-h4;
-	padding: 8px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
+	padding: calc((#{$height-input} - 1rem) / 2) 5px;    // Fix for vertical align issue with links. 1rem is default page font-size.
 	&-light {
 		@extend .button;
 		background: $color-text-alt;
@@ -64,8 +65,6 @@
 		}
 	}
 	&-square {
-		height: $height-input;
-		padding: 10px;
 		width: $height-input;
 	}
 }

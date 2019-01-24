@@ -277,12 +277,13 @@ ol, ul {
 
 .button, .button-light, .button-long, .button-normal {
   border-radius: 8px;
+  display: inline-block;
   font: bold 0.75rem "Montserrat", sans-serif;
   letter-spacing: 3px;
-  padding: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%; }
+  width: 100%;
+  padding: calc((46px - 1rem) / 2) 5px; }
   .button-light {
     background: #FFF;
     border: 1px solid #FFF;
@@ -298,9 +299,7 @@ ol, ul {
       background: #000;
       color: #FFF; }
   .button-square {
-    height: 45px;
-    padding: 10px;
-    width: 45px; }
+    width: 46px; }
 
 .card-tag {
   background-color: #D3D3D3;
@@ -653,7 +652,9 @@ ol, ul {
   margin: calc(36px + 40px) auto 0;
   background: #313439;
   color: #FFF;
-  text-align: center; }
+  text-align: center;
+  min-height: calc(100vh - 36px - 40px);
+  height: 90vh; }
   @media all and (min-width: 768px) {
     .error {
       margin-top: 56px; } }
@@ -688,12 +689,14 @@ ol, ul {
     padding: 15px 0;
     width: 95%; }
     .error-search input {
-      height: 45px;
+      height: 46px;
       margin-right: 15px;
       text-align: center;
       width: calc(100% - 80px); }
     .error-search button {
-      padding: 12px; }
+      padding: calc((46px - 1rem) / 2); }
+      .error-search button svg {
+        height: 20px; }
 
 @media all and (min-width: 768px) {
   .error {
@@ -876,9 +879,9 @@ ol, ul {
       background: #FFF;
       border: 1px solid #FFF;
       color: #313439;
-      height: 45px; }
+      height: 46px; }
     .footer-form input {
-      height: 45px;
+      height: 46px;
       margin-bottom: 25px; }
     .footer-form textarea {
       height: 250px;
@@ -900,7 +903,7 @@ ol, ul {
       margin: 10px 0 5px;
       padding: 0; }
       .footer-links ul li {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin: 0 10px;
         text-align: center;
         width: 30px; }

@@ -8,7 +8,8 @@
 	background: $color-bg-footer;
 	color: $color-text-alt;
 	text-align: center;
-//	height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
+	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});     
+	height: 90vh;   // Needed to solve IE11 min-height container centering bug.
 	&-container {
 		@include flexbox(row wrap, center);
     width: 95%;
@@ -42,7 +43,10 @@
 			width: calc(100% - 80px);
 		}
 		button {
-			padding: 12px;
+			padding: calc((#{$height-input} - 1rem) / 2);    // Fix for vertical align issue with links. 1rem is default page font-size.
+			svg {
+				height: 20px;
+			}
 		}
 	}
 }
