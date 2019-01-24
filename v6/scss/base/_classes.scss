@@ -88,6 +88,9 @@
 		padding-right: 30px;
 		position: relative;
 		text-transform: uppercase;
+		span {
+			color: darken($color-section, 50%);
+		}
 		&::after {
 			@include centerY($width: $width-max-website);
 			background-color: #000;

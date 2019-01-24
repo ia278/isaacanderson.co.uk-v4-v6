@@ -319,6 +319,8 @@ ol, ul {
     padding-right: 30px;
     position: relative;
     text-transform: uppercase; }
+    .divider h1 span, .divider h2 span, .divider-light h1 span, .divider-light h2 span {
+      color: #545454; }
     .divider h1::after, .divider h2::after, .divider-light h1::after, .divider-light h2::after {
       position: absolute;
       top: 50%;
@@ -939,6 +941,92 @@ ol, ul {
     max-width: 1080px; }
   .posts-card {
     width: 32%; } }
+/* ======================================
+//  List styles
+// ====================================*/
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0; }
+  @media all and (min-width: 768px) {
+    .list {
+      margin-top: 56px; } }
+  .list a {
+    color: #000;
+    text-decoration: none; }
+  .list .button, .list .button-light, .list .button-long, .list .button-normal {
+    margin: 25px auto; }
+  .list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+  .list-listing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+    padding: 15px 0;
+    width: 98%; }
+  .list-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin: 20px 2px;
+    padding: 5px;
+    text-align: left;
+    width: 90%; }
+    .list-card img {
+      width: 100%; }
+    .list-card h3 {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      margin: 0;
+      text-transform: uppercase; }
+      .list-card h3 a {
+        color: #000;
+        text-decoration: none; }
+        .list-card h3 a:hover {
+          color: #C33;
+          transition: 0.5s ease; }
+    .list-card p {
+      font-size: 0.75rem;
+      margin: 15px 0; }
+    .list-card-align {
+      margin: 0;
+      padding: 0; }
+  .list-navigation {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+
+@media all and (min-width: 550px) {
+  .list-container {
+    max-width: 1080px; }
+  .list-card {
+    max-width: 600px;
+    width: 95%; }
+    .list-card a {
+      max-width: 250px;
+      width: 40%; }
+      .list-card a img {
+        vertical-align: middle; }
+    .list-card-info {
+      padding-left: 15px;
+      width: calc(99% - 250px); } }
 /* ======================================
 //  Footer styles
 // ====================================*/

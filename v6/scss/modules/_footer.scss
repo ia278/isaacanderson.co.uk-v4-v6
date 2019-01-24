@@ -6,7 +6,7 @@
 	@include flexbox(row wrap, center);
 	@include positioning;
 	background: $color-bg-footer;
-	color: $color-text-alt;
+	color: $color-footer;
 	font-family: $font-secondary;
 	font-weight: bold;
 	text-transform: uppercase;

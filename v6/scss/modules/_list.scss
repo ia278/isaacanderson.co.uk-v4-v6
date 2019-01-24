@@ -1,0 +1,83 @@
+/* ======================================
+//  List styles
+// ====================================*/
+
+.list {
+	@include flexbox(row wrap, center);
+	@include positioning(margin-top);
+	a {
+		color: $color-text;
+		text-decoration: none;
+	}
+	.button {
+		margin: 25px auto;
+	}
+	&-container {
+		@include flexbox(row wrap, center);
+    width: 98%;
+	}
+	&-listing {
+		@include flexbox(row wrap, space-around, $align-items: flex-start);
+		padding: 15px 0;
+		width: 98%;
+	}
+	&-card {
+		@include flexbox(row wrap, center, $align-items: flex-start);
+		margin: 20px 2px; 
+		padding: 5px;
+		text-align: left;
+		width: $width-form-s;
+		img {
+			width: 100%;
+		}
+		h3 {
+			font-size: $font-size-h4;
+			letter-spacing: $spacing-letter-h4;
+			margin: 0;
+			text-transform: uppercase;
+			a {
+				color: $color-text;
+				text-decoration: none;
+				&:hover {
+					color: $color-link;
+					transition: $transition-hover;
+				}
+			}
+		}
+		p {
+			font-size: $font-size-h5;
+			margin: 15px 0;
+		}
+		&-align {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&-navigation {
+		@include flexbox(column wrap, center);
+		width: 98%;
+	}
+}
+
+@media all and (min-width: $breakpoint-s) {
+	.list {
+		&-container {
+			max-width: $width-max-website;
+		}
+		&-card {
+			max-width: $width-max-card-list;
+			width: 95%;
+			a {
+				max-width: $width-max-image-list; 
+				width: 40%;
+				img {
+					vertical-align: middle;
+				}
+			}
+			&-info {
+				padding-left: 15px;
+				width: calc(99% - #{$width-max-image-list});
+			}
+		}
+	}
+}
