@@ -13,9 +13,6 @@ Footer (includes contact form)
 More (related/latest articles)
 Hero
 
-font-primary: monseraat?
-font-secondary:    
-
 
 V5 - REDESIGNED HOME, CONTENTS LIST IN ARTICLES, automatic scrolling, header (new one was v5! xD)
 

@@ -1,26 +1,17 @@
 TO DO:
 
-- insert class="mini" into list-card items automatically
-- restructure git profile so all versions of the site are in one repo
-- project forms should have dynamic tags (changing excerpt info in article should change info on homepage)
-- JS to automatically insert classes on excerpt ("mini" for related articles, "bold secondary" for projects on homepage)
-- buttons should stay color when clicked (active)
-- redesign image section (images should always be 16 x 9)
-- maintenance page (get plugin)
-- npm and gulp for auto ES5/es6 and webkit 
-- Show links as visited when they have already been opened.
-- sort reader view (header appears before logo, quote author doesnt have spacing)
-- any changes to mobile header height needs to be reflected in min height error, archive)
-- redirect to section when clicking section in archive list
-- no target javascript for class .no-target
-
-
-
-
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon by changing colors
 - Add jQuery for search bar
 - Make form accessible (aria-labels, fieldsets etc.)
+- Add bottom border to search results, to seperate them slightly
+- Sort reader view (header appears before logo, quote author doesnt have spacing)
+- Show links as visited when they have already been opened.
+- buttons should stay color when clicked (active)
+- no target javascript for class .no-target
+- restructure git profile so all versions of the site are in one repo
+- maintenance page (get plugin)
+- npm and gulp for auto ES5/es6 and webkit 
 
 NOTES
 

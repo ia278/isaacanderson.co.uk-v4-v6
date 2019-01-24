@@ -355,6 +355,7 @@ ol, ul {
   fill: #C33;
   margin: 20px auto;
   max-width: 550px;
+  text-align: center;
   width: 250px; }
   .icons-div a {
     text-decoration: none; }
@@ -380,26 +381,6 @@ ol, ul {
 
 .italic {
   font-style: italic; }
-
-.list-card {
-  display: inline-block;
-  margin: 20px auto;
-  max-width: 550px;
-  vertical-align: top;
-  width: 100%; }
-  .list-card img {
-    overflow: hidden;
-    width: 100%; }
-  .list-card h4 {
-    margin: 10px auto;
-    text-align: center; }
-  .list-card p, .list-card ol, .list-card ul, .list-card .mini {
-    margin: 10px auto 0;
-    text-align: justify; }
-  @media all and (min-width: 768px) {
-    .list-card {
-      padding: 0 10px;
-      width: 350px; } }
 
 .mini {
   font-size: 0.75rem; }
@@ -649,6 +630,100 @@ ol, ul {
     .hero-container {
       max-width: 1080px; } }
 /* ======================================
+//  Article styles
+// ====================================*/
+.article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0;
+  padding: 0;
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    .article {
+      margin-top: 56px; } }
+  .article figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+    .article figure img {
+      width: 100%; }
+  .article blockquote {
+    margin: 20px auto;
+    max-width: 550px;
+    text-align: center; }
+  .article li {
+    padding: 0 10px; }
+  .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    letter-spacing: 0; }
+  .article ol, .article ul {
+    max-width: 550px;
+    text-align: justify; }
+  .article p {
+    margin: 30px auto;
+    max-width: 550px;
+    text-align: justify; }
+  .article-card {
+    display: inline-block;
+    margin: 20px auto;
+    max-width: 550px;
+    vertical-align: top;
+    width: 100%; }
+    .article-card img {
+      overflow: hidden;
+      width: 100%; }
+    .article-card h4 {
+      margin: 10px auto;
+      text-align: center; }
+    .article-card p, .article-card ol, .article-card ul, .article-card .mini {
+      margin: 10px auto 0;
+      text-align: justify; }
+    @media all and (min-width: 768px) {
+      .article-card {
+        padding: 0 10px;
+        width: 350px; } }
+  .article-contents {
+    padding: 0 10px;
+    width: 98%; }
+  .article-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: calc(100vh - 56px);
+    max-width: 400px;
+    position: sticky;
+    top: 56px;
+    width: calc(100% - 1080px); }
+    .article-nav div {
+      font-family: "Montserrat", sans-serif; }
+      .article-nav div ol {
+        padding-left: 35px;
+        margin: 0;
+        text-align: left; }
+
+@media all and (min-width: 768px) {
+  .article blockquote, .article p, .article ol, .article ul {
+    max-width: 630px; }
+  .article-contents {
+    max-width: 1080px; } }
+@media all and (max-width: 1330px) {
+  .article-nav {
+    display: none; } }
+/* ======================================
 //  Archive styles
 // ====================================*/
 .archive {
@@ -808,6 +883,62 @@ ol, ul {
     min-height: calc(100vh - 56px); }
     .error-container {
       max-width: 1080px; } }
+/* ======================================
+//  Page styles
+// ====================================*/
+.page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0;
+  padding: 0; }
+  @media all and (min-width: 768px) {
+    .page {
+      margin-top: 56px; } }
+  .page figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+    .page figure img {
+      width: 100%; }
+  .page blockquote {
+    margin: 20px auto;
+    max-width: 550px;
+    text-align: center; }
+  .page li {
+    padding: 0 10px; }
+  .page ol, .page ul {
+    max-width: 550px;
+    text-align: justify; }
+  .page p {
+    margin: 30px auto;
+    max-width: 550px;
+    text-align: justify; }
+  .page-contents {
+    padding: 0 10px;
+    width: 98%; }
+    .page-contents h1, .page-contents h2 {
+      font-size: 1.563rem;
+      letter-spacing: 4px;
+      text-align: left;
+      text-transform: uppercase; }
+
+@media all and (min-width: 768px) {
+  .page blockquote, .page p, .page ol, .page ul {
+    max-width: 630px; }
+  .page-contents {
+    max-width: 1080px; } }
 /* ======================================
 //  Featured styles
 // ====================================*/

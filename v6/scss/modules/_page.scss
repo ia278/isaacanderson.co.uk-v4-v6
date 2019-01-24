@@ -1,0 +1,58 @@
+/* ======================================
+//  Page styles
+// ====================================*/
+
+.page {
+  @include flexbox(row wrap, center, flex, $align-items: flex-start);
+	@include positioning(margin-top);
+	padding: 0;
+  figure {
+    @include flexbox(row wrap, center);
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;    
+    img {
+      width: 100%;
+    }
+  }
+  blockquote {
+    margin: 20px auto;
+    max-width: $width-max-p-s;
+    text-align: center;
+  }
+  li {
+    padding: 0 10px;
+  }
+  ol, ul {
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+  p {
+    margin: 30px auto;
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+	&-contents {
+    padding: 0 10px;
+    width: 98%;
+		h1, h2 {
+			font-size: $font-size-h2;
+			letter-spacing: $spacing-letter-h2;
+			text-align: left;
+			text-transform: uppercase;
+		}
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .page {
+    blockquote, p, ol, ul {
+      max-width: $width-max-p-m;
+    }
+		&-contents {
+      max-width: $width-max-website;
+    }
+  }
+}

@@ -127,6 +127,7 @@
   fill: $color-link;
   margin: 20px auto;
   max-width: $width-max-p-s;
+	text-align: center;
   width: $width-iconsdiv;
   a {
     text-decoration: none;
@@ -161,29 +162,7 @@
 .italic {
   font-style: italic;
 }   
-.list-card {
-  display: inline-block;
-  margin: 20px auto;
-  max-width: $width-max-p-s;
-  vertical-align: top;
-  width: 100%;
-  img {
-    overflow: hidden;
-    width: 100%;
-  }
-  h4 {
-    margin: 10px auto;
-    text-align: center;
-  }
-  p, ol, ul, .mini {
-    margin: 10px auto 0;
-    text-align: justify;
-  }
-  @media all and (min-width: $breakpoint-m) {
-    padding: 0 10px;
-    width: 350px;
-  }
-}
+
 .mini {
   font-size: $font-size-h5;
 }

@@ -2,7 +2,6 @@
 @import "utilities/variables",
         "utilities/mixins";
 
-
 // Base styles
 @import "base/normalize",
         "base/base",
@@ -11,8 +10,10 @@
 // Module styles
 @import "modules/header",
 				"modules/hero",
+				"modules/article",
 				"modules/archive",
 				"modules/error",
+				"modules/page",
 				"modules/featured",
 				"modules/posts",
 				"modules/list",

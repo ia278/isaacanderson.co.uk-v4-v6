@@ -1,13 +1,11 @@
 // Constants
-const articleTOC = document.querySelector(".article-toc");
+const articleNav = document.querySelector(".article-nav");
 const br = document.querySelectorAll(".related-contents br");
 const h2InArticle = document.querySelectorAll(".article h2");
 const linksInArticle = document.querySelectorAll(".article-contents a");
 
 
 // Functions
-
-
 const addTargetAttribute = () => {
 	if (linksInArticle.length === 0) {
 		return;
@@ -40,7 +38,7 @@ const createHeaderList = () => {
 	// Create div, place ol in div
 	const div = document.createElement("DIV");
 	div.appendChild(ol);
-	articleTOC.appendChild(div);
+	articleNav.appendChild(div);
 };
 const removeBr = () => {
 	if (br.length === 0) {

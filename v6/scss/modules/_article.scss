@@ -1,0 +1,102 @@
+/* ======================================
+//  Article styles
+// ====================================*/
+
+.article {
+  @include flexbox(row wrap, center, flex, $align-items: flex-start);
+	@include positioning(margin-top);
+	padding: 0;
+  text-align: center;
+  figure {
+    @include flexbox(row wrap, center);
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;    
+    img {
+      width: 100%;
+    }
+  }
+  blockquote {
+    margin: 20px auto;
+    max-width: $width-max-p-s;
+    text-align: center;
+  }
+  li {
+    padding: 0 10px;
+  }
+	h1, h2, h3, h4, h5, h6 {
+		letter-spacing: 0;
+	}
+  ol, ul {
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+  p {
+    margin: 30px auto;
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+	&-card {
+		display: inline-block;
+		margin: 20px auto;
+		max-width: $width-max-p-s;
+		vertical-align: top;
+		width: 100%;
+		img {
+			overflow: hidden;
+			width: 100%;
+		}
+		h4 {
+			margin: 10px auto;
+			text-align: center;
+		}
+		p, ol, ul, .mini {
+			margin: 10px auto 0;
+			text-align: justify;
+		}
+		@media all and (min-width: $breakpoint-m) {
+			padding: 0 10px;
+			width: 350px;
+		}
+	}
+	&-contents {
+    padding: 0 10px;
+    width: 98%;
+  }
+	&-nav {
+		@include flexbox;
+		font-size: $font-size-contents;
+		height: calc(100vh - #{$height-header-m});
+		max-width: 400px;
+		position: sticky;
+		top: $height-header-m;
+		width: calc(100% - 1080px);
+		div {
+			font-family: $font-secondary;
+			ol {
+				padding-left: 35px;
+				margin: 0;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .article {
+    blockquote, p, ol, ul {
+      max-width: $width-max-p-m;
+    }
+		&-contents {
+      max-width: $width-max-website;
+    }
+  }
+}
+
+@media all and (max-width: $breakpoint-l) {
+  .article-nav {
+		display: none;
+  }
+}
