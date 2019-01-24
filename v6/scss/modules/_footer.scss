@@ -24,13 +24,15 @@
 		button {
 			background: $color-text-alt;
 			border: 1px solid $color-text-alt;
-			color: $color-bg-footer;		
+			color: $color-bg-footer;
+			height: $height-input;
 		}
-		input {			
+		input {
+			height: $height-input;
 			margin-bottom: 25px;
 		}
 		textarea {
-			height: 280px;
+			height: 250px;
 			margin-bottom: 25px;
 			resize: none;
 		}

@@ -20,7 +20,7 @@ TO DO:
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon by changing colors
 - Add jQuery for search bar
-- 
+- Make form accessible (aria-labels, fieldsets etc.)
 
 NOTES
 

@@ -1,0 +1,57 @@
+/* ======================================
+//  Error styles
+// ====================================*/
+
+.error {
+	@include flexbox(row wrap, center);
+	@include positioning(margin-top);
+	background: $color-bg-footer;
+	color: $color-text-alt;
+	text-align: center;
+//	height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
+	&-container {
+		@include flexbox(row wrap, center);
+    width: 95%;
+		h1 {
+			font: bold $font-size-super $font-tertiary;
+			margin: 0;
+			padding: 15px 0;
+			width: 100%;
+		}
+		p {
+			margin: 0;
+			padding: 15px 0;
+			width: 95%;
+		}
+		ul {
+			list-style-position: inside;
+			margin: 0;
+			padding: 15px 0;
+			width: 95%;
+		}
+	}
+	&-search {
+		@include flexbox(row wrap, center);
+		max-width: $width-max-search;
+		padding: 15px 0;
+		width: 95%;
+		input {
+			height: $height-input;
+			margin-right: 15px;
+			text-align: center;
+			width: calc(100% - 80px);
+		}
+		button {
+			padding: 12px;
+		}
+	}
+}
+
+@media all and (min-width: $breakpoint-m) {
+	.error {
+		min-height: calc(100vh - #{$height-header-m});
+		&-container {
+			max-width: $width-max-website;
+		}
+	}
+}

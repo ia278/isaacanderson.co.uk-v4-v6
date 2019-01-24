@@ -60,11 +60,14 @@
 		color: $color-bg-footer;
 		&:hover {
 			background: $color-text;
-			color: invert($color-bg-footer);
+			color: $color-text-alt;
 		}
 	}
-	&-short {}
-	&-square {}
+	&-square {
+		height: $height-input;
+		padding: 10px;
+		width: $height-input;
+	}
 }
 
 .card-tag {

@@ -296,7 +296,11 @@ ol, ul {
     color: #313439; }
     .button-normal:hover {
       background: #000;
-      color: #cecbc6; }
+      color: #FFF; }
+  .button-square {
+    height: 45px;
+    padding: 10px;
+    width: 45px; }
 
 .card-tag {
   background-color: #D3D3D3;
@@ -623,15 +627,78 @@ ol, ul {
     .hero-container h1 {
       font: bold 3rem "Josefin Sans", sans-serif;
       margin: 0;
+      padding: 15px 0;
       width: 100%; }
     .hero-container p {
-      margin-bottom: 0;
+      margin: 0;
+      padding: 15px 0;
       width: 90%; }
 
 @media all and (min-width: 768px) {
   .hero {
     min-height: calc(100vh - 56px); }
     .hero-container {
+      max-width: 1080px; } }
+/* ======================================
+//  Error styles
+// ====================================*/
+.error {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: calc(36px + 40px) auto 0;
+  background: #313439;
+  color: #FFF;
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    .error {
+      margin-top: 56px; } }
+  .error-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 95%; }
+    .error-container h1 {
+      font: bold 3rem "Josefin Sans", sans-serif;
+      margin: 0;
+      padding: 15px 0;
+      width: 100%; }
+    .error-container p {
+      margin: 0;
+      padding: 15px 0;
+      width: 95%; }
+    .error-container ul {
+      list-style-position: inside;
+      margin: 0;
+      padding: 15px 0;
+      width: 95%; }
+  .error-search {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 15px 0;
+    width: 95%; }
+    .error-search input {
+      height: 45px;
+      margin-right: 15px;
+      text-align: center;
+      width: calc(100% - 80px); }
+    .error-search button {
+      padding: 12px; }
+
+@media all and (min-width: 768px) {
+  .error {
+    min-height: calc(100vh - 56px); }
+    .error-container {
       max-width: 1080px; } }
 /* ======================================
 //  Featured styles
@@ -808,11 +875,13 @@ ol, ul {
     .footer-form button {
       background: #FFF;
       border: 1px solid #FFF;
-      color: #313439; }
+      color: #313439;
+      height: 45px; }
     .footer-form input {
+      height: 45px;
       margin-bottom: 25px; }
     .footer-form textarea {
-      height: 280px;
+      height: 250px;
       margin-bottom: 25px;
       resize: none; }
   .footer-links {
