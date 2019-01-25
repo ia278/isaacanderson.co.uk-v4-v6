@@ -884,9 +884,9 @@ ol, ul {
     .error-container {
       max-width: 1080px; } }
 /* ======================================
-//  Page styles
+//  Single page styles
 // ====================================*/
-.page {
+.single {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -897,9 +897,9 @@ ol, ul {
   margin: calc(36px + 40px) auto 0;
   padding: 0; }
   @media all and (min-width: 768px) {
-    .page {
+    .single {
       margin-top: 56px; } }
-  .page figure {
+  .single figure {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -910,34 +910,34 @@ ol, ul {
     overflow: hidden;
     position: relative;
     width: 100%; }
-    .page figure img {
+    .single figure img {
       width: 100%; }
-  .page blockquote {
+  .single blockquote {
     margin: 20px auto;
     max-width: 550px;
     text-align: center; }
-  .page li {
+  .single li {
     padding: 0 10px; }
-  .page ol, .page ul {
+  .single ol, .single ul {
     max-width: 550px;
     text-align: justify; }
-  .page p {
+  .single p {
     margin: 30px auto;
     max-width: 550px;
     text-align: justify; }
-  .page-contents {
+  .single-contents {
     padding: 0 10px;
     width: 98%; }
-    .page-contents h1, .page-contents h2 {
+    .single-contents h1, .single-contents h2 {
       font-size: 1.563rem;
       letter-spacing: 4px;
       text-align: left;
       text-transform: uppercase; }
 
 @media all and (min-width: 768px) {
-  .page blockquote, .page p, .page ol, .page ul {
+  .single blockquote, .single p, .single ol, .single ul {
     max-width: 630px; }
-  .page-contents {
+  .single-contents {
     max-width: 1080px; } }
 /* ======================================
 //  Featured styles
