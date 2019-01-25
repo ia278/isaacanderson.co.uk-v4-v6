@@ -15,18 +15,23 @@ Posts       (used for work, thoughts, testing)
 Single      (used for about)
 
 
-Each of these page templates is made up of several modules. These are;
+Each of these page templates is made up of several replaceable modules. These are;
 
-Article     (code for article content)
+
 Error       (code for error hero)
 Footer      (code for footer)
 Head        (code for head)
 Header      (code for header)
 Hero        (code for hompeage hero)
-Single      (code for single page content)
 
 
-Four modules display article cards in different ways. These are;
+Two modules act as placeholders for CMS generated content. These are;
+
+Article     (placeholder for article content)
+Single      (placeholder for single page content)
+
+
+Article cards can be displayed in four different ways. The modules for these are;
 
 Archive     (text only)
 Featured    (large tiles, no description)
