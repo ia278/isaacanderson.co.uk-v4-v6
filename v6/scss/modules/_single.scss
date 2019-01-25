@@ -1,8 +1,8 @@
 /* ======================================
-//  Page styles
+//  Single page styles
 // ====================================*/
 
-.page {
+.single {
   @include flexbox(row wrap, center, flex, $align-items: flex-start);
 	@include positioning(margin-top);
 	padding: 0;
@@ -47,7 +47,7 @@
 }
 
 @media all and (min-width: $breakpoint-m) {
-  .page {
+  .single {
     blockquote, p, ol, ul {
       max-width: $width-max-p-m;
     }
