@@ -42,9 +42,8 @@ Posts       (grid view)
 These should be used in different situations, with different design patterns.
 
 Archive   - general archive pages, pagination
-Featured  - index and post pages, max of 3 displayed
 List      - search results & section archives, pagination 
-Posts     - Any other situation, 'see more' button
+Posts     - Index and post pages, 'see more' button
 
 
 ----------------------------------------
