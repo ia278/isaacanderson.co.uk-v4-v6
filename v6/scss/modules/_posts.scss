@@ -29,17 +29,15 @@
 			width: 100%;
 		}
 		h3 {
+			color: $color-text;
 			font-size: $font-size-h4;
 			letter-spacing: $spacing-letter-h4;
 			margin: 0;
 			text-transform: uppercase;
-			a {
-				color: $color-text;
-				text-decoration: none;
-				&:hover {
-					color: $color-link;
-					transition: $transition-hover;
-				}
+			text-decoration: none;
+			&:hover {
+				color: $color-link;
+				transition: $transition-hover;
 			}
 		}
 		p {
