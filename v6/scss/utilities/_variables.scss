@@ -57,9 +57,9 @@ $spacing-letter-h6: 2px;                                   // Letter spacing (h6
 
 // Scaling and transitions
 
-$scale-hover-project: scale(1.1);                          // Hover scaling (projects only)
+$scale-hover-card: scale(1.05);                             // Hover scaling (cards only)
 $transition-hover: 0.5s ease;                              // Hover transition
-$transition-hover-project: all .3s ease-in-out;            // Hover transition (projects only)
+$transition-hover-card: all .3s ease-in-out;               // Hover transition (cards only)
 $transition-scroll: top 0.5s ease;                         // Hyperlink scroll transition
 
 

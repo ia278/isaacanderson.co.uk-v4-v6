@@ -292,6 +292,7 @@ ol, ul {
 
 .card-tag {
   background-color: #D3D3D3;
+  display: inline-block;
   font-size: 0.6rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -1042,6 +1043,7 @@ ol, ul {
     align-items: flex-start;
     width: 98%; }
   .posts-card {
+    display: block;
     margin: 20px 2px;
     padding: 5px;
     width: 90%; }
@@ -1071,7 +1073,10 @@ ol, ul {
   .posts-container {
     max-width: 1080px; }
   .posts-card {
-    width: 32%; } }
+    width: 32%; }
+    .posts-card:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.05); } }
 /* ======================================
 //  List styles
 // ====================================*/

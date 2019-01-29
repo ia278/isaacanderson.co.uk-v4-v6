@@ -21,6 +21,7 @@
 		width: 98%;
 	}
 	&-card {
+		display: block;
 		margin: 20px 2px; 
 		padding: 5px;
 		width: $width-form-s;
@@ -66,6 +67,10 @@
 		}
 		&-card {
 			width: 32%;
+			&:hover {
+        transition: $transition-hover-card;
+        transform: $scale-hover-card;
+      }
 		}
 	}
 }
