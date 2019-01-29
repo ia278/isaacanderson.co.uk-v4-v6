@@ -3,7 +3,6 @@ TO DO:
 ALL IN TEXTPATTERN 4.7.2
 
 - design form error states
-- Insert alignment div with javascript, not pure html
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon (by changing fill color)
 - Add jQuery for search bar
