@@ -181,9 +181,51 @@
 			font-weight: bold;
 		}
 	}
-	.current {
+  .active {
+    background: $color-text;
+		color: $color-text-alt;
+  }
+	.ellipsis {
 		width: calc(#{$height-input} / 2);
 	}
+}
+.posts-card {
+  display: block;
+  margin: 20px 2px; 
+  padding: 5px;
+  width: $width-form-s;
+  img {
+    width: 100%;
+  }
+  h3 {
+    color: $color-text;
+    font-size: $font-size-h4;
+    letter-spacing: $spacing-letter-h4;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: $color-link;
+      transition: $transition-hover;
+    }
+  }
+  p {
+    font-size: $font-size-h5;
+  }
+  &-align {
+    margin: 0;
+    padding: 0;
+  }
+  @media all and (min-width: $breakpoint-s) {
+    width: 48%;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    width: 32%;
+    &:hover {
+      transition: $transition-hover-card;
+      transform: $scale-hover-card;
+    }
+  }
 }
 .primary {
   font-family: $font-primary;

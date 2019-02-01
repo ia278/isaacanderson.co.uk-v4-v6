@@ -2,7 +2,9 @@ TO DO:
 
 ALL IN TEXTPATTERN 4.7.2
 
+- change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
 - design form error states
+- introduce tagging system for articles (tru_tags)
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon (by changing fill color)
 - Add jQuery for search bar

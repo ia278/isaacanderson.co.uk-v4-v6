@@ -3,6 +3,7 @@ const archiveCard = document.querySelectorAll(".archive-listing .archive-card");
 const articleNav = document.querySelector(".article-nav");
 const br = document.querySelectorAll(".related-contents br");
 const h2InArticle = document.querySelectorAll(".article h2");
+const landingCard = document.querySelectorAll(".landing-listing .posts-card");
 const linksInArticle = document.querySelectorAll(".article-contents a");
 const postsCard = document.querySelectorAll(".posts-listing .posts-card");
 
@@ -17,6 +18,23 @@ const addArchiveAlignmentCard = () => {
 	div.setAttribute("class", `archive-card archive-card-align`);
 	const lastCard = archiveCard[archiveCard.length - 1];
 	lastCard.parentNode.insertBefore(div, lastCard.nextSibling);
+};
+const addLandingAlignmentCard = () => {
+	if (landingCard.length === 0) {
+		return;
+	}
+	// Attach first alignment div
+	const div = document.createElement("DIV");
+	div.setAttribute("class", `posts-card posts-card-align`);
+	const lastCard = landingCard[landingCard.length - 1];
+	lastCard.parentNode.insertBefore(div, lastCard.nextSibling);
+	
+	// Attach second alignment div
+	const div2 = document.createElement("DIV");
+	div2.setAttribute("class", `posts-card posts-card-align`);
+	const updatedLandingCard = document.querySelectorAll(".landing-listing .posts-card");
+	const updatedLastCard = updatedLandingCard[updatedLandingCard.length - 1];
+	updatedLastCard.parentNode.insertBefore(div2, updatedLastCard.nextSibling);
 };
 const addPostAlignmentCard = () => {
 	if (postsCard.length === 0) {
@@ -79,6 +97,7 @@ const removeBr = () => {
 
 // Invoke functions
 addArchiveAlignmentCard();
+addLandingAlignmentCard();
 addPostAlignmentCard();
 addTargetAttribute();
 createHeaderList();

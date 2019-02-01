@@ -4,14 +4,15 @@ The below are general notes and guidelines used for www.isaacanderson.co.uk.
 PAGES & MODULES
 ----------------------------------------
 
-Seven page templates have been created (available at www.ia278.github.io/v6);
+Eight page templates have been created (available at www.ia278.github.io/v6);
 
 Archive     (used for general archives)
 Article     (used for articles)
 Error       (used for 404)
 Index       (used for home)
-List        (used for search results, section archives)
-Posts       (used for work, thoughts, testing)
+Landing     (used for work, thoughts, testing)
+List        (used for search results)
+Posts       (used for section archives)
 Single      (used for about)
 
 

@@ -402,8 +402,43 @@ ol, ul {
     .pagination ul li, .see-more ul li {
       display: inline-block;
       font-weight: bold; }
-  .pagination .current, .see-more .current {
+  .pagination .active, .see-more .active {
+    background: #000;
+    color: #FFF; }
+  .pagination .ellipsis, .see-more .ellipsis {
     width: calc(46px / 2); }
+
+.posts-card {
+  display: block;
+  margin: 20px 2px;
+  padding: 5px;
+  width: 90%; }
+  .posts-card img {
+    width: 100%; }
+  .posts-card h3 {
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .posts-card h3:hover {
+      color: #C33;
+      transition: 0.5s ease; }
+  .posts-card p {
+    font-size: 0.75rem; }
+  .posts-card-align {
+    margin: 0;
+    padding: 0; }
+  @media all and (min-width: 550px) {
+    .posts-card {
+      width: 48%; } }
+  @media all and (min-width: 768px) {
+    .posts-card {
+      width: 32%; }
+      .posts-card:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.05); } }
 
 .primary {
   font-family: "Raleway", sans-serif; }
@@ -1012,6 +1047,46 @@ ol, ul {
     .featured-card:first-child {
       height: 375px; } }
 /* ======================================
+//  Landing styles
+// ====================================*/
+.landing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto; }
+  .landing a {
+    color: #000;
+    text-decoration: none; }
+  .landing .button, .landing .button-light, .landing .button-long, .landing .button-normal {
+    margin: 25px auto; }
+  .landing-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 98%; }
+  .landing-listing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    width: 98%; }
+
+@media all and (min-width: 768px) {
+  .landing-container {
+    max-width: 1080px; }
+  .landing-card {
+    width: 32%; }
+    .landing-card:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.05); } }
+/* ======================================
 //  Posts styles
 // ====================================*/
 .posts {
@@ -1022,7 +1097,10 @@ ol, ul {
   align-items: center;
   padding: 20px 0;
   width: 100%;
-  margin: 0 auto; }
+  margin: calc(36px + 40px) auto 0; }
+  @media all and (min-width: 768px) {
+    .posts {
+      margin-top: 56px; } }
   .posts a {
     color: #000;
     text-decoration: none; }
@@ -1042,40 +1120,10 @@ ol, ul {
     align-content: center;
     align-items: flex-start;
     width: 98%; }
-  .posts-card {
-    display: block;
-    margin: 20px 2px;
-    padding: 5px;
-    width: 90%; }
-    .posts-card img {
-      width: 100%; }
-    .posts-card h3 {
-      color: #000;
-      font-size: 1rem;
-      letter-spacing: 3px;
-      margin: 0;
-      text-transform: uppercase;
-      text-decoration: none; }
-      .posts-card h3:hover {
-        color: #C33;
-        transition: 0.5s ease; }
-    .posts-card p {
-      font-size: 0.75rem; }
-    .posts-card-align {
-      margin: 0;
-      padding: 0; }
 
-@media all and (min-width: 550px) {
-  .posts-card {
-    width: 48%; } }
 @media all and (min-width: 768px) {
   .posts-container {
-    max-width: 1080px; }
-  .posts-card {
-    width: 32%; }
-    .posts-card:hover {
-      transition: all 0.3s ease-in-out;
-      transform: scale(1.05); } }
+    max-width: 1080px; } }
 /* ======================================
 //  List styles
 // ====================================*/

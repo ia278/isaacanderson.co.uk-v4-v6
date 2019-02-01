@@ -1,10 +1,10 @@
 /* ======================================
-//  Posts styles
+//  Landing styles
 // ====================================*/
 
-.posts {
+.landing {
 	@include flexbox(row wrap, center);
-	@include positioning(margin-top);
+	@include positioning;
 	a {
 		color: $color-text;
 		text-decoration: none;
@@ -23,9 +23,16 @@
 }
 
 @media all and (min-width: $breakpoint-m) {
-	.posts {
+	.landing {
 		&-container {
 			max-width: $width-max-website;
+		}
+		&-card {
+			width: 32%;
+			&:hover {
+        transition: $transition-hover-card;
+        transform: $scale-hover-card;
+      }
 		}
 	}
 }
