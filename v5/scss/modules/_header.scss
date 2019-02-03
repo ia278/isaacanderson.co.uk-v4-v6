@@ -3,78 +3,106 @@
 // ====================================*/
 
 .header {
-  @include flexbox(row wrap, center);
-  background-color: $color-bg-header;
-  font-family: "Oswald", sans-serif;
-//  left: 50%;
-//  position: fixed;
-//  top: 0;
-//  transition: $transition-scroll;
-//  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
+	@include flexbox(row wrap, center);
+	background: $color-header;
+	font: 700 $font-size-h5 $font-secondary;
+	left: 0;
+	letter-spacing: $spacing-letter-h5;
+	position: fixed;
+	top: 0;
+	width: 100%;
   z-index: 1000;
-  &-container {
+	a {
+		color: $color-header;
+		text-decoration: none;
+		&:hover {
+			color: $color-link;
+			transition: $transition-hover;
+		}
+	}
+	&-container {
     @include flexbox(row wrap, space-between);
-    padding: 0 20px;
-    width: 98%;
+		height: 100%;
+    width: 100%;
   }
-  &-logo {
-    @include flexbox(row wrap, center);  
-    margin: 0 auto;
-    width: 45%;
+	&-logo {
+    @include flexbox(row wrap, center);
+		margin-left: 15px;
+		order: -2;
+    width: $width-logo;    // Required for IE to display SVG
     svg {
-      fill: $color-header;
+      fill: invert($color-header);
     }
   }
-  &-nav {
-    margin: 0 auto;
+	&-links {
+		@include flexbox(column wrap, space-around);
+		background: $color-bg-header;
+		height: $height-header-s;
+		text-transform: uppercase;
     width: 100%;
     ul {
-      @include flexbox(row wrap, space-around);
+      @include flexbox(row wrap, space-between);
+			height: 100%;
       list-style-type: none;
-      margin: 10px auto;
+      margin: 0;
       padding: 0;
-      a {
-        color: $color-header;
-        text-decoration: none;
-        &:hover {
-          color: $color-link;
-          transition: $transition-hover;
-        }
-      }
-      li {
-        margin: 0;
-        width: 80px;
+			text-align: center;
+			width: 100%;
+			li {
+				@include flexbox(column wrap, center);
+				height: 100%;
+				margin-top: 0;
+				margin-bottom: 0;
+				position: relative;
       }
     }
+  }
+	&-search {
+		@include flexbox(row wrap, center);
+		margin-right: 15px;
+		order: -1;
+		padding: 10px 0;
+		width: $width-logo;    // Required for IE to display SVG
+		svg {
+			fill: invert($color-header);
+			fill: $color-header; // Hide to show search icon
+		}
   }
 }
 
 @media all and (min-width: $breakpoint-m) {
   .header {
-    height: $height-header;
-    left: 50%;
-    position: fixed;
-    top: 0;
-    transition: $transition-scroll;
-    transform: translateX(-50%);
+		background: $color-bg-header;
+    height: $height-header-m;
     &-container {
       max-width: $width-max-website;
     }
     &-logo {
-      margin: 0;
-      width: 100px;
+			order: 0;
+			svg {
+				fill: $color-header;
+			}
     }
-    &-nav {
-      margin: 0;
-      width: 300px;
-      ul {
-        list-style-type: none;
-        justify-content: space-between;
-        margin: 5px auto 10px;
-        padding: 0;
-      }
+    &-links {
+			height: 100%;
+			order: 0;
+			width: calc(90% - #{$width-logo} - #{$width-logo});
+			ul {
+				max-width: 600px;
+			}
+    }
+		&-search {
+			order: 0;
+			svg {
+				fill: $color-header;
+				fill: $color-bg-header;  // Hide to show search icon
+			}
     }
   }
 }
+
+@media all and (max-width: 390px) {
+	.header {
+		font-size: $font-size-h6;
+	}
+}   // Reduced to prevent a second line of links.

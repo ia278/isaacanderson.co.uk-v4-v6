@@ -1,0 +1,80 @@
+/* ======================================
+//  Header styles
+// ====================================*/
+
+.header {
+  @include flexbox(row wrap, center);
+  background-color: $color-bg-header;
+  font-family: "Oswald", sans-serif;
+//  left: 50%;
+//  position: fixed;
+//  top: 0;
+//  transition: $transition-scroll;
+//  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  &-container {
+    @include flexbox(row wrap, space-between);
+    padding: 0 20px;
+    width: 98%;
+  }
+  &-logo {
+    @include flexbox(row wrap, center);  
+    margin: 0 auto;
+    width: 45%;
+    svg {
+      fill: $color-header;
+    }
+  }
+  &-nav {
+    margin: 0 auto;
+    width: 100%;
+    ul {
+      @include flexbox(row wrap, space-around);
+      list-style-type: none;
+      margin: 10px auto;
+      padding: 0;
+      a {
+        color: $color-header;
+        text-decoration: none;
+        &:hover {
+          color: $color-link;
+          transition: $transition-hover;
+        }
+      }
+      li {
+        margin: 0;
+        width: 80px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .header {
+    height: $height-header;
+    left: 50%;
+    position: fixed;
+    top: 0;
+    transition: $transition-scroll;
+    transform: translateX(-50%);
+    &-container {
+      max-width: $width-max-website;
+    }
+    &-logo {
+      margin: 0;
+      width: 100px;
+    }
+    &-nav {
+      margin: 0;
+      width: 300px;
+      ul {
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 5px auto 10px;
+        padding: 0;
+      }
+    }
+  }
+}

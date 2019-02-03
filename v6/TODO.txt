@@ -2,7 +2,9 @@ TO DO:
 
 ALL IN TEXTPATTERN 4.7.2
 
+- allow users to share articles on social media
 - change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
+- design search form on error page
 - design form error states
 - introduce tagging system for articles (tru_tags)
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not

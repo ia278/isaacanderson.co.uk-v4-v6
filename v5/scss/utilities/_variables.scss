@@ -50,6 +50,13 @@ $font-primary: "Raleway", sans-serif;                      // Default page font
 $font-secondary: "Oswald", sans-serif;                     // h1-h6 font
 $line-height: 1.5;                                         // Line height
 
+// Letter spacing
+
+$spacing-letter-h2: 4px;                                   // Letter spacing (h2 tags)
+$spacing-letter-h4: 3px;                                   // Letter spacing (h4 tags)
+$spacing-letter-h5: 3px;                                   // Letter spacing (h5 tags)
+$spacing-letter-h6: 2px;                                   // Letter spacing (h6 tags)
+
 // Scaling and transitions
 
 $scale-hover-project: scale(1.1);                          // Hover scaling (projects only)
@@ -61,7 +68,10 @@ $transition-scroll: top 0.5s ease;                         // Scroll transition
 // Widths and heights
 $height-footer: 100px;                                     // Footer height
 $height-header: 56px;                                      // Header height
+$height-header-s: 36px;                                    // Header height (small screens, bottom section only)
+$height-header-m: 56px;                                    // Header height (medium screens)
 $width-iconsdiv: 250px;                                    // "Icons-div" width
+$width-logo: 80px;                                         // Logo width
 $width-logo-project-s: 50%;                                // "Project" logo width (small screens)
 $width-logo-project-m: 225px;                              // "Project" logo width (medium screens)
 $width-max-hero-article: 1920px;                           // Article hero max width
