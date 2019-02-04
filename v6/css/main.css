@@ -756,7 +756,7 @@ ol, ul {
     max-width: 630px; }
   .article-contents {
     max-width: 1080px; } }
-@media all and (max-width: 1330px), all and (max-height: 580px) {
+@media all and (max-width: 1330px), all and (max-height: 570px) {
   .article-nav {
     display: none; } }
 /* ======================================
