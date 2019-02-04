@@ -180,7 +180,9 @@ button {
 figcaption {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 auto;
+  width: 75%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
@@ -733,7 +735,7 @@ ol, ul {
     padding: 0 10px;
     width: 98%; }
   .article-nav {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;

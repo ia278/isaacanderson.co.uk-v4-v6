@@ -66,7 +66,7 @@
     width: 98%;
   }
 	&-nav {
-		@include flexbox;
+		@include flexbox($display: inline-flex);
 		font-size: $font-size-contents;
 		height: calc(100vh - #{$height-header-m});
 		max-width: 400px;
