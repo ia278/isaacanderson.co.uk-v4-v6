@@ -935,10 +935,10 @@ ol, ul {
 // ====================================*/
 .single {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px 0;
   width: 100%;
   margin: calc(36px + 40px) auto 0;

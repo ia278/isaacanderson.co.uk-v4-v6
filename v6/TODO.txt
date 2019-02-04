@@ -5,14 +5,11 @@ TO DO:
 - related articles bug
 - allow users to share articles on social media
 - change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
-- design search form on error page
-- design form error states
 - introduce tagging system for articles (tru_tags)
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon (by changing fill color)
 - Add jQuery for search bar
-- Make form accessible (aria-labels, fieldsets etc.)
-- Add bottom border to search results, to seperate them slightly
+-  Add bottom border to search results, to seperate them slightly
 - Sort reader view (header appears before logo, quote author doesnt have spacing)
 - Show links as visited when they have already been opened.
 - buttons should stay color when clicked (active)
@@ -20,6 +17,13 @@ TO DO:
 - restructure git profile so all versions of the site are in one repo
 - maintenance page (get plugin)
 - npm and gulp for auto ES5/es6 and webkit 
+
+FORMS
+
+- design search form on error page
+- design form error states
+- Make form accessible (aria-labels, fieldsets etc.)
+- Add footer maximum height (layout thrown out on big screens)
 
 NOTES
 

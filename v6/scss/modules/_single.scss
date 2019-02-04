@@ -3,7 +3,7 @@
 // ====================================*/
 
 .single {
-  @include flexbox(row wrap, center, flex, $align-items: flex-start);
+  @include flexbox(column wrap, center);
 	@include positioning(margin-top);
 	padding: 0;
   figure {
