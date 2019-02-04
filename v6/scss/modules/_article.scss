@@ -3,13 +3,13 @@
 // ====================================*/
 
 .article {
-  @include flexbox(row wrap, center, flex, $align-items: flex-start);
+  @include flexbox(column wrap, center, flex, $align-items: flex-start);
 	@include positioning(margin-top);
 	padding: 0;
   text-align: center;
   figure {
     @include flexbox(row wrap, center);
-    margin: 0;
+    margin: 0 auto;
     max-width: 1920px;
     overflow: hidden;
     position: relative;
@@ -37,6 +37,12 @@
     margin: 30px auto;
     max-width: $width-max-p-s;
     text-align: justify;
+  }
+  &-container {
+    @include flexbox(row wrap, center, $align-items: flex-start);
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%; 
   }
 	&-card {
 		display: inline-block;
@@ -73,7 +79,7 @@
 		position: sticky;
 		top: $height-header-m;
 		width: calc(100% - 1080px);
-		div {
+		> div {
 			font-family: $font-secondary;
 			ol {
 				padding-left: 35px;

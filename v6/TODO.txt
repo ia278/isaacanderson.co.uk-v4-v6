@@ -1,8 +1,5 @@
 TO DO:
 
-- make sure nav bar is always on left on large screens (+2400px)
-
-
 - subscribe to website
 - .htaacess to change image names to something more SEO friendly
 - related articles bug

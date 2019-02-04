@@ -2,7 +2,7 @@
 const archiveCard = document.querySelectorAll(".archive-listing .archive-card");
 const articleNav = document.querySelector(".article-nav");
 const br = document.querySelectorAll(".related-contents br");
-const h2InArticle = document.querySelectorAll(".article h2");
+const h2InArticle = document.querySelectorAll(".article-contents h2");
 const landingCard = document.querySelectorAll(".landing-listing .posts-card");
 const linksInArticle = document.querySelectorAll(".article-contents a");
 const postsCard = document.querySelectorAll(".posts-listing .posts-card");

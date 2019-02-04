@@ -672,7 +672,7 @@ ol, ul {
 // ====================================*/
 .article {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
   align-items: flex-start;
@@ -690,7 +690,7 @@ ol, ul {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     max-width: 1920px;
     overflow: hidden;
     position: relative;
@@ -712,6 +712,15 @@ ol, ul {
     margin: 30px auto;
     max-width: 550px;
     text-align: justify; }
+  .article-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%; }
   .article-card {
     display: inline-block;
     margin: 20px auto;
@@ -746,9 +755,9 @@ ol, ul {
     position: sticky;
     top: 56px;
     width: calc(100% - 1080px); }
-    .article-nav div {
+    .article-nav > div {
       font-family: "Montserrat", sans-serif; }
-      .article-nav div ol {
+      .article-nav > div ol {
         padding-left: 35px;
         margin: 0;
         text-align: left; }
