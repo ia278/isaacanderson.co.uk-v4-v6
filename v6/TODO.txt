@@ -1,7 +1,16 @@
 TO DO:
 
-ALL IN TEXTPATTERN 4.7.2
 
+- change max height nav bar media query so it displays when download bar appears
+- make sure nav bar is always on left on large screens (+2400px)
+- make featured images scrim smaller (currently takes up half a card)
+- change max width of figcaption to 75%/810px (same width as img-75 images) 
+
+
+- subscribe to website
+- .htaacess to change image names to something more SEO friendly
+
+- related articles bug
 - allow users to share articles on social media
 - change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
 - design search form on error page
