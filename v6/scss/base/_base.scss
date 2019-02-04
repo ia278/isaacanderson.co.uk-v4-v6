@@ -19,6 +19,9 @@ body {
 }
 a {
   color: $color-link;
+  &:active, &:visited {
+    color: $color-link-hover;
+  }
   &:hover {
     color: $color-link-hover;
     transition: $transition-hover;

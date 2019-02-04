@@ -10,14 +10,14 @@
 	font-family: $font-secondary;
 	font-weight: bold;
 	text-transform: uppercase;
-	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
+//	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});      // 40px is height of logo, written inline (SVG).
 	&-container {
 		@include flexbox(row wrap, space-around, $align-items: flex-end);
     width: 98%;
 	}
 	&-form {
 		@include flexbox(column wrap, center);
-		margin-bottom: 30px;
+//		margin-bottom: 30px;
 		max-width: $width-max-form-s;
 		padding: 15px 0 0;
 		width: $width-form-s;
@@ -64,7 +64,7 @@
 
 @media all and (min-width: $breakpoint-m) {
 	.footer {
-		min-height: calc(100vh - #{$height-header-m});
+//		min-height: calc(100vh - #{$height-header-m});
 		&-container {
 			max-width: $width-max-website;
 		}
