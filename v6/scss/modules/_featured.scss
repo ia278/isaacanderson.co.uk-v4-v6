@@ -21,7 +21,7 @@
 		width: 100%;
 	}
 	&-card {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(to bottom, rgba($color-overlay, 0), rgba($color-overlay, 0), rgba($color-overlay, 0), rgba($color-overlay, 0.9));
 		display: inline-block;
 		height: 250px;
 		margin: 2px;
