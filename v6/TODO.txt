@@ -16,7 +16,8 @@ TO DO:
 - no target javascript for class .no-target
 - restructure git profile so all versions of the site are in one repo
 - maintenance page (get plugin)
-- npm and gulp for auto ES5/es6 and webkit 
+- npm and gulp for auto ES5/es6 and webkit
+- add styles for pre and code tags to base 
 
 FORMS
 
