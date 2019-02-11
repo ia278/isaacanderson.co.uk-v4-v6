@@ -5,7 +5,6 @@
 .error {
 	@include flexbox(row wrap, center);
 	@include positioning(margin-top);
-	background: $color-bg-footer;
 	color: $color-text-alt;
 	text-align: center;
 	min-height: calc(100vh - #{$height-header-s} - #{$height-logo});     

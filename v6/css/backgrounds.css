@@ -1,6 +1,11 @@
 /* ======================================
 //  Background styles
 // ====================================*/
+.error {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/backgrounds/error.jpg") center/cover no-repeat fixed; }
+  .error h1, .error p {
+    color: #FFF; }
+
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/backgrounds/laptop.jpg") center/cover no-repeat fixed; }
   .hero h1, .hero p {

@@ -1,11 +1,12 @@
 TO DO:
 
+- fix min height on about and posts pages
 - subscribe to website
 - .htaacess to change image names to something more SEO friendly
 - related articles bug
 - allow users to share articles on social media
 - change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
-- introduce tagging system for articles (tru_tags)
+- introduce tagging system for articles (smd_tags)
 - Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
 - Show search icon (by changing fill color)
 - Add jQuery for search bar
@@ -13,9 +14,7 @@ TO DO:
 - Sort reader view (header appears before logo, quote author doesnt have spacing)
 - Show links as visited when they have already been opened.
 - buttons should stay color when clicked (active)
-- no target javascript for class .no-target
 - restructure git profile so all versions of the site are in one repo
-- maintenance page (get plugin)
 - npm and gulp for auto ES5/es6 and webkit
 - add styles for pre and code tags to base 
 
