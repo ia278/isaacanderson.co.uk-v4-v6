@@ -1,13 +1,14 @@
 TO DO:
 
+- have a results div at the top of the page, summarising key results
+- use oswald for headers in articles
 - fix min height on about and posts pages
 - subscribe to website
 - .htaacess to change image names to something more SEO friendly
 - related articles bug
 - allow users to share articles on social media
 - change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
-- introduce tagging system for articles (smd_tags)
-- Edit header so the active class toggles depending on which list item is hovered over, but defaults to the current section if not
+- introduce tagging system for articles (smd_tabbgs)
 - Show search icon (by changing fill color)
 - Add jQuery for search bar
 -  Add bottom border to search results, to seperate them slightly
