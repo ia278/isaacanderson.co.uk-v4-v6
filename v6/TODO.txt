@@ -10,7 +10,7 @@ CODE
 
 - Add bottom border to search results (to seperate them slightly)
 - Add jQuery for search bar (and show by changing fill color)
-- Add styles for pre and code tags to base (probably highlight.js)
+- Add styles for pre and code tags to base (highlight.js, atom-one-dark)
 - Change list card to scale on hover, and make a greater area hyperlinked.
 - Keep backgrounds internal to Textpattern
 - Create SEO friendly image names with .htaccess
@@ -18,11 +18,6 @@ CODE
 - Show links as visited when they have already been opened (:active?)
 - Sort reader view (header appears before logo, quote author doesnt have spacing)
 - Use Oswald for headers in articles
-
-
-DESIGN
-
-- Redesign favicon to have white background
 
 
 FEATURES
