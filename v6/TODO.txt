@@ -1,30 +1,45 @@
 TO DO:
 
-- have a results div at the top of the page, summarising key results
-- use oswald for headers in articles
-- fix min height on about and posts pages
-- subscribe to website
-- .htaacess to change image names to something more SEO friendly
-- related articles bug
-- allow users to share articles on social media
-- change favicon so it doesn't disappear on certian screens, also keep internal to textpattern
-- introduce tagging system for articles (smd_tabbgs)
-- Show search icon (by changing fill color)
-- Add jQuery for search bar
--  Add bottom border to search results, to seperate them slightly
+ADMIN 
+
+- Learn npm and gulp for auto ES5/es6 and webkit
+- Restructure git profile so all versions of the site are in one repo
+
+
+CODE
+
+- Add bottom border to search results (to seperate them slightly)
+- Add jQuery for search bar (and show by changing fill color)
+- Add styles for pre and code tags to base (probably highlight.js)
+- Change list card to scale on hover, and make a greater area hyperlinked.
+- Keep backgrounds internal to Textpattern
+- Create SEO friendly image names with .htaccess
+- Fix min height on about and posts pages
+- Show links as visited when they have already been opened (:active?)
 - Sort reader view (header appears before logo, quote author doesnt have spacing)
-- Show links as visited when they have already been opened.
-- buttons should stay color when clicked (active)
-- restructure git profile so all versions of the site are in one repo
-- npm and gulp for auto ES5/es6 and webkit
-- add styles for pre and code tags to base 
+- Use Oswald for headers in articles
+
+
+DESIGN
+
+- Redesign favicon to have white background
+
+
+FEATURES
+
+- Allow users to share articles on social media
+- Introduce a results div at the top of the page, summarising key results.
+- Introduce tagging system for articles (smd_tags)
+- subscribe to website (rss or plugin?)
+
 
 FORMS
 
-- design search form on error page
-- design form error states
+- Design search form on error page
+- Design form error states
 - Make form accessible (aria-labels, fieldsets etc.)
 - Add footer maximum height (layout thrown out on big screens)
+
 
 NOTES
 
