@@ -12,7 +12,7 @@ CODE
 - Add jQuery for search bar (and show by changing fill color)
 - Add styles for pre and code tags to base (highlight.js, atom-one-dark)
 - Change list card to scale on hover, and make a greater area hyperlinked.
-- Keep backgrounds internal to Textpattern
+- Keep backgrounds internal to Textpattern (ask on forum about flat css being served when db is requested)
 - Create SEO friendly image names with .htaccess
 - Fix min height on about and posts pages
 - Show links as visited when they have already been opened (:active?)
@@ -34,8 +34,3 @@ FORMS
 - Design form error states
 - Make form accessible (aria-labels, fieldsets etc.)
 - Add footer maximum height (layout thrown out on big screens)
-
-
-NOTES
-
-- Changing the height of the logo requires the variable to also be changed, as this will update margins and headers.

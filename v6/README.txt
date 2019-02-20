@@ -68,3 +68,11 @@ Furthermore;
 * THUMBNAIL images;
   - must have an aspect ratio of 16:9.
 
+
+----------------------------------------
+LOGOS
+----------------------------------------
+
+The default height of the logo is 40px.
+
+Changing this requires the variable in variables.scss to be changed as well, as this will update margins and headers.
