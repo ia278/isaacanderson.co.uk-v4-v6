@@ -19,12 +19,17 @@ CODE
 - Sort reader view (header appears before logo, quote author doesnt have spacing)
 - Use Oswald for headers in articles
 
+DESIGN
+
+- Introduce column design (12 columns)
+- Introduce previous work places div on homepage (shows places I've worked at before, including Bath, Grenoble, Griffon)
+
 
 FEATURES
 
 - Allow users to share articles on social media
 - Introduce a results div at the top of the page, summarising key results.
-- Introduce tagging system for articles (smd_tags)
+- Introduce tagging system for articles (smd_tags). These should filter by project type (UX, prototype etc.)
 - subscribe to website (rss or plugin?)
 
 

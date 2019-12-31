@@ -16,7 +16,7 @@ Posts       (used for section archives)
 Single      (used for about)
 
 
-Each of these page templates is made up of several replaceable modules. These are;
+Each of these page templates is made up of several replaceable modules. These include;
 
 
 Error       (code for error hero)
@@ -32,7 +32,7 @@ Article     (placeholder for article content)
 Single      (placeholder for single page content)
 
 
-Article cards can be displayed in four different ways. The modules for these are;
+Articles can be displayed as cards, in four different ways. The modules for these are;
 
 Archive     (text only)
 Featured    (large tiles, no description)
@@ -73,6 +73,6 @@ Furthermore;
 LOGOS
 ----------------------------------------
 
-The default height of the logo is 40px.
+The default height of the logo is 40px. This is written inline.
 
-Changing this requires the variable in variables.scss to be changed as well, as this will update margins and headers.
+Therefore, changing this requires the variable in variables.scss to be changed as well, as this will update margins and headers.
